@@ -24,6 +24,7 @@ public class ImageSpanActivity extends AppCompatActivity {
     private EditText edtvTest;
     private TextView tvTest;
     private TextView tvTest1;
+    private TextView tvTest3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class ImageSpanActivity extends AppCompatActivity {
         edtvTest = findViewById(R.id.edtv_test);
         tvTest = findViewById(R.id.tv_test);
         tvTest1 = findViewById(R.id.tv_test1);
+        tvTest3 = findViewById(R.id.tv_test3);
     }
 
     /**
@@ -39,7 +41,7 @@ public class ImageSpanActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest1(View v) {
-        SpannableString fansImageSpan = SpanUtils.getFansBadgeImageSpan(this
+        SpannableString fansImageSpan = SpanUtils.getInterFansBadgeImageSpan(this
                 , "1"
                 , edtvTest.getText().toString()
                 , ScreenUtils.dip2px(this, ScreenUtils.INTER_IMG_CHAT_NORMAL_HEIGHT), ScreenUtils.KIWII_ALIGN_CENTER);
@@ -60,5 +62,19 @@ public class ImageSpanActivity extends AppCompatActivity {
 
     }
 
+
+    /**
+     * 95xiu 粉丝团徽章相关测试
+     * @param v
+     */
+    public void onTest3(View v) {
+        SpannableString fansImageSpan = SpanUtils.getFansBadgeImageSpan(this
+                , "9"
+                , edtvTest.getText().toString()
+                , ScreenUtils.dip2px(this, ScreenUtils.INTER_IMG_CHAT_NORMAL_HEIGHT), ScreenUtils.KIWII_ALIGN_CENTER);
+        tvTest3.setText(fansImageSpan);
+        System.out.println("=================> TextView width: " + tvTest3.getWidth() + "   height: " + tvTest3.getHeight());
+
+    }
     
 }

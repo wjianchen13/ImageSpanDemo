@@ -130,7 +130,8 @@ public class TestFansBadgeImageSpan extends ImageSpan {
         canvas.translate(x, transY);
         b.draw(canvas);
         canvas.restore();
-        
+        canvas.save();
+        canvas.translate(x, 0);
         int width = getDrawable().getBounds().width();
         int height = getDrawable().getBounds().height();
 
@@ -150,79 +151,7 @@ public class TestFansBadgeImageSpan extends ImageSpan {
         ty = (bottom - textHeight) / 2 + textHeight - bounds.bottom;
         drawRect(canvas, paint, tx, ty, Color.rgb(0, 255, 0), fm, bounds.bottom);
         canvas.drawText(badge, tx , ty , paint);
-        
-    }
-    
-    /**
-     * 绘制span到画布上
-     *
-     * @param canvas 将被渲染的span canvas
-     * @param text 当前文本
-     * @param start span开始字符索引
-     * @param end span结束字符索引
-     * @param x 要绘制的image的左边框到textview左边框的距离
-     * @param top 替换行的最顶部位置.
-     * @param y 要替换的文字的基线坐标，即基线到textview上边框的距离
-     * @param bottom 替换行的最底部位置.
-     * @param paint Paint instance.
-     */
-//    @Override
-    public void draw1(Canvas canvas, CharSequence text, int start, int end, float x, int top, int y, int bottom, Paint paint) {
-        if(sid == null || badge == null)
-            return ;
-        Drawable b = getCachedDrawable();
-        int transY = 0;
-        paint.setTextSize(ScreenUtils.dip2px(mContext, 12));
-        Paint.FontMetrics fm = paint.getFontMetrics();
-        System.out.println("=================> start: " + start + "   end:" + end + "   x:" + x + "   top:" + top + "   y:" + y + "   bottom:" + bottom);
-        if(xiu_align == ScreenUtils.KIWII_ALIGN_CENTER) { // 居中对齐
-            System.out.println("=================> fm.ascent222: " + fm.ascent + "   fm.top:" + fm.top + "   fm.bottom:" + fm.bottom + "   fm.descent:" + fm.descent);
-            transY = (bottom - background_height) / 2;
-        }
-        canvas.save();
-        canvas.translate(x, transY);
-        b.draw(canvas);
         canvas.restore();
-        
-//        System.out.println("=================> start: " + start + "   end:" + end + "   x:" + x + "   top:" + top + "   y:" + y + "   bottom:" + bottom);
-//        Paint.FontMetrics fm = paint.getFontMetrics();
-//        System.out.println("=================> fm.ascent222: " + fm.ascent + "   fm.top:" + fm.top + "   fm.bottom:" + fm.bottom + "   fm.descent:" + fm.descent);
-        int width = getDrawable().getBounds().width();
-        int height = getDrawable().getBounds().height();
-
-        // draw badge
-        getTextBounds(paint, ScreenUtils.dip2px(mContext, 12));
-        fm = paint.getFontMetrics();
-        int tx = ScreenUtils.dip2px(mContext, INTER_BADGE_WIDTH) + (width - (ScreenUtils.dip2px(mContext, INTER_BADGE_WIDTH) + ScreenUtils.dip2px(mContext, INTER_MARGIN_RIGHT) + bounds.width())) / 2;
-        System.out.println("=================> bounds.left: " + bounds.left + "   bounds.top:" + bounds.top + "   bounds.right:" + bounds.right + "   bounds.bottom:" + bounds.bottom);
-        System.out.println("=================> height: " + height);
-        int textHeight = bounds.bottom - bounds.top;
-        int ty = (bottom - textHeight) / 2 + textHeight - bounds.bottom; // 
-//        drawRect(canvas, paint, tx, ty, Color.rgb(0, 255, 0), fm, bounds.bottom);
-        canvas.drawText(badge, tx , ty , paint);
-        
-
-//        int width = getDrawable().getBounds().width();
-//        int height = getDrawable().getBounds().height();
-//
-//        // draw level
-//        getTextBounds(paint, ScreenUtils.dip2px(mContext, 10));
-//        paint.getTextBounds(sid, 0, sid.length(), bounds);
-//        int tx = (ScreenUtils.dip2px(mContext, INTER_BADGE_WIDTH) - bounds.width()) / 2 - ScreenUtils.dip2px(mContext, 0.5f);
-//        int ty = (height + bounds.height()) / 2 - ScreenUtils.dip2px(mContext, 0.0f);
-//        paint.setColor(Color.rgb(255, 255, 255));
-//        canvas.drawText(sid, tx , ty , paint);
-//
-//        // draw badge
-//        getTextBounds(paint, ScreenUtils.dip2px(mContext, 12));
-//        tx = ScreenUtils.dip2px(mContext, INTER_BADGE_WIDTH) + (width - (ScreenUtils.dip2px(mContext, INTER_BADGE_WIDTH) + ScreenUtils.dip2px(mContext, INTER_MARGIN_RIGHT) + bounds.width())) / 2;
-//        System.out.println("=================> bounds.left: " + bounds.left + "   bounds.top:" + bounds.top + "   bounds.right:" + bounds.right + "   bounds.bottom:" + bounds.bottom);
-//        System.out.println("=================> height: " + height);
-//        ty = (height + bounds.height()) / 2 - ScreenUtils.dip2px(mContext, 2.0f);
-//        drawRect(canvas, paint, tx, ty, Color.rgb(0, 255, 0));
-//        canvas.drawText(badge, tx , ty , paint);
-
-
     }
 
     /**
