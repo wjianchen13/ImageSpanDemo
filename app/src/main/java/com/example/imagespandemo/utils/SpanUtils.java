@@ -7,11 +7,14 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.TextUtils;
 import android.text.style.ImageSpan;
 
 import androidx.core.content.ContextCompat;
 
 import com.example.imagespandemo.R;
+import com.example.imagespandemo.fans.KiwiiFansBadgeImageSpan;
+import com.example.imagespandemo.fans.TestFansBadgeImageSpan;
 import com.example.imagespandemo.imagespan.BadgeImageSpan;
 import com.example.imagespandemo.imagespan.BadgeImageSpan1;
 import com.example.imagespandemo.imagespan.FansImageSpan;
@@ -215,6 +218,34 @@ public class SpanUtils {
         img.draw(temp_canvas);
         Drawable drawable = new BitmapDrawable(mContext.getResources(), target);
         return drawable;
+    }
+
+    /**
+     * 返回粉丝团徽章
+     */
+    public static SpannableString getFansBadgeImageSpan(Context context, String sid, String badge, int size, int verticalAlignment) {
+        SpannableString spanStr = null;
+        if (context != null && null != sid && !TextUtils.isEmpty(badge)) {
+            spanStr = new SpannableString("img ");
+            Drawable img = ContextCompat.getDrawable(context, R.drawable.bg_fans_group_badge);
+            ImageSpan fansImageSpan = new KiwiiFansBadgeImageSpan(context, img, sid, badge, verticalAlignment, img.getIntrinsicWidth(), Math.max(size, img.getIntrinsicHeight()));
+            spanStr.setSpan(fansImageSpan, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+        return spanStr == null ? new SpannableString("") : spanStr;
+    }
+
+    /**
+     * 返回粉丝团徽章
+     */
+    public static SpannableString getTestImageSpan(Context context, String sid, String badge, int size, int verticalAlignment) {
+        SpannableString spanStr = null;
+        if (context != null && null != sid && !TextUtils.isEmpty(badge)) {
+            spanStr = new SpannableString("img ");
+            Drawable img = ContextCompat.getDrawable(context, R.drawable.bg_fans_group_badge);
+            ImageSpan fansImageSpan = new TestFansBadgeImageSpan(context, img, sid, badge, verticalAlignment, img.getIntrinsicWidth(), Math.max(size, img.getIntrinsicHeight()));
+            spanStr.setSpan(fansImageSpan, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+        return spanStr == null ? new SpannableString("") : spanStr;
     }
 
 }

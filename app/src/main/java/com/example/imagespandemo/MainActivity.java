@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.imagespandemo.fans.ImageSpanActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -30,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent();
         it.setClass(this, PkBadgeActivity.class);
         startActivity(it);
+    }
+
+    public void onTest4(View v) {
+        startActivity(new Intent(this, ImageSpanActivity.class));
     }
 }

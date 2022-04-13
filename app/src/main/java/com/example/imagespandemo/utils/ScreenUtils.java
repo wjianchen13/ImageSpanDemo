@@ -21,6 +21,14 @@ import java.lang.reflect.Method;
  */
 
 public class ScreenUtils {
+
+    /**
+     * 居中对齐
+     */
+    public static final int KIWII_ALIGN_CENTER = 1;
+
+    public static final int INTER_IMG_CHAT_NORMAL_HEIGHT = 17; //图标高度
+    
     /**
      * 返回屏幕密度
      */
