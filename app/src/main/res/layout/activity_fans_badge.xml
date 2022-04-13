@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_test1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="#3fff0000"/>
+
+    <ImageView
+        android:id="@+id/imgv_test"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_test1"
+        android:layout_centerHorizontal="true"
+        android:background="#2f00ff00"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ff0000ff"
+        android:scrollbars="vertical"
+        android:layout_below="@id/imgv_test"
+        android:layout_above="@id/btn_test1"/>
+
+    <Button
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_test2"
+        android:textAllCaps="false"
+        android:text="test1"
+        android:onClick="onTest1"/>
+
+    <Button
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="test2"
+        android:onClick="onTest2"/>
+
+
+
+
+</RelativeLayout>
