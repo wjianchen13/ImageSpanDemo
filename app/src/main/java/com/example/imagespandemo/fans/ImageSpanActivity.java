@@ -2,6 +2,7 @@ package com.example.imagespandemo.fans;
 
 import android.os.Bundle;
 import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -68,11 +69,14 @@ public class ImageSpanActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest3(View v) {
+        SpannableStringBuilder sp = new SpannableStringBuilder();
+        sp.append("dhkashdlfhasldhflasfkasdhfkasdhfdhkashdlfshdlfdlfshdlfdddd");
         SpannableString fansImageSpan = SpanUtils.getFansBadgeImageSpan(this
                 , "9"
                 , edtvTest.getText().toString()
                 , ScreenUtils.dip2px(this, ScreenUtils.INTER_IMG_CHAT_NORMAL_HEIGHT), ScreenUtils.KIWII_ALIGN_CENTER);
-        tvTest3.setText(fansImageSpan);
+        sp.append(fansImageSpan);
+        tvTest3.setText(sp);
         System.out.println("=================> TextView width: " + tvTest3.getWidth() + "   height: " + tvTest3.getHeight());
 
     }

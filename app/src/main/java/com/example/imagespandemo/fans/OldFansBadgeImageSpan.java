@@ -8,15 +8,16 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.text.style.ImageSpan;
 
+
 import com.example.imagespandemo.utils.ScreenUtils;
 
 import java.lang.ref.SoftReference;
 import java.util.List;
 
 /**
- * 95xiu绘制粉丝徽章
+ * 绘制粉丝徽章
  */
-public class FansBadgeImageSpan extends ImageSpan {
+public class OldFansBadgeImageSpan extends ImageSpan {
 
     /**
      * context
@@ -36,29 +37,35 @@ public class FansBadgeImageSpan extends ImageSpan {
     /**
      * drawable reference
      */
-    private String sid;
 
-    /**
-     * text bounds
-     */
-    private final Rect bounds;
+    private String sid;
 
     private String badge;
 
     private SoftReference<Drawable> mDrawableRef;
 
-    public FansBadgeImageSpan(Drawable d, Context context, String sid, String badge, int align) {
+    public OldFansBadgeImageSpan(Drawable d, Context context, String sid, String badge, int align) {
         super(d, ImageSpan.ALIGN_BASELINE);
         this.mContext = context;
         xiuAlign = align;
         this.sid = sid;
         this.badge = badge;
-        bounds = new Rect();
     }
 
     public int getSize(Paint paint, CharSequence text, int start, int end, Paint.FontMetricsInt fm) {
         Drawable d = getDrawable();
         Rect rect = d.getBounds();
+        if (fm != null) {
+            Paint.FontMetricsInt fmPaint = paint.getFontMetricsInt();
+            int fontHeight = fmPaint.bottom - fmPaint.top;  // 字体高度
+            int drHeight = rect.bottom - rect.top; // 图片高度
+            int top = drHeight / 2 - fontHeight / 4;
+            int bottom = drHeight / 2 + fontHeight / 3;
+            fm.ascent = -bottom; // 字体的高度 descent - leading
+            fm.top = -bottom;
+            fm.bottom = top;
+            fm.descent = top;
+        }
         return rect.right;
     }
 
@@ -83,47 +90,41 @@ public class FansBadgeImageSpan extends ImageSpan {
     public void draw(Canvas canvas, CharSequence text, int start, int end, float x, int top, int y, int bottom, Paint paint) {
         if(sid == null || badge == null)
             return ;
-        ScreenUtils.log("text: " + text + "   start: " + start + "   end: " + end + "   x: " + x + "   top: " + top + "   y: " + y + "   bottom: " + bottom);
         Drawable b = getCachedDrawable();
-        int dis = b.getBounds().height();
-        int transY = top + (bottom - top - dis) / 2;
+        int transY = top + (bottom - top) / 2 - b.getBounds().height() / 2;
+        /*Paint.FontMetrics fm = paint.getFontMetrics();
+        if(xiuAlign == ImageSpanAlign.XIU_ALIGN_CENTER) { // 居中对齐
+            transY = (int) ((y + fm.descent + y + fm.ascent) / 2 - b.getBounds().bottom / 2);
+        }*/
         canvas.save();
         canvas.translate(x, transY);
         b.draw(canvas);
 
-        // draw level
         int width = getDrawable().getBounds().width();
+        int height = getDrawable().getBounds().height();
         int startWidth = (int)(width * 0.43);
+
+        // draw level
+        Rect bounds = new Rect();
         paint.setTextSize(ScreenUtils.dip2px(mContext, 10));
         paint.getTextBounds(sid, 0, sid.length(), bounds);
-        int textHeight = bounds.bottom - bounds.top;
-        int tx = (width - (width - startWidth) - bounds.width()) / 2 + ScreenUtils.dip2px(mContext, 0.0f );
-        int ty = top + (bottom - top - textHeight) / 2 + textHeight - bounds.bottom - transY;
+        int tx = (width - (width - startWidth) - bounds.width()) / 2 + ScreenUtils.dip2px(mContext, 0.0f);
+        int ty = (height + bounds.height()) / 2 - ScreenUtils.dip2px(mContext, 0.0f);
+
+//        paint.setColor(Color.rgb(0, 0, 255));
+//        canvas.drawRect(new Rect(tx, ty - bounds.height(), tx + bounds.width(), ty + bounds.bottom), paint);
+
         paint.setColor(Color.rgb(255, 255, 255));
+
         canvas.drawText(sid, tx , ty , paint);
 
         // draw badge
         paint.setTextSize(ScreenUtils.dip2px(mContext, 12));
         paint.getTextBounds(badge, 0, badge.length(), bounds);
-        textHeight = bounds.bottom - bounds.top;
         tx = (width - startWidth- bounds.width()) / 2 + startWidth;
-        ty = top + (bottom - top - textHeight) / 2 + textHeight - bounds.bottom - transY;
+        ty = (height + bounds.height()) / 2 - ScreenUtils.dip2px(mContext, 1.2f);
         canvas.drawText(badge, tx , ty , paint);
+
         canvas.restore();
-    }
-
-
-    /**
-     * 绘制文字区域
-     * @param canvas
-     * @param paint
-     * @param tx
-     * @param ty
-     * @param color
-     */
-    private void drawRect(Canvas canvas, Paint paint, int tx, int ty, int color, int des) {
-        paint.setColor(color);
-        canvas.drawRect(new Rect(tx, ty - (bounds.bottom - bounds.top) + des, tx + bounds.width(), ty + des), paint);
-        paint.setColor(Color.rgb(255, 255, 255));
     }
 }

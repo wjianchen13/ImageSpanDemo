@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat;
 import com.example.imagespandemo.R;
 import com.example.imagespandemo.fans.FansBadgeImageSpan;
 import com.example.imagespandemo.fans.KiwiiFansBadgeImageSpan;
+import com.example.imagespandemo.fans.OldFansBadgeImageSpan;
 import com.example.imagespandemo.fans.TestFansBadgeImageSpan;
 import com.example.imagespandemo.imagespan.BadgeImageSpan;
 import com.example.imagespandemo.imagespan.BadgeImageSpan1;
@@ -261,6 +262,23 @@ public class SpanUtils {
             float factor = (float)size / iHeight; // 转换因子
             img.setBounds(0, 0, (int)(img.getIntrinsicWidth() * factor), size);
             ImageSpan fansImageSpan = new FansBadgeImageSpan(img, context, sid, badge, verticalAlignment);
+            spanStr.setSpan(fansImageSpan, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+        return spanStr == null ? new SpannableString("") : spanStr;
+    }
+
+    /**
+     * 95xiu返回粉丝团徽章
+     */
+    public static SpannableString getOldFansBadgeImageSpan(Context context, String sid, String badge, int size, int verticalAlignment) {
+        SpannableString spanStr = null;
+        if (context != null) {
+            spanStr = new SpannableString("img ");
+            Drawable img = ContextCompat.getDrawable(context, R.drawable.bg_fans_group_badge1);
+            int iHeight = img.getIntrinsicHeight(); // 获取图片的高度 px
+            float factor = (float)size / iHeight; // 转换因子
+            img.setBounds(0, 0, (int)(img.getIntrinsicWidth() * factor), size);
+            ImageSpan fansImageSpan = new OldFansBadgeImageSpan(img, context, sid, badge, verticalAlignment);
             spanStr.setSpan(fansImageSpan, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         }
         return spanStr == null ? new SpannableString("") : spanStr;

@@ -459,6 +459,10 @@ public class ScreenUtils {
         }
         return params;
     }
+    
+    public static void log(String str) {
+        System.out.println("======================> " + str);
+    }
 
 }
 
