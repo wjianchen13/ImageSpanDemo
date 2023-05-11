@@ -21,6 +21,11 @@
         <activity android:name=".FansBadgeActivity1" />
         <activity android:name=".PkBadgeActivity" />
         <activity android:name=".fans.ImageSpanActivity" />
+        <activity android:name=".span.SpanActivity" />
+        <activity android:name=".edittext.EditTextActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode = "adjustPan"/>
+
     </application>
 
 </manifest>

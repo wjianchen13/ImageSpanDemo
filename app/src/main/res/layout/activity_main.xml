@@ -40,4 +40,23 @@
         android:text="粉丝团徽章"
         android:onClick="onTest4"/>
 
+
+    <Button
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="TextSpan效果"
+        android:onClick="onTest5"/>
+
+    <Button
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="EditText显示Span效果，@用户"
+        android:onClick="onTest6"/>
+
 </LinearLayout>
