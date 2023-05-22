@@ -59,4 +59,14 @@
         android:text="EditText显示Span效果，@用户"
         android:onClick="onTest6"/>
 
+    <Button
+        android:id="@+id/btn_test7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="普通Span"
+        android:onClick="onTest7"/>
+
+
 </LinearLayout>

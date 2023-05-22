@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/drawable/live_chat_bg.xml" value="0.11018518518518519" />
         <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/activity_edittext.xml" value="0.2046875" />
         <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/activity_fans_badge.xml" value="0.36614583333333334" />
         <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/activity_normal_span.xml" value="0.37864583333333335" />
         <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/activity_span.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/github/ImageSpanDemo/app/src/main/res/layout/item_chat_msg_1.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

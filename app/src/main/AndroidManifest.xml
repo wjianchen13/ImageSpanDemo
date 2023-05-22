@@ -25,6 +25,7 @@
         <activity android:name=".edittext.EditTextActivity"
             android:configChanges="orientation|keyboardHidden"
             android:windowSoftInputMode = "adjustPan"/>
+        <activity android:name=".normal_span.NormalSpanActivity" />
 
     </application>
 

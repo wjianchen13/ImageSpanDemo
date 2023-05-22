@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.imagespandemo.edittext.EditTextActivity;
 import com.example.imagespandemo.fans.ImageSpanActivity;
+import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.span.SpanActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest6(View v) {
         startActivity(new Intent(this, EditTextActivity.class));
+    }
+
+    /**
+     * EditText显示Span效果，@用户
+     * @param v
+     */
+    public void onTest7(View v) {
+        startActivity(new Intent(this, NormalSpanActivity.class));
     }
 
 }
