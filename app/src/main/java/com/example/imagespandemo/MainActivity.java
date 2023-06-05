@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.imagespandemo.edittext.EditTextActivity;
 import com.example.imagespandemo.fans.ImageSpanActivity;
+import com.example.imagespandemo.line.LineActivity;
 import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.span.SpanActivity;
 
@@ -62,5 +63,14 @@ public class MainActivity extends AppCompatActivity {
     public void onTest7(View v) {
         startActivity(new Intent(this, NormalSpanActivity.class));
     }
+
+    /**
+     * 富文本自动换行
+     * @param v
+     */
+    public void onTest8(View v) {
+        startActivity(new Intent(this, LineActivity.class));
+    }
+
 
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ImageSpanDemo</string>
+    <string name="enter_the_room">Enter the room！</string><!-- 进入房间！-->
+
 </resources>

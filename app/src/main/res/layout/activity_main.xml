@@ -68,5 +68,13 @@
         android:text="普通Span"
         android:onClick="onTest7"/>
 
+    <Button
+        android:id="@+id/btn_test8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="富文本自动换行"
+        android:onClick="onTest8"/>
 
 </LinearLayout>

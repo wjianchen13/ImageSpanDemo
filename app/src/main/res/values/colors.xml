@@ -6,4 +6,29 @@
     <color name="red">#ff0000</color>
     <color name="blue">#0000ff</color>
     <color name="black">#000000</color>
+
+    <color name="ccbcbcb">#ffcbcbcb</color>
+
+    <color name="cf4adff">#F4ADFF</color>
+
+    <color name="c01a067">#01A067</color>
+    <color name="caaff76">#AAFF76</color>
+
+    <color name="c2176f5">#2176F5</color>
+    <color name="c87bcff">#87B3FF</color>
+
+    <color name="cff4090">#FF4090</color>
+    <color name="cffa370">#FFA370</color>
+
+    <color name="cfe652c">#FE652C</color>
+    <color name="cff7b9b">#FF7B9B</color>
+
+    <color name="c952bf4">#952BF4</color>
+    <color name="ce935e2">#E935E2</color>
+
+    <color name="cda910a">#DA910A</color>
+    <color name="cf8d539">#F8D539</color>
+    <color name="c60ffe3">#60FFE2</color>
+    <color name="c3a2745">#3a2745</color>
+    <color name="c828489">#828489</color>
 </resources>
