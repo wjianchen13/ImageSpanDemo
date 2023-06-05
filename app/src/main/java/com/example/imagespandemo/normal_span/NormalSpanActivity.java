@@ -47,9 +47,10 @@ public class NormalSpanActivity extends Activity implements View.OnClickListener
 
         tvTest.setHighlightColor(Color.TRANSPARENT);
         tvTest.setMovementMethod(LinkMovementMethod.getInstance());
-        tvTest.setText(SpanUtils.getGradientClickSpanText("ClickableSpan 渐变点击测试",
-                ContextCompat.getColor(this, R.color.colorAccent),
+        tvTest.setText(SpanUtils.getGradientClickSpanText2("سامي ابو و4892",
+                ContextCompat.getColor(this, R.color.colorPrimary),
                 ContextCompat.getColor(this, R.color.red),
+                ContextCompat.getColor(this, R.color.blue),
                 ContextCompat.getColor(this, R.color.black),
                 this,
                 new UserInfo(1, "test", 1)));

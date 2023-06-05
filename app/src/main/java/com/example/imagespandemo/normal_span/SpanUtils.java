@@ -2,10 +2,12 @@ package com.example.imagespandemo.normal_span;
 
 import android.content.Context;
 import android.graphics.BlurMaskFilter;
+import android.graphics.Typeface;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.MaskFilterSpan;
+import android.text.style.StyleSpan;
 import android.view.View;
 
 import androidx.annotation.ColorInt;
@@ -93,10 +95,32 @@ public class SpanUtils {
         SpannableString spanStr = new SpannableString(txt);
         spanStr.setSpan(new LinearGradientFontSpan2(startColor, endColor), 0, spanStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-//        MaskFilterSpan maskFilterSpan = new MaskFilterSpan(new BlurMaskFilter(3, BlurMaskFilter.Blur.OUTER));
-//        spanStr.setSpan(new MaskFilterSpan(new BlurMaskFilter(5, BlurMaskFilter.Blur.SOLID)), 0, spanStr.length(), Spannable.
-//                SPAN_INCLUSIVE_EXCLUSIVE);
+        MaskFilterSpan maskFilterSpan = new MaskFilterSpan(new BlurMaskFilter(3, BlurMaskFilter.Blur.OUTER));
+        spanStr.setSpan(new MaskFilterSpan(new BlurMaskFilter(5, BlurMaskFilter.Blur.SOLID)), 0, spanStr.length(), Spannable.
+                SPAN_INCLUSIVE_EXCLUSIVE);
 
+        NoLineClickSpan mNoLineClickSpan = new NoLineClickSpan(clickColor, mOnClickListener) {
+            @Override
+            public void onClick(View widget) {
+                widget.setTag(clickTag);
+                super.onClick(widget);
+            }
+        };
+        mNoLineClickSpan.setShowUnderLine(false);
+        spanStr.setSpan(mNoLineClickSpan, 0, spanStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return spanStr;
+    }
+
+    /**
+     * 获取指定颜色，指定点击的字符串
+     * @param clickColor 有渐变这个参数不起作用
+     * @return
+     */
+    public static SpannableString getGradientClickSpanText2(String txt, @ColorInt int startColor, @ColorInt int midColor, @ColorInt int endColor, int clickColor,
+                                                           final View.OnClickListener mOnClickListener, final Object clickTag) {
+        SpannableString spanStr = new SpannableString(txt);
+        spanStr.setSpan(new LinearGradientFontSpan(txt, startColor, midColor, endColor), 0, spanStr.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanStr.setSpan(new StyleSpan(Typeface.BOLD), 0, spanStr.length(), Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
         NoLineClickSpan mNoLineClickSpan = new NoLineClickSpan(clickColor, mOnClickListener) {
             @Override
             public void onClick(View widget) {
