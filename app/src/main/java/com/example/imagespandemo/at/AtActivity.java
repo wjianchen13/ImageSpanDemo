@@ -1,8 +1,9 @@
-package com.example.imagespandemo.edittext;
+package com.example.imagespandemo.at;
+
+import static com.sunhapper.x.spedit.SpUtilKt.insertSpannableString;
 
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,11 +12,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.imagespandemo.R;
-import com.example.imagespandemo.imagespan.ImageSpanAlign;
-import com.example.imagespandemo.utils.ScreenUtils;
-import com.example.imagespandemo.utils.SpanUtils;
 
-public class EditTextActivity extends AppCompatActivity {
+
+/**
+ * @某人功能
+ */
+public class AtActivity extends AppCompatActivity {
 
     private Button btnTest1;
     private Button btnTest2;
@@ -41,12 +43,18 @@ public class EditTextActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest1(View v) {
-        SpannableStringBuilder sb = new SpannableStringBuilder();
-        sb.append("hello");
-        sb.append(SpanUtils.getBadgeImageSpan(this, Integer.toString(1),  ScreenUtils.dip2px(this, 17), ImageSpanAlign.XIU_ALIGN_CENTER));
-        sb.append("很好说");
-        tvTest1.setText(sb);
-        edtvTest.setText(sb);
+//        SpannableStringBuilder sb = new SpannableStringBuilder();
+//        sb.append("hello");
+//        sb.append(SpanUtils.getBadgeImageSpan(this, Integer.toString(1),  ScreenUtils.dip2px(this, 17), ImageSpanAlign.XIU_ALIGN_CENTER));
+//        sb.append("很好说");
+//        tvTest1.setText(sb);
+//        edtvTest.setText(sb);
+        replace(new AtUserSpan("Ismail ShaOJ5753").getSpannableString());
+    }
+
+    private void replace(CharSequence charSequence) {
+        Editable editable = edtvTest.getText();
+        insertSpannableString(editable, charSequence);
     }
 
     /**

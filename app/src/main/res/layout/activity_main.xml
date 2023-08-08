@@ -77,4 +77,15 @@
         android:text="富文本自动换行"
         android:onClick="onTest8"/>
 
+    <Button
+        android:id="@+id/btn_test9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="富文本获取省略实际内容"
+        android:onClick="onTest9"/>
+
+
+
 </LinearLayout>

@@ -22,11 +22,14 @@
         <activity android:name=".PkBadgeActivity" />
         <activity android:name=".fans.ImageSpanActivity" />
         <activity android:name=".span.SpanActivity" />
-        <activity android:name=".edittext.EditTextActivity"
+        <activity android:name=".at.AtActivity"
             android:configChanges="orientation|keyboardHidden"
             android:windowSoftInputMode = "adjustPan"/>
         <activity android:name=".normal_span.NormalSpanActivity" />
         <activity android:name=".line.LineActivity" />
+        <activity android:name=".ellipsize.EllipsizeActivity" />
+
+
 
     </application>
 

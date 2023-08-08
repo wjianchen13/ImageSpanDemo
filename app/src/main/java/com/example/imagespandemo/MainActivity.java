@@ -3,11 +3,11 @@ package com.example.imagespandemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.imagespandemo.edittext.EditTextActivity;
+import com.example.imagespandemo.at.AtActivity;
+import com.example.imagespandemo.ellipsize.EllipsizeActivity;
 import com.example.imagespandemo.fans.ImageSpanActivity;
 import com.example.imagespandemo.line.LineActivity;
 import com.example.imagespandemo.normal_span.NormalSpanActivity;
@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
      * @param v
      */
     public void onTest6(View v) {
-        startActivity(new Intent(this, EditTextActivity.class));
+        startActivity(new Intent(this, AtActivity.class));
     }
 
     /**
-     * EditText显示Span效果，@用户
+     * 普通Span
      * @param v
      */
     public void onTest7(View v) {
@@ -70,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest8(View v) {
         startActivity(new Intent(this, LineActivity.class));
+    }
+
+    /**
+     * 富文本获取省略实际内容
+     * @param v
+     */
+    public void onTest9(View v) {
+        startActivity(new Intent(this, EllipsizeActivity.class));
     }
 
 

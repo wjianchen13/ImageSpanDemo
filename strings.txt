@@ -1,0 +1,2120 @@
+<!-- erban_client -->
+<resources>
+    <string name="facebook_app_id">1694818344307143</string>
+    <string name="fb_login_protocol_scheme">fb1694818344307143</string>
+    <string name="facebook_client_token">7f75765d1bc708789c28b08e8f586b4f</string>
+
+    <string name="snapchat_redirect_url">myapp://comayomesg/oauth2</string>
+    <string-array name="snap_connect_scopes">
+        <item>https://auth.snapchat.com/oauth2/api/user.display_name</item>
+    </string-array>
+
+    <string name="loading">Loading&#8230;</string>
+    <string name="dian_dian_coin">Lucky grass</string><!--幸运草-->
+
+    <string name="gift_action">Send gift</string><!--送礼物-->
+    <string name="giro_action">Transfer</string><!--转账-->
+    <string name="giro_emotion">Expression</string><!--表情-->
+
+    <string name="ask_camera">Please grant permission to the application album so that it can be used normally.</string>
+
+    <!--TakePhoto-->
+    <string name="tip_type_not_image">The selected image is not a picture</string> <!-- 选择的不是图片 -->
+    <string name="tip_no_camera">No camera</string> <!-- 没有相机 -->
+    <string name="tip_tips">Prompt</string> <!-- 提示 -->
+    <string name="tip_compress">Compressing photos...</string> <!-- -->
+    <string name="tip_compress_failed">"%1$sPicture compression failed:%2$s picturePath:%3$s"</string> <!-- 图片压缩失败 -->
+    <string name="msg_crop_failed">Pictures with cutting failure</string> <!-- 有裁切失败的图片 -->
+    <string name="msg_compress_failed">Pictures with compression failure</string> <!-- 有压缩失败的图片 -->
+    <string name="msg_crop_canceled">" Cancel Trimming"</string> <!-- " 取消裁切" -->
+    <string name="msg_operation_canceled">Operation canceled</string> <!-- 操作被取消 -->
+    <string name="tip_permission_camera">You do not have permission to use the camera. Please open</string> <!-- 没有使用相机的权限，请在权限管理中开启 -->
+    <string name="tip_permission_storage">You do not have permission to use the SD card. Please open</string> <!-- 请在权限管理中开启 -->
+    <string name="tip_permission_camera_storage">You do not have permission to use camera and SD card. Please open</string> <!-- 没有使用相机和SD卡的权限，请在权限管理中开启 -->
+
+    <string name="selected">Selected</string> <!-- 已选 -->
+
+    <string name="bill_no_data_text">You haven\'t recorded it yet</string> <!-- 您还没有记录喔 -->
+    <string name="no_frenids_text">have no friends</string> <!-- 您暂无好友 -->
+    <string name="no_fan_text">You have no fans yet</string> <!-- 您还没有粉丝哦 -->
+
+    <!--我的页面-->
+    <string name="my_attention">Follow</string> <!-- 关注 -->
+    <string name="no_attention_text">You haven\'t followed your friends yet</string> <!-- 你还没有关注好友哦 -->
+    <string name="search_hint">NickName/ID/Room Title</string>
+    <string name="search_not_in_the_room_tips">Person is not in the room</string>
+    <string name="search_alread_in_the_same_room_tips">Already in the same room</string>
+    <string name="search_followed_cue">Are you sure you want to followed to %s</string>
+    <string name="search_item_go">Go</string>
+    <string name="search_item_follow">Follow</string><!-- 关注 -->
+    <string name="search_item_following">Following</string>
+
+    <!--兑换积分-->
+    <string name="exchange_gold_result_init">0</string>
+    <string name="exchange_gold_confirm_exchange">Confirm exchange</string> <!-- 确认兑换 -->
+    <string name="exchange_gold_error_empty_input">Please enter the number of voice waves to be redeemed</string> <!-- 请输入要兑换的音浪数量 -->
+    <string name="exchange_gold_error_is_not_ten_multiple">The voice wave exchanged must be an integer multiple of 10</string> <!-- 兑换的音浪必须为10的整数倍 -->
+    <string name="exchange_gold_error_diamond_less">The number of sound waves is less than the exchange quantity</string> <!-- 音浪数量少于兑换数量 -->
+    <string name="exchange_gold_success">Redemption succeeded</string> <!-- 兑换成功 -->
+
+    <!--充值-->
+    <string name="charge_number">%d</string> <!-- %d元 -->
+    <string name="charge_tips">Please select the recharge amount</string> <!-- 请选择充值金额 -->
+    <string name="charge_give_warning">Add %1$s for limited time</string> <!-- 限时加赠%1$s -->
+
+    <!--room-->
+    <string name="dearch_no_data">No data</string>
+    <string name="room_setting">Room setting</string> <!-- 房间设置 -->
+    <string name="room_setting_number_mic">Number of Mic</string> <!-- 麦位设置 -->
+    <string name="room_setting_number">Number</string> <!-- 麦位设置 -->
+    <string name="room_setting_mic_preview">Preview</string> <!-- 预览 -->
+    <string name="room_setting_number_mic_tip">Use recommend theme</string> <!-- 麦位设置 -->
+    <string name="input_pwd">Enter password</string> <!-- 输入密码 -->
+    <string name="waiting_text">Please wait...</string> <!-- 请稍后… -->
+    <string name="online_user_text">Online Users:%d</string>
+    <string name="contribution_list_text">Room contribution list</string> <!-- 房间贡献榜 -->
+    <string name="mic_user_list_text">Select a person</string> <!-- 选择人员 -->
+    <string name="gift_history_list_text">Gift Record</string>
+    <string name="room_come_msg_tip">is coming</string> <!-- 进入 -->
+
+    <!--消息-->
+    <string name="fan_success">Follow successfully. Follow each other and become friends</string> <!-- 关注成功，相互关注可成为好友哦！ -->
+
+    <!--提示-->
+    <string name="set_room_manager">You have been set up as the administrator by the homeowner</string><!--您已被房主设置为管理员-->
+    <string name="remove_room_manager">You have been removed by the homeowner as caretaker</string><!--您已被房主移除管理员-->
+    <string name="kick_mic">You have been kicked off the mic by the homeowner or custodian</string><!--您已被房主或管理员踢下麦-->
+    <string name="kick_mic_by_owner">You are off the mic by %s</string><!--您已被房主或管理员踢下麦-->
+    <string name="embrace_on_mic">You have been put on the mic by the homeowner or the custodian, but the microphone has not been turned on. Please turn on the microphone if you need to speak</string><!--您已被房主或管理员抱上麦，但并未开启麦克风，需要说话请打开麦克风-->
+    <string name="title_online">online</string><!--在线听众-->
+
+    <string name="listening_number">Listener：%d</string><!--收听-->
+
+    <string name="mic_mute">Mic mute</string><!--麦位静音-->
+    <string name="mic_open">Mic open</string><!--麦位打开声音-->
+    <string name="disable_chat">Disable chat</string><!--禁止聊天-->
+    <string name="enable_chat">Enable chat</string><!--解除禁止聊天-->
+    <string name="take_the_mic">Take the Mic</string><!--上麦-->
+    <string name="embrace_up_mic">Carry them to the mic</string><!--抱Ta上麦-->
+    <string name="embrace_down_mic">Hold them off the wheat</string><!--抱Ta下麦-->
+    <string name="unlock_mic">Unlock Mic</string><!--Unseal this seat-->
+    <string name="lock_mic">Lock Mic</string><!--封锁此座位-->
+    <string name="lock_all_mic">Lock all Mic</string>
+    <string name="unlock_all_mic">Unlock all Mic</string>
+    <string name="lock_mic_someone_tips">Someone in the mic, locking the mic will let the user off</string>
+    <string name="disable_chat_tips">Block the user from sending messages for 2 hours</string>
+    <string name="invite_countdown_tips">Cannot invite again until the countdown ends</string>
+
+    <string name="message_view_bottom_tip">New message</string> <!-- 底部有新消息 -->
+    <string name="data_error">Error getting data, please click Retry</string> <!-- 获取数据出错，请点击重试 -->
+    <string name="no_empty_mic">There are no empty seats</string><!--没有空余坑位-->
+    <string name="crowded_down">You\'re now Logged Out</string><!--您已被挤下麦-->
+    <string name="leave_mic_text">Leave the Mic</string> <!-- 下麦 -->
+    <string name="add_black_list">You have been added to the blacklist by the administrator</string> <!-- 您已被管理员加入黑名单 -->
+    <string name="set_manager">Set administrator</string> <!-- 设置管理员 -->
+    <string name="remove_manager">Remove administrator</string> <!-- 移除管理员 -->
+
+    <!--gift dialog-->
+    <string name="gift_send_text">Send</string>
+    <string name="gift_number_1">1</string>
+    <string name="gift_number_7">7</string>
+    <string name="gift_number_17">17</string>
+    <string name="gift_number_77">77</string>
+    <string name="gift_number_177">177</string>
+    <string name="gift_gold_init">0 Integral</string>
+
+    <!--setting-->
+    <string name="setting_feedback">Feedback &amp; Help</string> <!-- 意见反馈 -->
+    <string name="private_letter_not_disturb">After being enabled, users below a certain level cannot send private messages to you, but the objects or friends you actively send private messages to are not subject to this restriction</string> <!-- 开启后，低于特定等级用户无法向您发起私信，但您主动私信的对象或好友不受该限制 -->
+    <string name="setting_lab">Lab</string> <!-- 实验室 -->
+
+    <!--装扮商城模块文本-->
+    <string name="txt_headwear_emtpy">The headdress is missing</string> <!-- 头饰都不见了呢 -->
+    <string name="txt_car_emtpy">The car is missing</string> <!-- 座驾都不见了呢 -->
+    <string name="txt_my_headwear_emtpy">You don\'t have cool headwear yet. Buy it now</string> <!-- 您还木有炫酷头饰，赶紧购买吧 -->
+    <string name="txt_my_car_emtpy">You don\'t have a cool car yet. Buy it now</string> <!-- 您还木有炫酷座驾，赶紧购买吧 -->
+    <string name="txt_dress_up_car_try">Please wait while the test drive is in progress...</string> <!-- 正在试驾座驾请稍后… -->
+    <string name="txt_use">Use</string> <!-- 使用 -->
+    <string name="txt_cancel_use">Unuse</string> <!-- 取消使用 -->
+    <string name="txt_purchase_success">Purchase succeeded</string> <!-- 购买成功！ -->
+    <string name="txt_successful_renewal">Renewal succeeded</string> <!-- 续费成功！ -->
+    <string name="txt_cancel_use_success">Cancel successfully</string> <!-- 取消使用成功！ -->
+    <string name="txt_use_success">Successfully used</string> <!-- 使用成功！ -->
+    <string name="edit_password_selectable">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~`!@#$^*()-_+=>,.>?/;:\'"</string>
+    <string name="ranking_list_for_charm">Charm</string> <!-- 魅力 -->
+    <string name="ranking_list_for_tycoon">Wealth</string> <!-- 财富 -->
+
+    <string name="submit">Submit</string> <!-- 提交 -->
+    <!-- 幸运草只可以通过签到及任务形式获得，后续会开放更多获得途径,幸运草可用于活动、房间礼物赠送等。目前幸运草处理体验阶段，后续更多玩法敬请期待本活动与Apple INC.无关 -->
+    <string name="task_center_rule_desc">Lucky grass can only be obtained in the form of sign-in and task. More access will be opened in the future. Lucky grass can be used for activities, room gifts, etc. At the current stage of Lucky Grass processing experience, please look forward to more playing methods in the future. This activity has nothing to do with Apple INC</string>
+    <string name="txt_dress_up_use_change">Modifying...</string> <!-- 正在修改中... -->
+    <string name="txt_renewal_fee">renew</string> <!-- 续费 -->
+    <!-- 为呵护未成年人健康成长，平台推出了青少年模式，在该模式下部分功能将可能无法正常使用。请监护人主动选择，并设置监护密码。 -->
+    <string name="teenager_model_dialog_desc">In order to protect the healthy growth of minors, the platform has launched a youth mode, under which some functions may not be used normally. Please take the initiative to select and set the guardianship password</string>
+    <!-- 1.财富等级2级以上才可发广播；\n2.用户花费%1$d积分即可抢广播，时间2分钟；\n3.用户也能增加%2$d积分去抢广播；\n4.请遵守平台规则，文明发送广播内容，若发现不当言论，平台会依据严重程度进行处罚。 -->
+    <string name="headlines_rule">1. Only those with a wealth level of more than 2 can broadcast; \N2. Users spend %1$d points to grab the broadcast, and the time is 2 minutes; \N3. Users can also increase %2$d points to grab the broadcast; \N4. Please abide by the platform rules and send the broadcast content in a civilized manner. If any inappropriate remarks are found, the platform will punish them according to the severity</string>
+    <string name="protect_carrot_rule_tips">protect_carrot_rule_tips">Warm tips: click 10 and 50 times to explore the easier the medium and large pieces</string> <!-- 温馨提示：点按10次和50次探索越容易中大件 -->
+    <string name="input_phone_hint">Please enter your mobile phone number</string> <!-- 请输入手机号码 -->
+
+    <string name="no_float_permission">No floating window permission</string> <!-- 没有悬浮窗权限 -->
+    <string name="go_t0_open_float_ask">Do you have permission to open the floating window</string> <!-- 前往打开悬浮窗权限吗？ -->
+
+    <!-- 房间红包说明
+        \n1.单个红包最低面值1积分；
+        \n2.抢到红包的用户会自动关注房主、发红包直播间和发红包用户；
+        \n3.没有抢完的红包会在24小时内返还至账户余额；
+        \n4.红包仅用于正常娱乐活动，请勿用于非法行为、转移大额积分。 -->
+    <string name="room_red_pack_des">
+        Description of room red envelope
+        \n1. The minimum face value of a single red packet is 1 point;
+        \n2. Users who grab red packets will automatically pay attention to the homeowner, live broadcast room and users who send red packets;
+        \n3. The red envelopes that have not been looted will be returned to the account balance within 24 hours;
+        \n4. Red envelopes are only used for normal entertainment activities. Do not use them for illegal activities or transfer large points. -->
+    </string>
+    <!--         全服红包说明
+        \n1.全服红包会在所有房间内展示，发送红包后，其他房间会接收到通知；
+        \n2.单个红包最低面值1积分；
+        \n3.抢到红包的用户会自动关注房主、发红包直播间和发红包用户；
+        \n4.没有抢完的红包会在24小时内返还至账户余额；
+        \n5.红包仅用于正常娱乐活动，请勿用于非法行为、转移大额积分。 -->
+    <string name="all_room_red_pack_des">
+        Full service red envelope description
+        \n1. The full service red envelope will be displayed in all rooms. After sending the red envelope, other rooms will receive the notice;
+        \n2. The minimum face value of a single red packet is 1 point;
+        \n3. Users who grab red packets will automatically pay attention to the homeowner, live broadcast room and users who send red packets;
+        \n4. The red envelopes that have not been robbed will be returned to the account balance within 24 hours;
+        \n5. Red envelopes are only used for normal entertainment activities. Do not use them for illegal activities or transfer large points. -->
+    </string>
+
+    <!--公共-->
+    <string name="common_web_upload_failure">Upload failure</string>
+    <string name="common_web_take_photos">Take photos</string>
+    <string name="common_web_album">Album</string>
+    <string name="common_web_share_success">Share success</string>
+    <string name="common_web_share_failure">Share failure</string>
+    <string name="common_web_unshare">Unshare</string>
+    <string name="common_entering_the_room">Entering the room…</string>
+    <string name="common_load_failure">Load failure</string><!--加载失败-->
+    <string name="common_data_exception">Data exception</string><!--数据异常-->
+    <string name="common_validation_exception">Get code validation exception</string><!--验证异常-->
+    <string name="common_get_code_exception">Get code exception</string><!--验证码获取异常-->
+    <string name="common_network_is_unstable">The current network is unstable. Please check the network</string><!--当前网络不稳定，请检查网络-->
+    <string name="common_network_is_abnormal_disconnnected">The network is abnormal and disconnected from the server. Check the network</string><!--当前网络异常，与服务器断开连接，请检查网络-->
+    <string name="common_mic_may_be_occupied">The microphone may be occupied. Please check whether the device is available</string><!--当前麦克风可能被占用，请检查设备是否可用-->
+
+
+    <!--Main底部tab-->
+    <string name="main_tab_home">Home</string>
+    <string name="main_tab_me">Personal</string>
+
+    <!--语聊房间-->
+    <string name="home_party_follow_success">Follow success</string>
+    <string name="home_party_unfollow_success">Unfollow success</string>
+    <string name="home_party_homeowner">Owner</string><!--房主-->
+    <string name="home_party_admin">Admin</string><!--管理员-->
+    <string name="home_party_cleared_the_chat">Cleared the chat</string><!--清空了聊天内容-->
+    <string name="home_party_charm_failed">Failed to control charm switch</string><!--控制魅力值开关失败-->
+    <string name="home_party_clear_room_chat_tips">Whether to clear the room of chat</string><!--是否清空房间内聊天内容-->
+    <string name="home_party_gift_record">Gift Record</string><!--礼物记录-->
+    <string name="home_party_report">Report</string><!--举报-->
+    <!--pk-->
+    <string name="home_party_minmize">Minmize</string><!--最小化-->
+    <string name="home_party_exit">Exit</string><!--退出-->
+
+    <string name="home_party_report_room">Name of reporting room</string><!--举报房名-->
+    <string name="home_party_report_politically_sensitive">Politically sensitive</string><!--政治敏感-->
+    <string name="home_party_report_pornographic_and_vulgar">Pornographic and vulgar</string><!--色情低俗-->
+    <string name="home_party_report_advertising_harassment">Advertising harassment</string><!--广告骚扰-->
+    <string name="home_party_report_personal_attack">Personal attack</string><!--人身攻击-->
+    <string name="home_party_report_report_head">Report head</string><!--举报头像-->
+    <string name="home_party_report_report_nickname">Report nickname</string><!--举报昵称-->
+    <string name="home_party_report_report_album">Report album</string><!--举报相册-->
+    <string name="home_party_report_cuccess">If your report is successful, we will deal with it as soon as possible</string><!--举报成功，我们会尽快为您处理-->
+
+    <string name="audio_room_announcement">Notice</string>
+    <string name="audio_room_no_announcement_yet">No announcement yet</string>
+    <string name="audio_room_msg_all">All</string>
+    <string name="audio_room_msg_gift">Gift</string>
+    <string name="audio_room_msg_chat">Chat</string>
+    <string name="audio_room_msg_send">Send</string>
+    <string name="audio_room_msg_hint">Type some…</string>
+    <string name="audio_room_msg_follow_to_homeowner">%s followed to homeowner</string>
+    <string name="audio_room_msg_share_room">%s shared the room</string>
+    <string name="audio_room_expression_input_tips">You have to do it on the mic</string>
+    <string name="audio_room_no_song_playing">No song playing</string><!--暂无歌曲播放-->
+    <string name="audio_room_my_music">My music</string><!--我的音乐-->
+
+    <string name="audio_room_bottom_gift_give">Give</string><!--送给-->
+    <!--资料-->
+    <string name="audio_room_bottom_gift_backpack">Backpack</string><!--背包-->
+
+    <string name="audio_room_red_pack_record">Record</string>
+    <string name="audio_room_red_pack_room">Room</string><!--房间红包-->
+    <string name="audio_room_red_pack_all">All</string><!--全服红包-->
+    <string name="audio_room_red_pack_num">Red Pack</string><!--红包个数-->
+    <string name="audio_room_red_pack_count">Count</string><!--红包个数-->
+    <string name="audio_room_red_pack_please_enter_quantity">enter quantity</string><!--请输入数量-->
+    <string name="audio_room_red_pack_please_enter_total_amount">the total amount</string><!--请输入总金额-->
+    <string name="audio_room_red_pack_please_enter_red_ackets">the number of red packets</string><!--请输入红包个数-->
+    <string name="audio_room_red_pack_please_enter_a_multipe_of_ten">multiple of 10,min 50</string><!--请输入10的倍数,最低50-->
+    <string name="audio_room_red_pack_please_enter_a_multipe_of_one_hundred">multiple of 100,min 1000</string><!--请输入100的倍数,最低1000-->
+    <string name="audio_room_red_pack_1_200">The number of red packets is 1–200</string><!--红包个数1-200-->
+    <string name="audio_room_red_pack_total_integral">Total</string><!--总积分-->
+    <string name="audio_room_red_pack_single_integral">Single</string><!--单个积分-->
+    <string name="audio_room_red_pack_integral_balance">Integral:%s</string><!--积分余额-->
+    <string name="audio_room_red_pack_red_pack_rule">red Pack envelope rule</string><!--积分余额-->
+    <string name="audio_room_red_pack_tips">Tuhao online money!! Grab it! Grab it! !</string><!--土豪在线撒钱啦！！快抢快抢!！-->
+    <string name="audio_room_red_pack_handling_fee">%s Integral including handling fee</string><!--含手续费${handlingFee.toInt()}积分-->
+    <string name="audio_room_red_pack_integral">%s Integral</string><!--%s积分-->
+    <string name="audio_room_red_pack_integral_1">Integral</string><!--积分-->
+    <string name="audio_room_red_pack_insert">Insert</string><!--%s积分-->
+
+    <string name="audio_room_message">Message</string><!--信息-->
+
+    <string name="micro_item_position">NO.%d</string>
+
+    <!--我的-->
+    <string name="me_setting">Setting</string>
+
+    <!--设置-->
+    <string name="ayome_id">Ayome ID:</string>
+    <string name="me_setting_account_security">Account security</string>
+    <string name="me_setting_set_password">Set password</string>
+    <string name="me_setting_set_secondary_password">Set secondary password</string>
+    <string name="me_setting_private_chat_sound_switch">Private chat sound switch</string>
+    <string name="me_setting_help">Help</string>
+    <string name="me_setting_about">About</string>
+    <string name="me_setting_account">Account</string>
+    <string name="me_setting_block_list">Block List</string>
+    <string name="me_setting_language">Language</string>
+    <string name="me_setting_clean_cache">Clean Cache</string>
+    <string name="me_setting_cancel_an_account">Cancel an account</string>
+    <string name="me_setting_permission_setting">Permission setting</string>
+    <string name="me_setting_notification_permission_setting">Notification permission setting</string>
+    <string name="me_setting_logout">Logout</string>
+
+    <!--关于-->
+    <string name="about_ayome_user_agreement">《AYOME User Agreement》</string>
+    <string name="about_version_name">Version:%s</string>
+
+    <string name="change_the_bound_mobile">Change the bound mobile phone number</string><!--更换绑定手机号-->
+    <string name="enter_bound_phone_number">Enter the bound mobile phone number</string><!--请输入已绑定的手机号码-->
+    <string name="bind_mobile_phone">Bind mobile phone number</string><!--绑定手机号码-->
+    <string name="newly_bound_moble_phone">newly bound mobile phone number</string><!--请输入新绑定的手机号码-->
+    <string name="binding_success">Binding success</string><!--绑定成功-->
+    <string name="get_code">Get code</string><!--获取验证码-->
+    <string name="enter_the_correct_mobile_phone">Please enter the correct mobile phone number</string><!--请输入正确的手机号码-->
+    <string name="current_password">Current password</string><!--当前密码-->
+    <string name="enter_new_password_6_digits">Please enter new password (more than 6 digits)</string><!--请输入新密码(6位以上)-->
+
+    <!-- 支付 -->
+    <string name="pay_google_pay">Google Play</string>
+
+
+    <!-- 字符串资源 -->
+    <string name="common_input_verification_code">Please enter the verification code</string> <!-- 请输入验证码 -->
+    <string name="common_get_verification_code">Get verification code</string> <!-- 获取验证码 -->
+    <string name="common_password">forget password</string><!--忘记密码-->
+    <string name="common_input_pwd">Please enter the password</string> <!-- 请输入密码 -->
+    <string name="common_change_pwd">Password Reset</string> <!-- 密码重置 -->
+    <string name="common_save">Save</string> <!-- 保存 -->
+    <string name="common_login_agree">Agree</string> <!-- 登录注册即同意 -->
+    <string name="common_male">Male</string> <!-- 男 -->
+    <string name="common_female">Female</string> <!-- 女 -->
+    <string name="common_complete">Finish</string> <!-- 完成 -->
+    <string name="common_agree">Agree</string> <!-- 同意 -->
+    <string name="common_record">record</string> <!-- 记录 -->
+
+    <string name="forget_pwd_input_pwd_again">Please enter the password again</string> <!-- 请再次输入密码 -->
+
+    <string name="forget_pwd_user_agreement">" User Agreement "</string> <!-- 《用户协议》 -->
+    <string name="forget_pwd_and">&amp;</string> <!-- 和 -->
+    <string name="forget_pwd_privacy_greement">" Privacy Agreement "</string> <!-- 《隐私协议》 -->
+    <string name="login_pwd_login">Password login</string> <!-- 密码登录 -->
+    <string name="login_login">login</string> <!-- 登录 -->
+    <string name="login_forget_pwd">forget password</string> <!-- 忘记密码 -->
+    <string name="login_verification_code">Login with verification code</string> <!-- 验证码登录 -->
+    <string name="android_sdk_too_low">The system version is too low. The APP only supports Android 7 and above</string> <!-- 系统版本太低，APP只支持安卓7及以上 -->
+
+    <string name="phone_login_phone">Mobile login</string> <!-- 手机登录 -->
+    <string name="quick_login">Quick login</string> <!-- 手机登录 -->
+    <string name="facebook_login">Sign in with Facebook</string> <!-- Facebook登录 -->
+    <string name="cancel_facebook_login">Cancel Facebook login</string> <!-- 取消Facebook登录 -->
+    <string name="google_login">Sign in with Google</string> <!-- Google登录 -->
+    <string name="snapchat_login">Sign in with Snapchat</string> <!-- Snapchat登录 -->
+    <string name="agree_user_agreement_tips">Please agree to the User Agreement and Privacy Policy</string> <!-- 同意协议提示 -->
+    <string name="logging_in_agree">Logging in means you agree to the user</string> <!-- 同意协议提示 -->
+    <string name="google_login_fail">Google login failed</string> <!-- 谷歌登录失败 -->
+
+    <string name="dynamic_add_add">Publish</string> <!-- 发布 -->
+
+    <string name="dynamic_add_add_dynamic">Send dynamic</string> <!-- 发动态 -->
+    <string name="dynamic_add_today">Share your mood today~</string> <!-- 分享今日心情吧～ -->
+    <string name="dynamic_add_join">Participate in the topic</string> <!-- 参与话题 -->
+    <string name="group_add_join">Single dating group</string> <!-- 单身交友群 -->
+    <string name="group_add_code">Scan QR code to enter single dating group</string> <!-- 扫描二维码进单身交友群 -->
+    <string name="group_add_save_code">Save QR code</string> <!-- 保存二维码 -->
+    <string name="add_music_tip">There is a kind of love called letting go</string> <!-- 有一种爱叫做放手 -->
+
+    <string name="common_jump">Skip</string> <!-- 跳过 -->
+    <string name="user_info_nickname">Username</string> <!-- 昵称 -->
+    <string name="user_info_invitation_code">Invitation code</string> <!-- 邀请码 -->
+    <string name="user_info_friend_purpose">Purpose of making friends</string> <!-- 交友目的 -->
+    <string name="user_info_more">More</string> <!-- 更多 -->
+
+    <string name="anchor_center_center">Anchor Center</string> <!-- 主播中心 -->
+    <string name="anchor_center_details">Bill Details</string> <!-- 账单明细 -->
+    <string name="anchor_center_user_name">User name</string> <!-- 用户名 -->
+    <string name="anchor_center_welcome">Welcome to your exclusive anchor center</string> <!-- 欢迎来到专属您的主播中心 -->
+    <string name="anchor_center_setting">Personal Settings</string> <!-- 个人设置 -->
+    <string name="anchor_center_excharge">Cash withdrawal and exchange</string> <!-- 提现兑换 -->
+    <string name="anchor_center_momey">Current balance</string> <!-- 当前余额 -->
+    <string name="anchor_center_income">Total revenue</string> <!-- 总收益 -->
+    <string name="anchor_center_video_income">Video revenue</string> <!-- 视频收益 -->
+    <string name="anchor_center_audio_income">Voice revenue</string> <!-- 语音收益 -->
+    <string name="anchor_center_gift_income">Gift income</string> <!-- 礼物收益 -->
+    <string name="anchor_center_heart_income">Heartburn</string> <!-- 心动收益 -->
+    <string name="anchor_center_check_income">View revenue</string> <!-- 查看收益 -->
+    <string name="anchor_center_user_charge_income">User recharge income</string> <!-- 用户充值收益 -->
+    <string name="anchor_center_today_data">Today data</string> <!-- 今日数据 -->
+    <string name="anchor_center_today_income">Today income</string> <!-- 今日收益 -->
+    <string name="anchor_center_add">Add a new daemon</string> <!-- 新增守护 -->
+
+    <string name="arrears_dialog_charge">Your balance is insufficient, please recharge first</string> <!-- 您的余额不足请先充值 -->
+    <string name="arrears_dialog_pay">Recharge now</string> <!-- 立即充值 -->
+
+    <string name="audio_record_audio">Record sound</string> <!-- 录制声音 -->
+    <string name="audio_record_audio_duration">Up to 60S can be recorded</string> <!-- 最多可录制60S -->
+    <string name="audio_record_audio_record">Re-record</string> <!-- 重录 -->
+    <string name="audio_record_start_record">Click to start recording</string> <!-- 点击开始录制 -->
+
+
+    <string name="best_friend_detail_my_friend">My best friend</string> <!-- 我的挚友 -->
+    <string name="best_friend_detail_once">Once</string> <!-- 曾经 -->
+    <string name="best_friend_detail_empty_record">No record~</string> <!-- 暂无记录~ -->
+
+    <string name="big_list_data_wealth">Wealth List</string> <!-- 财富榜 -->
+    <string name="big_list_data_heart">Heartbook</string> <!-- 心动榜 -->
+    <string name="big_list_data_say_wealth">Confess the wealth list</string> <!-- 表白财富榜 -->
+    <string name="big_list_data_say_heart">Confession list</string> <!-- 表白心动榜 -->
+    <string name="big_list_data_day">Daily list</string> <!-- 日榜 -->
+    <string name="big_list_data_yesterday">Yesterday list</string> <!-- 昨日榜 -->
+    <string name="big_list_data_week">Weekly list</string> <!-- 周榜 -->
+    <string name="big_list_data_month">Monthly list</string> <!-- 月榜 -->
+    <string name="big_list_data_empty">Vacant waiting</string> <!-- 虚位以待 -->
+    <string name="big_list_data_empty_data">No data at present</string> <!-- 暂无数据 -->
+
+    <string name="bind_phone_bind_phone_number">Bind mobile phone number</string> <!-- 绑定手机号 -->
+    <string name="bind_phone_bind">Bind</string> <!-- 绑定 -->
+
+    <string name="back_friend_list">Blacklist</string> <!-- 黑名单列表 -->
+    <string name="charge_center_title">Recharge Center</string> <!-- 充值中心 -->
+    <string name="success_blocked_user">Successfully blocked user</string> <!-- 举报用户成功 -->
+
+    <string name="chat_room_select_bg">Theme background</string> <!-- 主题背景 -->
+    <string name="confirm_phone_sure">Confirm mobile phone number</string> <!-- 确认手机号 -->
+
+    <string name="fans_list_title">fan list</string> <!-- 粉丝列表 -->
+
+    <string name="feedback_i_need">I want feedback</string> <!-- 我要反馈 -->
+    <string name="feedback_question_des">Problem Description</string> <!-- 问题描述 -->
+    <string name="feedback_input_question">Please describe your question and thank you for your valuable comments</string> <!-- 请描述您的问题，感谢您的宝贵意见 -->
+    <string name="feedback_way">Contact information</string> <!-- 联系方式 -->
+    <string name="feedback_input">Please enter</string> <!-- 请输入 -->
+    <string name="friend_list_title">Friends list</string> <!-- 好友列表 -->
+
+    <string name="giro_loading">Loading</string> <!-- 加载中 -->
+    <string name="giro_transfer_point">Transfer points</string> <!-- 转账积分 -->
+    <string name="giro_transfer">Transfer Now</string> <!-- 立即转账 -->
+    <string name="giro_transfer_rule">Transfer rules</string> <!-- 转账规则 -->
+
+    <string name="gradle_rule_des">Level description</string> <!-- 等级说明 -->
+    <string name="gradle_rule_icon">Icon</string> <!-- 图标 -->
+    <string name="gradle_rule_level">Level</string> <!-- 等级 -->
+    <string name="gradle_rule_value">Experience value</string> <!-- 经验值 -->
+
+    <string name="hall_details_title">Hall owner details</string> <!-- 厅主详情 -->
+    <string name="hall_owner">Hall owner</string> <!-- 厅主详情 -->
+    <string name="hall_details_introduction">Introduction</string> <!-- 简介 -->
+    <string name="hall_details_add">Join the hall</string> <!-- 加入厅 -->
+    <string name="hall_details_join">Join</string> <!-- 加入 -->
+
+    <string name="hall_edit_info_title">Hall Introduction</string> <!-- 厅简介 -->
+    <string name="hall_edit_info_input">Please enter the hall profile...</string> <!-- 请输入厅简介… -->
+
+    <string name="hobby_label_interest">Interest tag</string> <!-- 兴趣标签 -->
+
+    <string name="income_details">View details</string> <!-- 查看明细 -->
+    <string name="income_income">Revenue</string> <!-- 收益 -->
+
+    <string name="lab_env_current">The current environment is:</string> <!-- 当前环境是: -->
+    <string name="lab_sex">Gender</string> <!-- 性别 -->
+    <string name="lab_env_test">Test environment</string> <!-- 测试环境 -->
+    <string name="lab_env_release">Formal environment</string> <!-- 正式环境 -->
+    <string name="lab_env_pre_release">Pre-formal environment</string> <!-- 预正式环境 -->
+
+    <string name="attention_list_title">Follow list</string> <!-- 关注列表 -->
+
+    <string name="audio_record_try">Listen</string> <!-- 试听 -->
+    <string name="dress_up_mall_mine">My dress</string> <!-- 我的装扮 -->
+    <string name="dress_up_mall_center">Store</string> <!-- 装扮中心 -->
+
+    <string name="dynamic_detail_details">Dynamic details</string> <!-- 动态详情 -->
+    <string name="dynamic_detail_comment">0 comments in total</string> <!-- 共0条评论 -->
+    <string name="dynamic_detail_comment_good">Comment on something nice~</string> <!-- 评论点好听的吧～ -->
+    <string name="dynamic_detail_send">Send</string> <!-- 发送 -->
+
+    <string name="dynamic_msg_clear">Clear</string> <!-- 清空 -->
+    <string name="dynamic_msg_send_msg">Dynamic message</string> <!-- 动态消息 -->
+
+    <string name="exchange_gold_title">Redeem points</string> <!-- 兑换积分 -->
+    <string name="exchange_gold_current_has">Currently existing points</string> <!-- 当前已有积分 -->
+    <string name="exchange_gold_receive">Sound wave received</string> <!-- 收到音浪 -->
+    <string name="exchange_gold_desc">(Conversion ratio: 10 sound waves=10 points, the number of sound waves must be an integral multiple of 10)</string> <!-- （兑换比例：10音浪=10积分，音浪数量必须为10的整数倍） -->
+    <string name="exchange_gold_input_number">Please enter the number of sound waves</string> <!-- 请输入音浪的数量 -->
+    <string name="exchange_gold_audio_gold">Soundbyte</string> <!-- 音浪： -->
+    <string name="family_info_apply">Apply to join</string> <!-- 申请加入 -->
+
+    <string name="hall_details_anchor_list">Anchor list</string> <!-- 主播列表 -->
+
+    <string name="local_music_list_my">My local music</string> <!-- 我的本地音乐 -->
+    <string name="local_music_list_search">Scan local music</string> <!-- 扫描本地音乐 -->
+    <string name="local_music_list_mp3">MP3 format files only</string> <!-- 只限MP3格式文件 -->
+
+    <string name="message_not_disturb_title">Message immunity</string> <!-- 消息免打扰 -->
+    <string name="message_not_disturb_msg">Private message is not disturbed</string> <!-- 私信免打扰 -->
+    <string name="message_not_disturb_close">Close</string> <!-- 关闭 -->
+
+    <!-- 温馨提示\n1.填写虚假号的将面临直接封停账号的处理。\n2.用户投诉号超过3次加不上的，直接取消交友资格。 -->
+    <string name="modify_info_desc">Warm prompt n1. Those who fill in a false number will face the direct closure of the account. \N2. If the user complaint number exceeds 3 times and cannot be added, the qualification of making friends will be directly cancelled</string>
+
+    <string name="my_wallet_title">My wallet</string> <!-- 我的钱包 -->
+    <string name="purpose_make_friends">Warm tips n The purpose of making friends will indicate the circle of friends you want to know, and will be displayed in the personal center. People with the same intention will contact you voluntarily. Please choose sincerely</string> <!-- 温馨提示\n交友目的将表明想要了解的交友圈，将会在个人中心展示，有相同意向的人会主动联系你，请真诚选择。 -->
+
+    <string name="register_account_register">Account registration</string> <!-- 账号注册 -->
+    <string name="register_register">Register</string> <!-- 注册 -->
+    <string name="room_back_list_title">Room blacklist</string> <!-- 房间黑名单 -->
+
+    <string name="room_manager_list_title">Room administrator</string> <!-- 房间管理员 -->
+
+    <string name="room_play_tip_title">Set room announcement</string> <!-- 设置房间公告 -->
+    <string name="room_play_tip_input">Please enter content</string> <!-- 请输入内容 -->
+
+    <string name="room_avatar">Room Avatar</string> <!-- 房间头像 -->
+    <string name="room_setting_name">Room Name</string> <!-- 房间名字 -->
+    <string name="room_setting_announcement">Room Announcement</string> <!-- 房间公告 -->
+    <string name="room_setting_region">Country/Region</string> <!-- 选择地区 -->
+    <string name="room_setting_membership">Membership Fee</string> <!-- 会费 -->
+    <string name="room_setting_mic_number">Number of Mic</string> <!-- 麦位 -->
+    <string name="room_setting_dice_number">Number of Dice</string> <!-- 骰子数目 -->
+    <string name="room_setting_room_theme">Room Theme</string> <!-- 房间主题 -->
+    <string name="room_setting_block_title">Room Block List</string> <!-- 禁言列表 -->
+    <string name="room_setting_block_list">Room Block List</string> <!-- 禁言列表 -->
+    <string name="room_setting_tourists_mic">Tourists on Mic</string> <!-- 游客上麦 -->
+    <string name="room_setting_tourists_text">Tourists send Text</string> <!-- 游客发送消息 -->
+    <string name="room_setting_send_emojis">Send emojis to the chattings area</string> <!-- 在该地区是否允许发送表情 -->
+    <string name="room_setting_welcome_tip">Set Welcome Message</string> <!-- 设置欢迎语 -->
+    <string name="room_setting_close">Close</string> <!-- 关 -->
+    <string name="room_setting_open">On</string> <!-- 开 -->
+    <string name="room_welcome_tip_input_content">Please enter content</string> <!-- 请输入内容 -->
+    <string name="search_history">History search</string> <!-- 历史搜索 -->
+    <string name="setting_title">Personal Settings</string> <!-- 个人设置 -->
+    <string name="setting_young_type">Youth mode</string> <!-- 青少年模式 -->
+    <string name="setting_float_window">Floating window</string> <!-- 悬浮窗 -->
+    <string name="share_fans_invite">Invite</string> <!-- 邀请 -->
+    <string name="sms_code_login_welcome">Welcome to the rice ball planet</string> <!-- 欢迎来到饭团星球 -->
+
+    <string name="square_broadcast">Broadcast Hall</string> <!-- 广播大厅 -->
+    <string name="task_center_title">Task Center</string> <!-- 任务中心 -->
+    <string name="task_center_newer_task">New task</string> <!-- 新手任务 -->
+    <string name="task_center_normal_task">Daily tasks</string> <!-- 日常任务 -->
+    <string name="topic_title">Hot Topics</string> <!-- 热门话题 -->
+    <string name="topic_details_school">Campus Cultivation Record</string> <!-- 校园修身录 -->
+    <string name="topic_details_content">Topic</string> <!-- 话题 -->
+
+    <string name="union_info_title">Family Details</string> <!-- 家族详情 -->
+    <string name="union_info_join_family">Join the family</string> <!-- 加入家族 -->
+    <string name="union_info_modify_info">Family information</string> <!-- 家族信息 -->
+    <string name="union_info_modify_my_family">My family, even its name is so beautiful~</string> <!-- 我的家族，连名字都这么秀~ -->
+    <string name="union_info_modify_welcome_join">Welcome to join...</string> <!-- 欢迎加入… -->
+    <string name="union_info_modify_head">Family portrait</string> <!-- 家族头像 -->
+    <string name="union_info_modify_upload_head">Upload avatar</string> <!-- 上传头像 -->
+    <string name="union_info_modify_nickname">Family nickname</string> <!-- 家族昵称 -->
+    <string name="union_info_modify_edit">Go to edit</string> <!-- 去编辑 -->
+    <string name="union_info_modify_desc">Family Introduction</string> <!-- 家族简介 -->
+    <string name="union_sort_input_id">Enter family id</string> <!-- 输入家族id -->
+    <string name="union_sort_search">Search</string> <!-- 搜索 -->
+    <string name="union_sort_rank">Family influence ranking</string> <!-- 家族影响力排行榜 -->
+    <string name="user_info_modify_my_info">My profile</string> <!-- 我的资料 -->
+    <string name="user_info_modify_real_head">Please upload the photo of the real person, otherwise the authentication will not pass</string> <!-- 请上传真人照片，否则认证不通过 -->
+    <string name="user_info_modify_nickname">Username</string> <!-- 昵称 -->
+    <string name="user_info_modify_sex">Gender</string> <!-- 性别 -->
+    <string name="user_info_modify_birthday">Birthday</string> <!-- 生日 -->
+    <string name="user_info_modify_welcome_voice">Voice greeting</string> <!-- 声音招呼 -->
+    <string name="user_info_modify_welcome_edit">Edit greeting</string> <!-- 编辑招呼 -->
+    <string name="user_info_modify_record_voice">Record my voice</string> <!-- 录制我的声音 -->
+    <string name="user_info_modify_my_video">Personal video</string> <!-- 个人视频 -->
+    <string name="user_info_modify_upload">Click Upload</string> <!-- 点击上传 -->
+    <string name="user_info_modify_like">Interests</string> <!-- 兴趣爱好 -->
+    <string name="user_info_modify_not_input">Not filled</string> <!-- 未填写 -->
+    <string name="user_info_modify_city">City</string> <!-- 所在城市 -->
+    <string name="user_info_modify_make_friend_tip">Friends Declaration</string> <!-- 交友宣言 -->
+    <string name="user_photo_modify_edit">Edit</string> <!-- 编辑 -->
+    <string name="user_photo_modify_photo">Photo album</string> <!-- 相册 -->
+
+    <string name="web_pay_title">Payment</string> <!-- 支付 -->
+    <string name="with_draw_help">View help</string> <!-- 查看帮助 -->
+    <string name="with_draw_crash">Withdrawal</string> <!-- 提现 -->
+    <string name="with_draw_current_gold">Current balance</string> <!-- 当前余额 -->
+    <string name="with_draw_select_gold_number">Please select the withdrawal amount</string> <!-- 请选择提现金额 -->
+    <string name="with_draw_apply_crash">Apply for withdrawal</string> <!-- 申请提现 -->
+
+    <string name="with_draw_details">Sound Wave Details</string> <!-- 音浪明细 -->
+    <string name="with_draw_sport">Exercise together</string> <!-- 一起运动 -->
+    <string name="red_acket_list_red">Red envelope</string> <!-- 的红包 -->
+    <string name="red_acket_list_has_get">Received</string> <!-- 已领取 -->
+    <string name="home_tab_layout">Message</string> <!-- 消息 -->
+    <string name="union_number_manager">President</string> <!-- 会长 -->
+    <string name="union_number_remove">Move out</string> <!-- 移出 -->
+
+    <string name="micro_match_has_attend">followed</string> <!-- 已关注 -->
+    <string name="dialog_best_friend_desc">The current company level will be cleared after cancellation. Are you sure you want to cancel the best friend relationship</string> <!-- 解除后将清空当前的陪伴等级，确定要解除挚友关系吗？ -->
+
+    <string name="dilog_blind_date_heart_forgive">Give up</string> <!-- 放弃 -->
+    <string name="dialog_bottom_auction_setting">Bidding settings for this round</string> <!-- 本轮竞拍设置 -->
+    <string name="dialog_bottom_auction_start_gold">Starting price:</string> <!-- 起拍价: -->
+    <string name="dialog_bottom_auction_start">Start bidding</string> <!-- 开始竞拍 -->
+
+    <string name="dialog_bottom_gift_excharge">Redeem</string> <!-- 兑换 -->
+
+    <string name="dialog_card_bannner_gift">Gift</string> <!-- 礼物 -->
+    <string name="dialog_card_bannner_rank">Ranking</string> <!-- 排行 -->
+    <string name="dialog_card_bannner_rule">Rules</string> <!-- 规则 -->
+    <string name="dialog_card_bannner_all_prize">The current prize pool</string> <!-- 本期奖池 -->
+    <string name="dialog_card_bannner_get_one">Draw once</string> <!-- 抽一次 -->
+    <string name="dialog_card_bannner_get_ten">Draw ten </string> <!-- 抽十次 -->
+    <string name="dialog_card_bannner_get_100">Draw 100</string> <!-- 抽百次 -->
+    <string name="dialog_count_down_title">Countdown selector</string> <!-- 倒计时选择器 -->
+    <string name="dialog_cp_mic_in_list_menber">Number of people who row wheat</string> <!-- 排麦人数 -->
+    <string name="dialog_cp_mic_in_list">Barley</string> <!-- 排麦 -->
+    <string name="dialog_default_avatar_set_head">Set avatar</string> <!-- 设置头像 -->
+    <string name="dialog_default_avatar_photo">Take photos</string> <!-- 拍照 -->
+    <string name="dialog_default_avatar_select_album">Select from the album</string> <!-- 从相册选择 -->
+    <string name="dialog_default_avatar_try_head">Recommended avatars</string> <!-- 推荐头像 -->
+    <string name="dialog_edittext_input_tip">Please enter the purchase quantity, up to 999</string> <!-- 请输入购买数量，最多999 -->
+    <string name="dialog_exchange_awards_congratulations">Congratulations</string> <!-- 恭喜你 -->
+    <string name="dialog_exchange_awards_sorry">Unfortunately, there was no explosion</string> <!-- 很遗憾，没有爆中 -->
+    <string name="dialog_exchange_verification_title">Please enter the SMS verification code bound to the mobile phone</string> <!-- 请输入绑定手机的短信验证码 -->
+    <string name="dialog_finger_guessing_game_failure_tip">It seems to be a step too slow to participate in this boxing</string> <!-- 好像慢了一步，无法参与本次猜拳 -->
+    <string name="dialog_finger_guessing_game_failure_start">Initiate boxing</string> <!-- 发起猜拳 -->
+    <string name="dialog_gift_input_send_number">Please enter the number of gifts, up to 999</string> <!-- 请输入赠送数量，最多999 -->
+    <string name="dialog_gift_record_list_no_record">There is no gift record yet</string> <!-- 暂时还没有礼物记录哦 -->
+    <string name="dialog_goods_buy">Purchase</string> <!-- 购买 -->
+    <string name="dialog_gard_say">Tell me what you think...</string> <!-- 大胆说出你的想法吧… -->
+    <string name="dialog_gard_send_broadcast">Publish broadcast</string> <!-- 发布广播 -->
+
+    <string name="user_info_xyy_nickname_limit">The nickname can be up to 6 characters</string> <!-- 昵称最多6字 -->
+    <string name="dialog_heart_draw_energy">Energy</string> <!-- 能量 -->
+    <string name="dialog_heart_draw_start1">Ring x1</string> <!-- 响起x1 -->
+    <string name="dialog_heart_draw_start10">Ring x10</string> <!-- 响起x10 -->
+    <string name="dialog_heart_draw_start50">Ring x50</string> <!-- 响起x50 -->
+    <string name="dialog_heart_draw_custom">custom</string> <!-- 自定义 -->
+    <string name="dialog_heart_draw_confession">Confession</string> <!-- 表白 -->
+
+    <string name="dialog_magic_fairy_congratulation">Congratulations!</string> <!-- 恭喜您获得! -->
+    <string name="dialog_magic_fairy_all_prize">Get total value</string> <!-- 获得总价值 -->
+    <string name="dialog_magic_fairy_get">Accept</string> <!-- 收下 -->
+
+    <string name="dialog_msg_hi_say">Say hello~</string> <!-- 打招呼～ -->
+    <string name="dialog_msg_hi_make_friend">Can little sister make friends</string> <!-- 小姐姐能交个朋友吗？ -->
+
+    <string name="dialog_multiple_pk_history_end">PK end</string> <!-- PK结束 -->
+    <string name="dialog_multiple_pk_history_value">Score by gift value</string> <!-- 按礼物价值计分 -->
+    <string name="dialog_multiple_pk_setting_history">History</string> <!-- 历史记录 -->
+    <string name="dialog_multiple_pk_setting_select_member">Select a PK member:</string> <!-- 选择PK成员： -->
+    <string name="dialog_multiple_pk_setting_type">PK type:</string> <!-- PK类型： -->
+    <string name="dialog_multiple_pk_setting_value_pk">PK by value</string> <!-- 按价值PK -->
+    <string name="dialog_multiple_pk_setting_duration">PK duration:</string> <!-- PK时长： -->
+    <string name="dialog_multiple_pk_setting_gift_limit">(PK the value of gifts received by both parties within a limited time)</string> <!-- （限定时间内双方收到礼物价值多少进行PK） -->
+    <string name="dialog_multiple_pk_setting_member_limit">(The number of people voting by both sides in a limited time shall be compared)</string> <!-- （限定时间内双方投票的人数多少进行PK） -->
+
+    <string name="dialog_open_tip_login">Login prompt</string> <!-- 登录提示 -->
+    <string name="dialog_open_tip_agree">Do you agree with the User Service Agreement and Privacy Policy</string> <!-- 是否同意《用户服务协议》和《隐私政策》 -->
+    <string name="agree_or_not">Agree or not</string> <!-- 是否同意 -->
+
+    <string name="dialog_password_confirm_input_second_pwd">Please enter the second-level password</string> <!-- 请输入二级密码 -->
+    <string name="dialog_password_confirm_set_second_pwd">Set secondary password</string> <!-- 设置二级密码 -->
+    <string name="dialog_pay_member_select_pay">Please select the payment method</string> <!-- 请选择支付方式 -->
+    <string name="dialog_privacy_allow_screen">Allow screenshots</string> <!-- 允许截屏 -->
+    <string name="dialog_privacy_disallow_screen">Screen capture is not allowed</string> <!-- 不允许截屏 -->
+    <string name="dialog_privacy_open_log">Open log</string> <!-- 开启日志 -->
+    <string name="dialog_privacy_close_log">Close log</string> <!-- 关闭日志 -->
+    <string name="dialog_protect_carrot_gift">Gift</string> <!-- 礼物 -->
+    <string name="dialog_protect_carrot_surprised">Surprise Sweets</string> <!-- 惊喜甜宝 -->
+    <string name="dialog_protect_carrot_dream">Fantasy Tianbao</string> <!-- 梦幻甜宝 -->
+    <string name="dialog_protect_carrot_1">Pray once</string> <!-- 祈一次 -->
+    <string name="dialog_protect_carrot_10">Pray ten times</string> <!-- 祈十次 -->
+    <string name="dialog_protect_carrot_100">Pray 100 times</string> <!-- 祈百次 -->
+    <string name="dialog_protect_carrot_exchage_mine_energy">My energy:</string> <!-- 我的能量： -->
+    <string name="dialog_protect_carrot_exchage_mine_radio">Scale: 20 points=1 energy</string> <!-- 比例：20积分=1能量 -->
+    <string name="dialog_protect_carrot_exchage_sure_buy">Confirm to purchase</string> <!-- 确 定 购 买 -->
+    <string name="dialog_protect_carrot_more_rule">Play rules</string> <!-- 玩法规则 -->
+    <string name="dialog_protect_carrot_more_switch">Animation effect</string> <!-- 动画效果 -->
+    <string name="dialog_protect_carrot_reward_record">Winning record</string> <!-- 中奖记录 -->
+
+    <!-- 1、进行饭团星球回转，100%获得礼物\n
+        2、礼物可以在背包查看，打赏给你喜欢的用户\n
+        3、该玩法仅供娱乐，用户获取的物品不可反向兑成现金或价值商品。禁止一切线下交易，收购等不当行为。平台将对各类以盈利为目的的交易行为进行严厉打击\n
+        4、本活动仅供18岁以上用户参加 -->
+    <string name="dialog_protect_carrot_rule">1. Turn the rice ball planet and get 100% gifts \n
+        2. The gift can be viewed in the backpack and rewarded to the user you like \n
+        3. This game is only for entertainment. The items obtained by users cannot be reversed into cash or value goods. All offline transactions, acquisitions and other improper behaviors are prohibited. The platform will crack down on all kinds of profit-oriented transactions \n
+        4. This activity is only for users over 18 years old</string>
+    <string name="dailog_red_envelope_detail_red">Gao Yong\'s red envelope</string> <!-- 高勇的红包 -->
+    <string name="dailog_red_envelope_detail_save">has been saved into your wallet</string> <!-- 已存入您的钱包 -->
+    <string name="dailog_red_envelope_detail_get">Received1/9</string> <!-- 已领取1/9 -->
+    <string name="dailog_red_packet_info_gold">Red packet amount: 1000 points</string> <!-- 红包金额：1000积分 -->
+    <string name="dailog_red_packet_info_tip">When you receive the full service red packet, you will jump to the room where the red packet is located</string> <!-- 领取全服红包会跳转至红包所在房间 -->
+    <string name="dailog_red_packet_result_get">Congratulations on getting</string> <!-- 恭喜你获得 -->
+    <string name="dailog_red_packet_result_integral">Points</string> <!-- 恭喜你获得 -->
+    <string name="dailog_red_packet_result_sorry">Unfortunately, the hand is slow</string> <!-- 很遗憾，手慢了 -->
+    <string name="dailog_red_packet_result_details">Claim details</string> <!-- 领取详情 -->
+    <string name="dialog_red_packet_setting_normal">Common red packets</string> <!-- 普通红包 -->
+    <string name="dialog_red_packet_setting_integral">1 point including handling fee</string> <!-- 含手续费1积分 -->
+    <!-- 房间红包说明
+        \n1.单个红包最低面值1积分；
+        \n2.抢到红包的用户会自动关注房主、发红包直播间和发红包用户；
+        \n3.没有抢完的红包会在24小时内返还至账户余额；
+        \n4.红包仅用于正常娱乐活动，请勿用于非法行为、转移大额积分。 -->
+    <string name="dialog_red_packet_setting_desc">Description of room red envelope\n
+        1. The minimum face value of a single red packet is 1 point;\n
+        2. Users who grab red packets will automatically pay attention to the homeowner, live broadcast room and users who send red packets;\n
+        3. The red envelopes that have not been looted will be returned to the account balance within 24 hours;\n
+        4. Red envelopes are only used for normal entertainment activities. Do not use them for illegal activities or transfer large points.</string>
+    <string name="dialog_rob_red_envelope_desc">You have just made contributions, and good luck! Good luck</string> <!-- 贡献方才，大吉大利! 贡献方才，大吉大利! -->
+    <string name="dialog_rob_red_envelope_lost">The red envelope has flown away~</string> <!-- 红包已经飞走啦~ -->
+
+    <string name="dialog_room_choice_title">A new pairing method is available</string> <!-- 全新配对玩法登场 -->
+    <!-- 1、我求签，你解签，匹配起来亲密无间\n2、随机3个数字便可预测你的运势是666还是250等你预测\n3、本法仍处于测试阶段，仅定时开发，具体联系客服\n -->
+    <string name="dialog_room_choice_desc">1. I ask for the signature, and you cancel the signature, and match it closely. \n2. Three random numbers can predict whether your fortune is 666 or 250. You can predict it. \n3. This method is still in the testing stage, and it is only developed regularly. Please contact customer service for details. \n</string>
+    <string name="dialog_room_gift_record_count">Air Cat</string> <!-- 空气猫 -->
+    <string name="dialog_room_turntable_1">Extract × 1</string> <!-- 抽×1 -->
+    <string name="dialog_room_turntable_10">Extract × 10</string> <!-- 抽×10 -->
+    <string name="dialog_room_turntable_100">Extract × 100</string> <!-- 抽×100 -->
+    <string name="dialog_sign_in_rule_title">Lucky grass rules</string> <!-- 幸运草规则 -->
+    <string name="dialog_sign_in_rule_i_know">I know</string> <!-- 幸运草规则 -->
+    <string name="dialog_start_finger_guessing_game_select">Select to punch</string> <!-- 选择出拳 -->
+    <string name="dialog_start_finger_guessing_game_record">Punch guessing record</string> <!-- 猜拳记录 -->
+    <string name="dialog_start_finger_guessing_game_gift">Select a gift</string> <!-- 选择礼物 -->
+    <string name="dialog_start_finger_guessing_game_count">Participation times</string> <!-- 参与次数 -->
+    <string name="dialog_start_finger_guessing_game_desc">If no one participates, the points will be returned within 30 minutes</string> <!-- 若无人参与,积分将在30分钟内退还 -->
+    <string name="dialog_teenager_model_entry">Enter teen mode ></string> <!-- 进入青少年模式 -->
+    <string name="dialog_teenager_model_select">You can select up to 3 topics~</string> <!-- 你可以选择最多3个话题哦～ -->
+    <string name="dialog_user_info_fans">Fans</string> <!-- 粉丝 -->
+    <string name="dialog_user_info_active">Active</string> <!-- 活跃 -->
+    <string name="dialog_user_info_wealth">Wealth value</string> <!-- 财富值 -->
+    <string name="dialog_user_info_like">Charm value</string> <!-- 魅力值 -->
+    <string name="dialog_user_info_entry_home">Go to my home page</string> <!-- 进入我的主页 -->
+    <string name="dialog_user_info_private_chat">Private chat</string> <!-- 私聊 -->
+    <string name="dialog_user_info_private_prize">Reward</string> <!-- 打赏 -->
+    <string name="dialog_user_info_private_home">Home page</string> <!-- 主页 -->
+    <string name="dialog_user_info_private_black">Blackout</string> <!-- 拉黑 -->
+    <string name="dialog_user_info_private_home_black">Pull black in the hall</string> <!-- 厅内拉黑 -->
+    <string name="dialog_user_info_attend">+ Follow</string> <!-- + 关注 -->
+    <string name="dialog_user_info_follow">Follow</string> <!-- 关注 -->
+    <string name="dialog_user_info_at">Mention</string> <!-- @ -->
+    <string name="dialog_user_info_profile">Profile</string> <!-- 主页 -->
+    <string name="dialog_user_info_gift">Gift</string> <!-- 礼物 -->
+    <string name="dialog_verified_not_use">Temporarily not used</string> <!-- 暂时不用 -->
+    <string name="dialog_voice_seek_music">Music</string> <!-- 音乐 -->
+    <string name="dialog_voice_seek_voice">Voice</string> <!-- 人声 -->
+    <string name="fans_list_find">Find ta</string> <!-- 找ta -->
+    <string name="av_room_auction_input">Enter what you want to say here</string> <!-- 在此输入你要说的话 -->
+    <string name="av_room_game_red">Red packet activity</string> <!-- 红包活动 -->
+    <string name="av_room_game_btn">The owner rolls the dice button</string> <!-- 房主摇骰子按钮 -->
+    <string name="fragment_bill_user_gift">Personal gift collection</string> <!-- 个人收礼 -->
+    <string name="fragment_bill_room_income">Room division</string> <!-- 房间分成 -->
+    <string name="fragment_city_select_title">City selection</string> <!-- 城市选择 -->
+    <string name="fragment_datum_page_photo">Photo wall</string> <!-- 照片墙 -->
+    <string name="fragment_datum_page_upload_3_photo">(Upload at least 3 photos of my life, and others will not pass)</string> <!-- （至少上传3张本人生活照，其他一律不通过） -->
+    <string name="fragment_cp_room_xing">Constellations</string> <!-- 星座 -->
+    <string name="fragment_cp_room_certification">real-name authentication</string> <!-- 实名认证 -->
+    <string name="fragment_adree_up_list_day">/day</string> <!-- /天 -->
+    <string name="fragment_dynamic_no_data">No hot topics for the time being</string> <!-- 暂无热门话题 -->
+    <string name="fragment_home_blind_date_notice">Announcement</string> <!-- 公告 -->
+    <string name="fragment_home_user_list_main_tab">Home page</string> <!-- 首页 -->
+    <string name="fragment_me_friend">Friends</string> <!-- 好友 -->
+    <string name="fragment_me_room">Room</string> <!-- 房间 -->
+    <string name="fragment_me_level">Level</string> <!-- 等级 -->
+    <string name="fragment_me_family">Family</string> <!-- 家族 -->
+    <string name="fragment_me_dress_up">Store</string> <!-- 装饰中心 -->
+    <string name="fragment_me_private_set">Privacy Settings</string> <!-- 隐私设置 -->
+    <string name="fragment_me_balance">Balance</string> <!-- 余额 -->
+    <string name="fragment_me_svip">SVIP</string> <!-- 余额 -->
+    <string name="fragment_me_vip_get_it">Get it</string> <!-- 余额 -->
+    <string name="fragment_me_service">Contact customer service</string> <!-- 联系客服 -->
+    <string name="fragment_receive_red_envelope_good">Best luck</string> <!-- 手气最佳 -->
+    <string name="fragment_recharge_integral_detail">Points Details</string> <!-- 积分明细 -->
+    <string name="fragment_recharge_account_num">Account balance</string> <!-- 账号余额 -->
+    <string name="fragment_recharge_service_tip">Please contact customer service</string> <!-- 更多充值优惠请联系客服 -->
+    <string name="fragment_recharge_go">Go ></string> <!--前往> -->
+    <!-- 温馨提示\n
+        1.积分仅限于饭团星球平台内的直播礼物、装扮、增值服务消费，切不能提现或转让。\n
+        2.禁止使用不合法信用卡和储蓄卡充值，一经发现一律封禁处理，情节严重者将移交公安部门。 -->
+    <string name="fragment_recharge_warm_tip">Warm tips \n
+        1. The points are only limited to the consumption of live gifts, decorations and value-added services in the platform of the rice ball planet, and cannot be withdrawn or transferred. \n
+        2. It is forbidden to use illegal credit cards and savings cards for recharging. Once found, they will be banned. If the circumstances are serious, they will be handed over to the public security department.</string>
+    <string name="fragment_recharge_charge_sure">Confirm recharging</string> <!-- 确认充值 -->
+    <string name="fragment_register_immediately">Register now</string> <!-- 立即注册 -->
+    <string name="fragment_register_tip">Registration of minor users is not accepted temporarily. Please confirm that you</string> <!-- 暂不接受未成年用户注册，请确认您 -->
+    <string name="fragment_reset_pw">Reset Password</string> <!-- 重置密码 -->
+    <string name="fragment_reset_pw_sure">Confirm modification</string> <!-- 确认修改 -->
+    <string name="fragment_square_tip">Only show the square information of the last ten days</string> <!-- 仅展示最近十天的广场信息 -->
+    <string name="fragment_wallet_sound">Sound balance</string> <!-- 音浪余额 -->
+    <string name="fragment_wallet_chat">Chat currency balance</string> <!-- 聊币余额 -->
+    <string name="fragment_with_draw_code">Scan the upper QR code to enter</string> <!-- 扫描上方二维码进入 -->
+    <string name="fragment_with_name">Ayome</string> <!-- 饭团星球 -->
+    <string name="item_best_friend">Close friends</string> <!-- 亲密挚友 -->
+    <string name="item_best_with">Accompanied</string> <!-- 已陪伴 -->
+    <string name="item_best_friend_detail_level">Companion level</string> <!-- 陪伴等级 -->
+    <string name="item_best_friend_detail_duration">Companion duration</string> <!-- 陪伴时长 -->
+    <string name="item_best_friend_detail_market">Private mall</string> <!-- 私密商城 -->
+    <string name="item_boss_micro_blind_data_main">Main</string> <!-- 主 -->
+    <string name="item_cp_mic_on">Maize</string> <!-- 上麦 -->
+    <string name="item_dynamic_list_comment">Comment</string> <!-- 评论 -->
+    <string name="item_dynamic_msg_desc">Description</string> <!-- 描述 -->
+    <string name="item_hobby_label_sing">Sing</string> <!-- 唱歌 -->
+    <string name="item_home_tag_up">The popularity has soared</string> <!-- 人气飙升 -->
+    <string name="item_member_info_top">Top</string> <!-- 置顶 -->
+    <string name="item_ranking_from_pre_one">Distance from the top</string> <!-- 距离前一名 -->
+    <string name="item_rv_friend_black_list_remove">Remove</string> <!-- 移除 -->
+    <string name="item_rv_my_task_complete">Go to complete</string> <!-- 去完成 -->
+    <string name="item_start_finger_guessing_game_not">No emotion</string> <!-- 莫得感情 -->
+    <string name="item_task_center_head_lucky">My lucky grass</string> <!-- 我的幸运草 -->
+    <string name="item_task_center_head_seven">You can get a gift box by signing in for 7 consecutive days</string> <!-- 连续签到7天可获得礼物盒哦 -->
+    <string name="item_task_center_head_interest">Fun play</string> <!-- 趣味玩法 -->
+    <string name="item_task_center_head_pk">Little Big PK</string> <!-- 点点大PK -->
+    <string name="item_task_center_head_are_you">>Is that you? People selected by heaven</string> <!-- 是你吗？天选之人 -->
+    <string name="item_task_center_head_luck_get">Lucky Spot</string> <!-- 幸运点点抽 -->
+    <string name="item_task_center_head_start">Turn around and everything is yours</string> <!-- 转起来 一切都是你的 -->
+    <string name="item_task_center_head_grown">Growth Center</string> <!-- 成长中心 -->
+    <string name="item_task_center_head_task">More rewards are waiting for you to get</string> <!-- 做任务得幸运草  更多奖励等你拿 -->
+    <string name="item_task_center_sign_in">Day 1</string> <!-- 第1天 -->
+    <string name="layout_auction_view_south">Southern Girl</string> <!-- 南方姑娘 -->
+    <string name="layout_auction_view_capricious">The wayward queen</string> <!-- 任性女皇 -->
+    <string name="layout_auction_view_send">send</string> <!-- 赠送 -->
+    <string name="layout_auction_view_like">Entertainment</string> <!-- 娱乐 -->
+    <string name="layout_home_party_multiple_pk_gift">Score by total gift value</string> <!-- 按礼物总价值计分 -->
+    <string name="layout_home_party_multiple_pk_no_people">No one voted in this PK. This PK is invalid</string> <!-- 本次PK中没人投票，本次PK无效 -->
+    <string name="layout_home_party_multiple_pk_cancel">Cancel PK</string> <!-- 取消PK -->
+    <string name="layout_home_party_multiple_pk_name">Name</string> <!-- 名字 -->
+    <string name="layout_msg_view_holder_attend">Someone has followed you. Come and see who it is~</string> <!-- 有人关注了您，快来看看是谁吧~ -->
+    <string name="layout_msg_view_holder_look">Click to view</string> <!-- 点击查看 -->
+    <string name="layout_msg_view_holde_lottery_desc">Congratulations, you have won the chance to draw a lottery, click me to draw a lottery>></string> <!-- 恭喜您，获得抽奖机会，点我抽奖>> -->
+    <string name="layout_msg_view_holder_online_attend">Your TA</string> <!-- 您关注的TA -->
+    <string name="layout_music_player_view_no_music">No music is playing now</string> <!-- 暂无音乐播放 -->
+
+    <string name="show_header_popup_dialog_system_head">System head image</string> <!-- 系统头像 -->
+    <string name="show_header_popup_dialog_take_photo">Take photos</string> <!-- 拍照 -->
+    <string name="show_header_popup_dialog_picture">Select from mobile photo album</string> <!-- 从手机相册选择 -->
+    <string name="layout_toast_tip">You have not opened the networking permission for the current application. Please go to the application permission center to open the wlan and data networking permission for this application</string> <!-- 还没给当前应用打开联网权限，请到应用权限中心给本应用打开wlan和数据联网权限 -->
+    <string name="list_item_auction_empty_tip">There are no local tyrants for the time being</string> <!-- 暂无土豪喔 -->
+    <string name="common_pk_win">Victory</string> <!-- 胜利 -->
+    <string name="common_pk_people_number">PK by number of people</string> <!-- 按人数PK -->
+    <string name="common_pk_people_support">Support</string> <!-- 支持 -->
+    <string name="home_attend_my">My attention</string> <!-- 我的关注 -->
+    <string name="home_attend_no_attend">hasn\'t followed anyone yet~</string> <!-- 还没有关注任何人哦~ -->
+    <string name="home_attend_recommended_attend">Recommended Follow</string> <!-- 推荐关注 -->
+    <string name="home_attend_no_recommended_attend">There is nothing recommended to follow</string> <!-- 没有任何推荐关注的哦 -->
+    <string name="common_dynamic">Dynamic</string> <!-- 动态 -->
+    <string name="main_tab_layout">Dynamic</string> <!-- 动态 -->
+    <string name="room_notice_send_gift_follow_room">Follow into the room</string> <!-- 跟随进房 -->
+    <string name="item_best_friend_detail">good friend</string> <!-- 情迷挚友 -->
+
+    <!--CompressImageUtil-->
+    <string name="image_compression_failure">Image compression failure,%s</string><!--图片压缩失败,%s-->
+    <string name="mass_compression_failure">Mass compression failure</string><!--质量压缩失败-->
+    <string name="compressed_does_not_exist">The file to be compressed does not exist</string><!--要压缩的文件不存在-->
+
+    <!--TExceptionType-->
+    <string name="file_is_not_picture">The selected file is not a picture</string><!--选择的文件不是图片-->
+    <string name="failed_to_save_the_file">Failed to save the selected file</string><!--保存选择的的文件失败-->
+    <string name="uri_photo_is_null">The Uri of the selected photo is null</string><!--所选照片的Uri 为null-->
+    <string name="failed_file_path_uri">Failed to obtain the file path from the Uri</string><!--从Uri中获取文件路径失败-->
+    <string name="no_intent_to_image">No Intent was matched to select the image</string><!--没有匹配到选择图片的Intent-->
+
+    <string name="no_camera">No camera</string><!--没有相机-->
+    <string name="file_was_not_found">The selected file was not found</string><!--选择的文件没有找到-->
+
+    <!--TPermissionType-->
+    <string name="authorized">authorized</string><!--已授权-->
+    <string name="unauthorized">unauthorized</string><!--未授权-->
+    <string name="waiting_authorization">Waiting for authorization</string><!--等待授权-->
+    <string name="no_authorization_required">No authorization required</string><!--无需授权-->
+    <string name="no_permission_to_take_photes">No permission to take photos</string><!--没有拍照权限-->
+    <string name="no_permission_to_sd">No read/write permission on the SD card</string><!--没有读写SD卡权限-->
+
+    <!--XChatApplication-->
+    <string name="receive_a_message">Receive a message</string><!--收到一条消息-->
+
+    <!--BaseListFragment-->
+    <string name="network_exception">Network exception</string><!--网络异常-->
+
+    <!--GiftAction-->
+    <string name="only_be_given_to_users_on_mic">It can only be given to users on the mic</string><!--只能够赠送给麦上用户哦-->
+
+    <!--MsgViewHolderCallRecords-->
+    <string name="initiate_video">Initiate a video call</string><!--发起视频通话-->
+    <string name="initiate_video_to_you">Initiate a video call to you</string><!--向你发起视频通话-->
+    <string name="other_side_has">The other side has</string><!--对方已经-->
+    <string name="refuse">Refuse</string><!--拒绝-->
+    <string name="initiate_voice">Initiate a voice call</string><!--发起语音通话-->
+    <string name="initiate_voice_toyou">Initiate a voice call to you</string><!--向你发起语音通话-->
+
+    <!--MsgViewHolderOnline-->
+    <string name="come_online">Come online</string><!--上线啦-->
+    <string name="not_in_the_room">The other person is not in the room</string><!--对方不在房间内-->
+    <string name="alread_in_the_same_room">Already in the same room</string><!--已经和对方在同一个房间-->
+
+    <!--MsgViewHolderRedPacket-->
+    <string name="received_red_packet_go_look">Received %s red packet, go and have a look</string><!--收到%s红包，快去看看吧！-->
+
+    <!--MsgViewHolderTransfer-->
+    <string name="transfer_to_you">%s transfer to you</string><!--转账给你-->
+    <string name="transfer_to">transfer to %s</string><!--转账给-->
+
+    <!--MsgViewHolderUnion-->
+    <string name="agreed">Agreed</string><!--已同意-->
+    <string name="refused">Refused</string><!--已拒绝-->
+    <string name="agreed_join_fmily">You have agreed to join the %s family</string><!--您已同意加入%s家族-->
+    <string name="refused_join_fmily">You have refused to join the %s family</string><!--您已拒绝加入%s家族-->
+
+    <!--DressUpModel-->
+    <string name="headwear">Frame</string><!--头饰-->
+    <string name="car">Car</string><!--座驾-->
+
+    <!--FindSquarePresenter-->
+    <string name="square_entry_failure">Square entry failure</string><!--进入广场失败-->
+    <string name="message_sending_failure">Message sending failure</string><!--消息发送失败-->
+
+    <!--AVRoomActivity-->
+    <string name="the_other_party_is_offline">The other party is offline</string><!--对方已下线-->
+    <string name="the_orher_persion_not_room">The other person is not in the room</string><!--对方不在房间内-->
+    <string name="the_gift_has_expried">The gift has expired</string><!--该礼物已过期-->
+
+    <!--AddMusicListActivity-->
+    <string name="playback_failed_file_is_abnormal">Playback failed because the file is abnormal</string><!--播放失败，文件异常-->
+    <string name="no_songs_on_the_palylist">There are no songs on the playlist yet</string><!--播放列表中还没有歌曲哦-->
+
+    <!--AudioRecordActivity-->
+    <string name="audio_recording_whether_to_end_recording">The current audio recording is in progress. Determine whether to end recording?</string><!--当前音频正在录制中，是否结束录制-->
+    <string name="audio_recording">recording…</string><!--已经在录音...-->
+    <string name="start_record">Start Record</string><!--点击开始录制-->
+    <string name="finished_recording">Finished recording</string><!--已完成录制-->
+    <string name="auditing">Auditing</string><!--试听中-->
+    <string name="audition">Audition</string><!--试听-->
+    <string name="unable_to_record_in_the_room">Unable to record in the room at present, whether to close the room</string><!--当前正在房间无法录音，是否关闭房间?-->
+    <string name="recording_failed_time_is_too_short">Recording failed because the recording time is too short</string><!--录制失败,录音时间过短-->
+    <string name="completion_recording">Completion of recording</string><!--录制完成-->
+    <string name="recording_takes_too_long">Recording takes too long</string><!--录音时间过长-->
+    <string name="upload_failure">Upload failure</string><!--上传失败-->
+
+    <!--LocalMusicListActivity-->
+    <string name="start_scanning">Start scanning…</string><!--开始扫描...-->
+    <string name="scanning_please_wait">Scanning, please wait…</string><!--正在扫描，请稍后...-->
+    <string name="scan_completed_no_song">Scan completed, no song found yet</string><!--扫描完成，暂未发现歌曲-->
+    <string name="scan_completed">Scan completion</string><!--扫描完成-->
+
+    <!--BigListDataActivity-->
+    <string name="vacant_position">Vacant position</string><!--虚位以待-->
+
+    <!--LightChatOnlineActivity-->
+    <string name="lauch_an_auction">Launch an auction</string><!--发起竞拍-->
+    <string name="bidding_is_underway">Bidding is underway, please finish bidding first!</string><!--正在竞拍,请先结束竞拍!-->
+    <string name="no_description">No description</string><!--暂无竞拍描述-->
+
+    <!--RoomBlackListActivity-->
+    <string name="remove_persons_from_the_blacklist">Whether to remove %s from the blacklist?</string><!--是否将%s移除黑名单列表-->
+    <string name="blacklist_persons">Blacklist %s persons</string><!--黑名单%s人-->
+    <string name="no_blacklist_has_been_set">No blacklist has been set</string><!--暂没有设置黑名单-->
+    <string name="operate_successfully">Operate successfully</string><!--操作成功-->
+
+    <!--RoomInviteActivity-->
+    <string name="no_hold_user">No hold user for now</string><!--暂无可抱用户-->
+
+    <!--RoomManagerListActivity-->
+    <string name="remove_person_from_admin_list">Whether to remove %s from the admin list?</string><!--是否将%s移除管理员列表？-->
+    <string name="admin_person">Admin %s person</string><!--管理员%s人-->
+    <string name="no_admin_has_been_set">No admin has been set</string><!--暂没有管理员-->
+
+    <!--RoomPlayTipActivity-->
+    <string name="save_successfully">Save successfully</string><!--保存成功-->
+
+    <!--RoomSelectBgActivity-->
+    <string name="normal">Default</string><!--默认-->
+
+    <!--ShareFansActivity-->
+    <string name="no_fans">No fans</string><!--没有粉丝-->
+    <string name="invite_friends">Invite friends</string><!--邀请好友-->
+    <string name="multiple_choice">Multiple choice</string><!--多选-->
+    <string name="send_successfully">Send successfully</string><!--发送成功-->
+    <string name="send_failure">Send failure</string><!--发送失败-->
+    <string name="message_too_often">The message has been sent. Some users failed to send the message too often</string><!--已经发送完毕,部分用户因发送太频繁未成功-->
+    <string name="invite_message">I invite you to the room of [%s]. Come on!</string><!--我邀请你参加【" + title + "】的房间，快来吧！-->
+
+    <!--BlindDateMicroViewAdapter-->
+    <string name="chair">Chair</string><!--主持位-->
+
+    <!--PkHistoryAdapter-->
+    <string name="vote_by_number">Vote by number</string><!--按人数投票-->
+    <string name="vote_by_gift_value">Vote by gift value</string><!--按礼物价值投票-->
+    <string name="duration_minutes">Duration:%s minutes</string><!--时长：%s分钟-->
+    <string name="duration_seconds">Duration:%s seconds</string><!--时长：%秒-->
+    <string name="draw">Draw</string><!--平局-->
+    <string name="victory">Victory</string><!--胜利-->
+    <string name="defeated">Defeated</string><!--失败-->
+
+    <!--PkHistoryAdapter-->
+    <string name="all_mic">All Mic</string><!--全麦-->
+
+    <!--ShareFansAdapter-->
+    <string name="have_invited">Have invited</string><!--已邀请-->
+    <string name="invite">Invite</string><!--邀请-->
+
+    <!--AcctionRoomFragment-->
+    <string name="insufficient_balance">Insufficient balance, whether to recharge</string><!--余额不足，是否充值-->
+    <string name="followed_on_success">Followed on success, focus on each other can become friends!</string><!--关注成功，相互关注可成为好友哦！-->
+    <string name="followed_on_failure">Followed on failure</string><!--关注失败-->
+    <string name="unfollow_success">Unfollow success</string><!--取消关注成功-->
+    <string name="unfollow_failure">Unfollow failure</string><!--取消关注失败-->
+    <string name="input_cannot_be_empty">The input field cannot be empty</string><!--输入框不能为空-->
+    <string name="is_being_launched">An auction is being launched</string><!--正在发起竞拍-->
+    <string name="admin">Admin</string><!--管理员-->
+    <!--CPFragment-->
+    <string name="no_gift_record">No gift record</string><!--暂无礼物记录-->
+    <string name="public_message_disabled">Public screen messages have been disabled by the administrator. Please try again later</string><!--公屏消息已经被管理员禁止，请稍候再试-->
+    <string name="you_on_the_mic">You\'re on the mic</string><!--您上麦了-->
+
+    <!--HomeBlindDateRoomFragment-->
+    <string name="clear_charm">Clear charm</string><!--清除魅力值-->
+    <string name="sound_wave_details">View the sound wave details</string><!--查看音浪明细-->
+    <string name="gift_record">Gift-giving Record</string><!--送礼统计-->
+
+    <!--ButtonItemFactory-->
+    <string name="kick_out_of_the_room">Kick out of the room</string><!--踢出房间-->
+    <string name="view_data">View data</string><!--查看资料-->
+    <string name="succeeded_set_admin">Succeeded in setting the administrator</string><!--设置管理员成功-->
+    <string name="succeeded_remove_admin">Succeeded in removing an administrator</string><!--移除管理员成功-->
+    <string name="whether_to_set_person_as_admin">Whether to set %s as administrator</string><!--是否将%s设置为管理员?-->
+    <string name="whether_to_remove_person_from_admin">Whether to remove %s from the administrator</string><!--是否将%s移除管理员?-->
+    <string name="whether_add_blacklist">Whether to add %s to the blacklist</string><!--是否将%s加入黑名单？-->
+    <string name="off_chat">off chat</string><!--关闭房间内聊天-->
+    <string name="on_chat">on chat</string><!--开启房间内聊天-->
+
+    <!---->
+    <string name="bid_is_less_heighest">Failed bid. Your bid is less than the current highest bid</string><!--出价失败，您出的价格少于当前最高价-->
+    <string name="less_tan_min_starting_bid">The bid cannot be less than the minimum starting bid</string><!--出价不能少于最低起拍价-->
+    <string name="mark_up_failure">Mark-up failure</string><!--加价失败-->
+    <string name="cannot_raise_the_price">You are being auctioned and cannot raise the price</string><!--您正在被竞拍，无法加价-->
+    <string name="whether_close_auction">Whether to close the current auction?</string><!--是否结束当前竞拍-->
+
+    <!--GiftView-->
+    <string name="vote_for_him">Vote for him</string><!--投票给他-->
+    <string name="failed_to_vote">Failed to vote</string><!--投票失败-->
+    <string name="successful_to_vote">Successful to vote</string><!--投票成功-->
+    <string name="pk_head_count">PK per head count</string><!--按人数PK-->
+    <string name="pk_by_gift_value">PK by gift value</string><!--按礼物价值PK-->
+
+    <!--MessageView-->
+    <string name="system_message_selects">System message :%s selects %s</string><!--系统消息:%s 选择了 %s-->
+    <string name="system_message_congratualtion_holding_hands">System message: Congratulations %s and %s have succeeded in holding hands \n\n</string><!--系统消息: 恭喜 %s 和 %s 牵手成功 \n\n-->
+    <string name="whether_to_check_out_wedding">Whether to check out the wedding</string><!--是否前往查看婚礼-->
+    <string name="let_is_go_mic">Let\'s go to the wheat</string><!--一起上麦啦-->
+    <string name="start_a_guessing_game">Start a guessing game,</string><!--发起猜拳-->
+    <string name="blocked_small_gift_effects"> The room has been blocked for small gift effects</string><!--已屏蔽该房间小礼物特效-->
+    <string name="enable_small_gift_effects"> Small gift effects have been enabled for the room</string><!--已开启该房间小礼物特效-->
+    <string name="blocked_mount_gfit_effects"> The room has been masked for gift effects on Mount</string><!--已屏蔽该房间坐骑礼物特效-->
+    <string name="turned_on_mount_gift_effects"> Has turned on the room Mount gift effects</string><!--已开启该房间坐骑礼物特效-->
+    <string name="shut_down_room_chat">The owner turned off everyone sending messages</string><!--关闭了房间内聊天-->
+    <string name="opened_room_chat">The owner has turned on sending messages from all</string><!--开启了房间内聊天-->
+    <string name="mysterious_burst">Mysterious burst~</string><!--神秘爆出-->
+    <string name="pass"> pass </string><!--通过-->
+    <string name="unexpected_acquisition_of_gifts"> Unexpected acquisition of gifts </string><!--送礼意外获得-->
+    <string name="initiated_pk">Initiated PK</string><!--发起了PK-->
+    <string name="cancelled_pk">Cancelled PK</string><!--取消了PK-->
+    <string name="win_pk_victory"> Win a PK victory</string><!--获得PK胜利-->
+    <string name="pk_is_invalid">This PK is invalid.</string><!--本次PK无效-->
+    <string name="pk">PK</string><!--PK-->
+    <string name="and">and</string><!--和-->
+    <string name="pk_result">PK result:</string><!--本场PK结果-->
+    <string name="cancelled">Cancelled</string><!--取消了-->
+    <string name="unsign">unsign</string><!--解签-->
+    <string name="start_sign"> It\'s time to ask for a sign </string><!--开始求签了-->
+    <string name="be_tempted_to_choose"> Be tempted to choose </string><!--心动选择了-->
+    <string name="have_chosen"> Have chosen </string><!--已选择了-->
+    <string name="waiver_of_receipt"> Waiver of receipt </string><!--放弃了解签-->
+    <string name="waiting_for_his_destiny"> Waiting for his destiny</string><!--等待他的命中注定-->
+    <string name="close_friend">Close friend</string><!--亲密挚友-->
+    <string name="best_friend">Best Friend</string><!--情深挚友-->
+    <string name="god_best_friend">God\'s best friend</string><!--天作挚友-->
+    <string name="congratulation">congratulation </string><!--恭喜-->
+    <string name="from"> from </string><!--结成-->
+    <string name="kind_consideration_in_the_future">,Thank you for your kind consideration in the future </string><!--,未来的日子请多多关照~-->
+    <string name="sent_a">Sent a</string><!--发送了一个-->
+    <string name="room_red_packet">Room red packet</string><!--房间红包-->
+    <string name="full_red_packet">Full red packet</string><!--全服红包-->
+    <string name="come_grab_red_packet">,Come and grab the red packet!</string><!--，快来抢红包吧！-->
+    <string name="open_box">Open %s actually out</string><!--打开%s竟然开出了-->
+    <string name="open_the_auction">%s opened the auction</string><!--%s 开启了竞拍-->
+    <string name="shoot_it_at_points"> Shoot it at %s points </string><!--以%s积分拍下-->
+    <string name="closed_auction_no_bids"> Closed the auction. There are no bids at present</string><!--结束了竞拍，当前暂无人出价-->
+    <string name="bid_credits"> Bid %s credits</string><!--出价%s积分-->
+    <string name="in_the_room"> In the room </string><!-- 在房间-->
+    <string name="sit">sit</string><!-- 坐着-->
+    <string name="your_best_friend">Your best friend</string><!-- 你的挚友-->
+    <string name="drive">Drive</string><!-- 驾着-->
+    <string name="enter_the_room1">Enter the room！</string><!-- 进入房间！-->
+    <string name="got_it_on_star_trek">I got it on a star trek</string><!-- 在星空探险中竟然获得了-->
+    <string name="got_it_in_the_deer_wheel">I actually got it in the deer Wheel</string><!-- 在鹿鹿大转盘中竟然获得了-->
+    <string name="me">Me</string><!-- 我-->
+    <string name="sysytem_message_congratulations_to_married">System message: Congratulations to %s and %s on getting married in %s</string><!-- 系统消息:恭喜 %s 和 %s 在 %s 结婚成功-->
+    <string name="with_close_friends">With close friends </string><!-- 与挚友-->
+
+    <!--RoomNoticeView-->
+    <string name="room_notice_view_give"> Give </string><!-- 送给-->
+    <string name="many_people">%d people</string><!-- 等%d人-->
+    <string name="sent_a_full_red_packet">Sent a full suit red envelope, come to see ~</string><!-- 发了一个全服红包，快来围观吧~-->
+
+    <!--RoomPlayInfoDialog-->
+    <string name="no_announcements_room">No announcements are set in the room</string><!-- 房间没有设置公告-->
+
+    <!--BlindDateHearSelectDialog-->
+    <string name="heart_not_selected">The heart is not selected</string><!-- 未选择心动对象-->
+
+    <!--StartFingerGuessingGameDialog-->
+    <string name="no_participates_returned_minutes">If no one participates, the credits will be returned within %d minutes</string><!-- 若无人参与,积分将在%s分钟内退还-->
+
+    <!--RoomPrivateMsgDialog-->
+    <string name="room_private_msg_attention_online">You pay attention to the TA online, quick to watch it ~~~</string><!-- 您关注的TA上线啦，快去围观吧~~~-->
+    <string name="room_private_msg_gift">[Gift]</string><!-- [礼物]-->
+    <string name="room_private_msg_received_red_packet1">You have received a red packet!</string><!--您收到一个红包哦!-->
+    <string name="room_private_msg_received_red_packet2">You have received a %s red packet!</string><!--您收到一个%s红包哦!-->
+    <string name="room_private_msg_win_luck_draw">Congratulations on winning the lucky draw</string><!--恭喜您，获得抽奖机会-->
+    <string name="room_private_msg_room_inviation">[Room invitation]</string><!--[房间邀请]-->
+    <string name="room_private_msg_following_you">Someone is following you. Let\'s see who it is</string><!--有人关注了您，快来看看是谁吧~-->
+    <string name="room_private_msg_transfer">[transfer]</string><!--[转账]-->
+    <string name="room_private_msg_voice">[Voice]</string><!--[语音]-->
+
+    <!--DynamicFaceDialog-->
+    <string name="look_ready">Look ready…</string><!--表情准备中...-->
+
+    <!--CarrotRankingDailoh-->
+    <string name="today_rank">Today\'s Rank</string><!--今日榜单-->
+    <string name="yesterday_rank">Yesterday\'s Rank</string><!--昨日榜单-->
+
+    <!--HearDrawDialog-->
+    <string name="please_enter_custom_times">Please enter custom times</string><!--请输入自定义次数-->
+
+    <!--HearDrawDialog-->
+    <string name="duration_seconds_1">%s seconds</string><!--时长：%秒-->
+    <string name="get_credits">Get: %d credits</string><!--获得：%d积分-->
+
+    <!--MagicwandExchageDialog-->
+    <string name="enery_conversion_failure">Energy conversion failure</string><!--兑换能源失败-->
+    <string name="enery_conversion_successful">Successful energy conversion</string><!--兑换能源成功-->
+    <string name="please_enter_quantity">Please enter quantity</string><!--请输入数量-->
+    <string name="insufficient_number_of_credits">Insufficient number of credits</string><!--积分数量不足-->
+
+    <!--RedEnvelopeRecordDialog-->
+    <string name="red_packet_amount_credits">Red packet amount %s credits</string><!--红包金额%s积分-->
+    <string name="red_packet_total_credits">%d red packets total %d credits</string><!--%d个红包共$%d积分-->
+
+    <!--GiftDialog-->
+    <string name="select_gift_member">Did not choose the user</string><!--请选择送礼成员-->
+    <string name="choose_gift">Please choose the gift you want to give</string><!--请选择您需要赠送的礼物-->
+    <string name="your_backpack_is_insufficient">Your backpack gift is insufficient</string><!--您的背包礼物数量不够-->
+    <string name="no_one_on_mic">No one\'s on the mic yet</string><!--暂无成员在麦上-->
+    <string name="no_reward_can_given_real_name">No reward can be given without real-name authentication</string><!--未经过实名认证不可以进行打赏-->
+    <string name="authenticate_real_name_first">Please authenticate with your real name first</string><!--请先实名认证-->
+    <string name="gift_expired">The gift has expired</string><!--该礼物已过期-->
+    <string name="mystery_gift_not_enough">Your mystery gift isn\'t enough</string><!--您的神秘礼物数量不够-->
+    <string name="enter_number_greater_than_zero">Please enter a number greater than 0</string><!--请输入大于0的数-->
+
+    <!--RoomChoiceDialog-->
+    <string name="result_has_been_selected">The result has been selected, please show the result first!</string><!--已选择结果，请先展示结果！-->
+    <string name="please_select_result">Please select the result first!</string><!--请先选择结果！-->
+
+    <!--MultiplePKHistoryDetailDialog-->
+    <string name="points_based_total_number_of_votes">Points are awarded based on the total number of votes cast</string><!--按投票总人数计分-->
+    <string name="points_base_of_gift">Points are given for the total value of the gift</string>
+
+    <string name="thirty_second">30s</string>
+    <string name="sixty_second">60s</string>
+    <string name="ninety_second">90s</string>
+    <string name="one_hundred_eighty_second">180s</string>
+    <string name="five_minute">5min</string>
+    <string name="ten_minute">10min</string>
+    <string name="twenty_minute">20min</string>
+    <string name="choose_at_least_two_pk">Please choose at least two PK</string><!--请至少选择两人PK-->
+
+    <!--MutiplePkView-->
+    <string name="cancel_this_round_pk">After cancellation, the score of this pk will be cleared. Do you need to cancel this round of pk?</string><!--取消后，本次pk的分数将清空，是否需要取消本轮pk？-->
+    <string name="cannot_call_yourself">You can\'t call yourself</string><!--不能给自己打call-->
+    <string name="pk_failed_confirm_user_on_mic">PK failed to be enabled. Please confirm that PK user is on the mic.</string><!--PK开启失败，请确认PK用户在麦位上！-->
+    <string name="sure_pk_again">Are you sure to perform PK again?</string><!--确认要再次进行PK吗?-->
+    <string name="hold_hands_successfully">Hold hands successfully in %s</string><!-- 在%s牵手成功-->
+
+    <string name="bid">Bid</string><!-- 出价-->
+    <string name="above_integral">Above integral</string><!-- 积分以上-->
+    <string name="starting_bid_integral">Current starting bid %s integral</string><!-- 当前起拍价%s积分-->3
+
+    <string name="go_mic">go mic</string><!-- 排麦-->
+    <string name="cancel_mic">Cancel mic</string><!-- 取消排麦-->
+    <string name="mic_people">%d mic people</string><!-- 排麦人数-->
+
+    <!--ListDataDialog-->
+    <string name="record">record</string><!-- 记录-->
+
+    <string name="delete">delete</string><!-- 删除-->
+    <string name="fans_count">Fans:%d</string><!-- 粉丝：%d-->
+
+    <!--BestFriendApplyDialog-->
+    <string name="give_gifts_are_you_make_friend">gave you %s. Are you going to be best friends with him?</string><!-- %s赠送你%s礼物你要和他成为挚友吗？-->
+    <string name="receive">receive</string><!-- 接受-->
+
+    <string name="failed_to_switch_up">Failed to switch up, please log in again!</string><!-- 调起失败，请重新登录!-->
+    <string name="payment_success">Payment success</string><!-- 支付成功-->
+    <string name="payment_failure">Payment failure</string><!-- 支付失败-->
+
+    <string name="failed_set_teen_mode">Failed to set the teen mode</string><!-- 青少年模式设置失败-->
+
+    <string name="date_picker">DatePicker</string><!--日期选择-->
+    <string name="unknown">Unknown</string><!--未知-->
+    <string name="hot_city">Hot city</string><!--热门城市-->
+
+    <string name="retry_in_seconds">%d retry in seconds</string><!--%s秒后重试-->
+    <string name="reacquire">reacquire</string><!--重新获取-->
+    <string name="fans">Fans</string><!--粉絲-->
+
+    <string name="click_back_room">Click back to room</string><!--点击返回房间-->
+
+
+
+
+    <string name="confirm_renwal_heddress">Confirm renewal %s headdress</string><!--  确认续费%s头饰-->
+    <string name="confirm_purchase_heddress">Confirm purchase of %s headdress</string><!--   确认购买%s头饰-->
+    <string name="confirm_renwal_car">Confirm renewal of %s car</string><!--    确认续费%s座驾-->
+    <string name="confirm_purchase_car">Confirmed purchase of %s car</string><!--  确认购买%s座驾-->
+
+    <string name="it_did_not_hit">Unfortunately, it didn\'t hit</string><!--  很遗憾，没有爆中-->
+
+    <string name="please_bind_phone">Please bind the mobile phone first</string><!--  请先绑定手机-->
+    <string name="sms_sent_successfully">SMS sent successfully</string><!--  短信发送成功-->
+
+    <string name="enter_your_feedback">Please enter your feedback</string><!--  请输入您要反馈的内容-->
+    <string name="enter_your_number">Please enter your number</string><!--  请输入您的号码-->
+    <string name="uploading_please_wait">Uploading please wait…</string><!--  正在上传请稍后...-->
+    <string name="sumbit_successfully">submit successfully</string><!--  提交成功-->
+
+    <string name="password_reset_succeeded">Password reset succeeded</string><!--  重置密码成功-->
+    <string name="verification_code_empty">The verification code cannot be empty</string><!--  验证码不能为空-->
+    <string name="phone_number_is_incorrect">The mobile phone number is incorrect</string><!--  手机号码不正确-->
+    <string name="check_password">Please check the password</string><!--  请核对密码-->
+    <string name="fill_in_phone_number">Please fill in the mobile phone number</string><!--  请填写手机号码-->
+    <string name="whether_to_quit">Whether to quit</string><!--  是否退出？-->
+    <string name="gift_recipient">Gift recipient :%s</string><!--  收礼人:%s-->
+    <string name="giver">Giver :%s</string><!--  送礼人::%s-->
+    <string name="confirm_purchase_give_it_to">Confirm the purchase of %s and give it to %s</string><!-- 确认购买%s并赠送给%s？-->
+    <string name="gift_giving_successful">Successful gift giving</string><!--赠送礼物成功-->
+    <string name="home_main_tab_recently">Recently</string><!--最近-->
+    <string name="home_main_tab_follow">Follow</string><!--关注-->
+    <string name="age">age</string><!--岁-->
+    <string name="message_notificaiton_enable">Message notification is enabled</string><!--已开启消息通知-->
+    <string name="message_notificaiton_off">Message notification is turned off</string><!--已关闭消息通知-->
+    <string name="other_set_private_message_not_disturb">The other party has set a private message do not disturb</string><!--对方已设置私信免打扰-->
+    <string name="failed_enter_private_chat">Failed to enter private chat</string><!--进入私聊失败-->
+    <string name="user_agreement">User agreement</string><!--用户协议-->
+    <string name="privacy_agreement">Privacy agreement</string><!--隐私协议-->
+
+    <string name="owner_changed_the_room_type_reenter_room">The owner has changed the room type, please re-enter the room</string><!--房主更改了房间类型，请重新进入房间-->
+    <string name="enable_notifications_avoid_missing_notification">Please enable notifications (and their sounds) to avoid missing important notifications</string><!--请开启通知(及其的声音)权限，避免遗漏重要通知哦-->
+    <string name="whether_clse_existing_room">Whether to close the existing room and create a new room</string><!--当前创建房间类型与上次不符是否关闭原有房间后创建新类型房间-->
+    <string name="you_have_kicked_offline">You have been kicked offline. If the behavior is abnormal, please change the password in time</string><!--您已被踢下线，若非正常行为，请及时修改密码-->
+    <string name="blocked">blocked</string><!--已拉黑-->
+    <string name="city">city</string><!--省 市 区-->
+    <string name="completed">Completed</string><!--已完成-->
+
+    <string name="continuous_check_in">Continuous check-in</string><!--连续签到-->
+    <string name="day_avilability">Day availability</string><!--天可获得-->
+    <string name="gift_box">Gift box</string><!--礼物盒-->
+
+    <string name="mobile_phone_binding_failure">Mobile phone binding failure</string><!--绑定手机失败-->
+    <string name="failed_replace_mobile_phone">Failed to replace and tie the mobile phone</string><!--换绑手机失败-->
+
+    <string name="all">All</string><!--所有对象-->
+    <string name="being_modifed">Being modified…</string><!--正在修改...-->
+    <string name="below_level_ten">Below level 10</string><!--10级以下-->
+
+
+    <string name="set_friendsip_declaration">Set  Friendship Declaration</string><!--设置交友宣言-->
+    <string name="modify_nickname">Modify nickname</string><!--修改昵称-->
+    <string name="set_inviation_code">Set invitation code</string><!--设置邀请码-->
+    <string name="modify_failure_remind_you_civilized_language">Modify the failure, small cute sister to remind you of civilized language</string><!--修改失败，小萌妹提醒您文明用语-->
+    <string name="content_is_empty">The content is empty</string><!--所填内容为空-->
+
+    <string name="message">Message</string><!--消息-->
+
+    <string name="just_now">Just now</string><!--刚刚-->
+    <string name="minutes_age">%d minutes ago</string><!--%d分钟前-->
+    <string name="hour_ago">HHHour ago</string><!--小时前-->
+    <string name="morning">Morning</string><!--上午-->
+    <string name="afternoon">Afternoon</string><!--下午-->
+    <string name="yesterday">Yesterday</string><!--昨天-->
+    <string name="today">Today</string><!--今天-->
+    <string name="tomorrow">Tomorrow</string><!--明天-->
+    <string name="sunday">Sunday</string><!--周日-->
+    <string name="monday">Monday</string><!--周一-->
+    <string name="tuesday">Tuesday</string><!--周二-->
+    <string name="wednesday">Wednesday</string><!--周三-->
+    <string name="thurday">Thursday</string><!--周四-->
+    <string name="friday">Friday</string><!--周五-->
+    <string name="saturday">Saturday</string><!--周六-->
+
+    <string name="passwrd_can_not_empty">The password cannot be empty</string><!--密码不能为空-->
+
+    <string name="onigiri_planet_staff">Onigiri Planet staff</string><!--饭团星球工作人员-->
+
+    <string name="registered_successfully">Registered successfully</string><!--注册成功-->
+    <string name="being_registered">Being registered…</string><!--正在注册...-->
+    <string name="mobile_phone_cannot_empty">The mobile phone number cannot be empty</string><!--手机号码不能为空-->
+    <string name="password_cannot_less_than_limmit">The password cannot be less than 6 characters</string><!--密码不能少于6位-->
+    <string name="password_inconsistency">Password inconsistency</string><!--密码不一致-->
+    <string name="enter_new_password_length_limit">Please enter a new password (length of 8 to 12 characters).</string><!--请输入新密码(长度8到12位)-->
+    <string name="login_password_successfully_changed">The login password is successfully changed</string><!--修改登录密码成功-->
+    <string name="login_password_successfully_set">The login password is successfully set</string><!--设置登录密码成功-->
+    <string name="secondray_password_successfully">The secondary password is successfully set</string><!--设置二级密码成功-->
+
+    <string name="wait_while_checking">Please wait while checking…</string><!--正在查询请稍后...-->
+    <string name="saving_picture">Saving picture…</string><!--正在保存图片...-->
+    <string name="picture_saved_succesfully">Picture saved successfully</string><!--图片保存成功-->
+    <string name="picture_saved_failure">Picture saved failure</string><!--图片保存失败-->
+    <string name="broadcast_interval_wait_moment">The broadcast interval is 30 seconds. Please wait for a moment</string><!--广播发送间隔为30秒，请稍等-->
+    <string name="successfully_fetch_task">Successfully fetch task</string><!--成功领取任务-->
+    <string name="sharing_failed_try_again">Sharing failed, please try again</string><!--分享失败，请重试-->
+    <string name="stop_sharing">Stop sharing</string><!--取消分享-->
+    <string name="share_success">Share success</string><!--分享成功-->
+    <string name="the_day">The %d day</string><!--第%d天-->
+
+    <string name="edit_personal_signature">Edit personal signature</string><!--编辑个人签名-->
+    <string name="slect_video_less_than_thirty_second">Please select a video less than 30 seconds</string><!--请选择30秒以内的视频-->
+    <string name="uploading_video_wether_exit">Uploading video, whether to exit?</string><!--正在上传视频，是否退出？-->
+    <string name="only_change_gender_once">You can only change your gender once</string><!--性别只能修改一次哦~-->
+    <string name="upload_success_wait_review">Upload successfully, please wait for review!</string><!--上传成功，请等待审核！~-->
+    <string name="video_is_uploaded_wait">The video is uploaded, please wait patiently</string><!--视频上传中，请耐心等待-->
+    <string name="max_number_photos">The maximum number of photos uploaded has been reached</string><!--照片已达到最大上传数-->
+    <string name="image_address_is_abnormal">Image address is abnormal, please try again!</string><!--图片地址异常，请重试！-->
+
+    <string name="unavailable_during_the_review_period">We are sorry that this function is temporarily unavailable during the review period</string><!--很抱歉审核期内暂时无法使用该功能-->
+    <string name="go_identification">Go identification</string><!--去认证-->
+    <string name="go_bind">Go bind</string><!--去绑定-->
+    <string name="bind_phone_first">Please bind the mobile phone number first</string><!--请先绑定手机号-->
+    <string name="cost_sound_wave">Cost %d sound wave</string><!--"消耗%s音浪"-->
+
+    <string name="release_success_being_reviewed">Release success is being reviewed, please be patient ~</string><!--发布成功正在审核，请耐心等待~-->
+    <string name="enter_dynamic_content">Please enter dynamic content</string><!--请输入动态内容-->
+    <string name="publishing_failure">Publishing failure</string><!--发布失败-->
+    <string name="abandon_release_dynamic">Are you sure to abandon the release dynamic?</string><!--确认放弃发布动态吗-->
+
+    <string name="please_upload_profile_picture">Please upload your profile picture</string><!--请上传头像-->
+    <string name="please_set_nickname">Please set a nickname</string><!--请设置昵称-->
+    <string name="please_set_sex">Please select sex</string><!--请设置昵称-->
+    <string name="nickname_cannot_empty">Nicknames cannot be empty</string><!--昵称不能为空-->
+
+    <string name="companionship_level">Companionship level:</string><!--陪伴等级：-->
+    <string name="company_time">Company time:</string><!--陪伴时间：-->
+    <string name="become_good_friends">Become good friends:</string><!--成为挚友：-->
+    <string name="day">day</string><!--天-->
+    <string name="edit_until_reached_level_two">You can\'t edit until you\'ve reached level two</string><!--亲密等级达到两级才可以编辑哦-->
+    <string name="need_expansion_card">Need expansion card</string><!--需要拓展卡-->
+    <string name="to_date">to date</string><!--至今-->
+    <string name="open_new_best_friend_go_to_mall">If you want to open a new best friend, you need to buy an expansion card. Do you want to buy one at the mall?</string><!--想要开启新的挚友位需要购买拓展卡，是否前往商城购买？-->
+    <string name="cancellation_failure">Cancellation failure</string><!--解除失败-->
+    <string name="cancellation_successfully">Cancellation Successfully</string><!--解除成功-->
+
+    <string name="bind_bank_card_tips_1">Please select a bank type</string><!--请选择银行类型-->
+    <string name="bind_bank_card_tips_2">Please enter your bank card number</string><!--请输入银行卡号-->
+    <string name="bind_bank_card_tips_3">Please enter your real name</string><!--请输入真实姓名-->
+    <string name="bind_bank_card_tips_4">Please enter your ID number</string><!--请输入身份证号-->
+    <string name="bind_bank_card_tips_5">Please enter the bank card reserved mobile phone number</string><!--请输入银行卡预留手机号-->
+    <string name="bank_car_binding_success">Bank card binding successfully</string><!--银行卡绑定成功-->
+
+    <string name="deleted_success">Deleted successfully</string><!--删除成功-->
+    <string name="total_comments">Total %d comments</string><!--共%s条评论-->
+    <string name="are_you_delete_comment">Are you sure to delete the comment?</string><!--确定删除该评论吗？-->
+    <string name="are_you_delet_dynamics">Are you sure about deleting dynamics?</string><!--确定删除动态吗？-->
+
+    <string name="overall_theme">Overall theme</string><!--全部主题-->
+    <string name="recommend">recommend</string><!--推荐-->
+
+    <string name="success_top_placement">Successful top placement</string><!--置顶成功-->
+    <string name="top_placement">top placement</string><!--置顶-->
+
+    <string name="are_you_sure_to_clear_dynamicemsg">After clearing, all news feeds will be deleted. Are you sure to clear?</string><!--清空后将删除所有的动态消息，确定清空吗？-->
+
+    <string name="comment_to_you">Commented on you</string><!--评论了你-->
+    <string name="like_you">like you</string><!--点赞了你-->
+    <string name="ayome_in_use">Ayome in use</string><!--正在使用饭团星球~-->
+
+    <string name="please_enter_integral">Please enter the integral</string><!--请输入积分~-->
+    <string name="success_transfer">Successful transfer</string><!--转账成功~-->
+    <string name="underintegration">underintegration</string><!--积分不足~-->
+    <string name="please_enter_valid_integral">Please enter a valid integral amount</string><!--请输入有效的积分数额~-->
+    <string name="peolpe">peolpe</string><!--人~-->
+    <string name="confirm_removal">Confirm removal</string><!--确认移除~-->
+    <string name="removed_success">Removed successfully</string><!--移除成功~-->
+    <string name="udpate_profile_success">Update profile successfully</string><!--更新简介成功-->
+    <string name="join_success">Join successfully</string><!--加入成功-->
+
+    <string name="please_enter_broadcast_content">Please enter the broadcast content</string><!--请输入广播内容-->
+    <string name="please_select_login_type">Please select a login type</string><!--请选择登录类型-->
+
+    <string name="havenot_joined_hall">Haven\'t joined the hall yet</string><!--还未加入厅-->
+    <string name="enter_requested_hall_id">Enter the requested hall id</string><!--输入申请的厅id-->
+    <string name="join_hall_success">Join the hall successfully</string><!--加入厅成功-->
+
+    <string name="guard">guard</string><!--守护-->
+
+    <string name="male_greetings1">Little brother, do you miss me?</string><!--小哥哥，想我了吗？-->
+    <string name="male_greetings2">Hi, little brother, can you tell me the way to your heart?</string><!--嗨,小哥哥，请问去你心里的路怎么走？-->
+    <string name="male_greetings3">Hi, little brother, want to watch the sound wave and see the moon with you</string><!--嗨,小哥哥，想和你一起看音浪看月亮呢～-->
+    <string name="male_greetings4">Little brother, want to talk with you…</string><!--小哥哥，想和你聊聊天呢...-->
+    <string name="male_greetings5">Little brother, I want to meet you.</string><!--小哥哥，好想认识一下你哦...-->
+    <string name="male_greetings6">Little brother, let\'s talk ~</string><!--小哥哥，一起来聊天吧～-->
+    <string name="male_greetings7">Little brother, I miss you…</string><!--小哥哥，想你了呢...-->
+    <string name="female_greetings1">hi!</string><!--嗨！-->
+    <string name="female_greetings2">Hi, beautiful woman, can you tell me the way to your heart?</string><!--嗨,美女，请问去你心里的路怎么走？-->
+    <string name="female_greetings3">Hello, beautiful woman. Are you tired today? You\'ve been running through my head all day...</string><!--美女你好，你今天累吗？你在我脑子里跑了一整天了...-->
+    <string name="female_greetings4">Beautiful woman, you are beautiful!</string><!--美女，你好漂亮呀！-->
+    <string name="female_greetings5">Girl, can you guess where my heart is? It\'s on your side…</string><!--美女，你猜猜我的心脏在哪边？是在你那边呢...-->
+    <string name="female_greetings6">Girl, you look so good. Wanted to talk to you.</string><!--美女，你真好看，想和你聊聊天。-->
+    <string name="female_greetings7">Pretty girl, are you dating?</string><!--美女，处对象吗？-->
+    <string name="female_greetings8">hi, may I meet you?</string><!--hi，能认识一下你吗？-->
+    <string name="cannot_get_greeting">Can\'t get greeting copy</string><!--获取不到打招呼文案-->
+
+
+    <string name="getting_withdrawal_info">Getting withdrawal information</string><!--正在获取提现信息，请稍后重试-->
+    <string name="bind_bank_car_first">Please bind your bank card first</string><!--请先绑定银行卡-->
+    <string name="select_withdrawal_amount">Please select the withdrawal amount</string><!--请选择提现额度-->
+    <string name="insufficient_withdrawable_balance">Insufficient withdrawable balance</string><!--可提现余额不足-->
+    <string name="success_withdrawal">Successful withdrawal</string><!--提现成功-->
+
+    <string name="invalid_room">Invalid room</string><!--房间无效-->
+    <string name="unfollow_no_longer_be_friend">Unfollow will no longer be a friend. Are you sure?</string><!--取消关注将不再是好友关系，确定取消关注？-->
+    <string name="difinite_unfollow">Definite unfollow?</string><!--确定取消关注？-->
+    <string name="enter_correct_id">Please enter the correct id</string><!--请输入正确id-->
+    <string name="introducation_to_modify">Introduction to modification</string><!--修改简介-->
+
+    <string name="family_not_been_created_success">Small master, the family has not been created successfully, exit will not save the previous operation</string><!--小主，家族未创建成功，退出将不保存之前的操作-->
+    <string name="family_success">Family success</string><!--创建家族成功-->
+    <string name="please_enter_family_logo">Please select the family Logo</string><!--请选择家族Logo！-->
+    <string name="please_enter_family_nickname">Please enter a family nickname</string><!--请输入家族昵称！-->
+    <string name="please_enter_family_profile">Please enter a family profile</string><!--请输入家族简介！-->
+    <string name="add_success">Add successfully</string><!--添加成功！-->
+
+    <string name="creation_time">Creation time</string><!--创建时间-->
+    <string name="choose_max_three_topics">Choose a maximum of 3 topics</string><!--最多选择3个话题-->
+    <string name="logging_in">Logging in…</string><!--正在登录...-->
+
+    <string name="no_check_please_select_larger_circle_friend">No check, please select! To gain a larger circle of friends</string><!--暂无选中，请选择！从而获取更大的交友圈-->
+    <string name="confirmed_accession">Confirmed accession</string><!--确定加入-->
+
+    <!--sign up info-->
+    <string name="sign_up_info_title1">Compelete your information</string><!--填写你的信息-->
+    <string name="sign_up_info_title2">One selected,it cannot be changed</string><!--一旦选中，就不能更改-->
+    <string name="enter_you_nickname">Enter you username</string><!--输入你的昵称-->
+    <string name="sign_up_info_commit">Finished</string>
+    <string name="nick_name_length_limmit">Nickname can be up to 30 characters long</string>
+
+    <!-- 充值 -->
+    <string name="pay_title_gold">Gold</string> <!-- 金币 -->
+    <string name="pay_title_diamond">Diamond</string> <!-- 钻石 -->
+    <string name="pay_history_news">News</string> <!-- News -->
+    <string name="pay_main_question">Any questions?</string> <!-- Any questions? -->
+    <string name="pay_main_contact_up">Contact us</string> <!-- 联系我们 -->
+    <string name="pay_diamond_exchange">Exchange</string> <!-- 兑换 -->
+    <string name="pay_history_charge_tip">just Top-up</string> <!-- 充值 -->
+    <string name="pay_history_charge_gold">gold</string> <!-- 金币 -->
+    <string name="pay_diamond_exchange_success">Successfully converted diamonds into gold</string> <!-- 成功兑换金币 -->
+
+    <string name="select_region_title">Select Country/Region</string> <!-- 选择地区 -->
+    <string name="select_region_payment">Payment</string> <!-- 支付方式 -->
+    <string name="select_region_currency">Currency: </string> <!-- 币种 -->
+
+    <string name="copy">Copy</string>
+
+    <!--language-->
+    <string name="language_english">English</string>
+    <string name="language_arab">العربية</string>
+
+    <!--feedback-->
+    <string name="inbox_feedback">Inbox Feedback</string>
+    <string name="inbox_feedback_title1">Feedback</string>
+    <string name="inbox_feedback_title2">History</string>
+    <string name="feedback_tips">If you have any dissatisfaction please tell us as soon as possible we will try our best to serve you</string>
+    <string name="inbox_feedback_selcet_category">* Selcet category</string>
+    <string name="inbox_feedback_description_request">* Description your request</string>
+    <string name="inbox_feedback_description_request_hint">Please describe your request briefly</string>
+    <string name="inbox_feedback_user_id">* User ID</string>
+    <string name="inbox_feedback_user_id_error">Please input user ID</string>
+    <string name="inbox_feedback_upload_photo_or_video">Upload photo/video(optional)</string>
+    <string name="inbox_feedback_report_user">Report User</string>
+    <string name="inbox_feedback_app_complains">App Complains</string>
+    <string name="inbox_feedback_recharge_problem">Recharge Problem</string>
+    <string name="inbox_feedback_other">Other</string>
+    <string name="inbox_feedback_submit_success">Submitted successfully, we will respond ASAP</string>
+    <string name="inbox_feedback_gif_limit">Gif size limit is 3Mb</string>
+    <string name="inbox_feedback_photo_limit">Photo size limit is 5Mb</string>
+    <string name="inbox_feedback_video_limit">Video size limit is 10Mb</string>
+    <!--feedback History-->
+    <string name="inbox_feedback_history_order">Order:%d</string>
+    <string name="inbox_feedback_history_message_official_staff_to_deal">Please wait for the official staff to deal with it</string>
+    <string name="inbox_feedback_history_message_end_conversation">End of conversation</string>
+    <string name="inbox_feedback_history_message_input_hint">The input information</string>
+    <string name="inbox_feedback_history_message_input_tips">Please input content</string>
+    <string name="inbox_feedback_details_feedback_id">ID:%d</string>
+
+    <string name="room_anchor_info_setting">Settings</string>
+    <string name="room_setting_name_limit_tip">Enter up to %1$s characters</string> <!-- 房间名称字数限制 -->
+    <string name="room_setting_room_announce">room announce</string> <!-- 房间公告 -->
+    <string name="room_room_id">Room ID:</string> <!-- 房间id -->
+
+    <!-- 首页 -->
+    <string name="home_tab_no_introduction">There is no introduction here</string> <!-- 这里没有简介 -->
+
+    <string name="down_micro_tips">The owner has modified the number of mic， needs to join the mic</string> <!-- 下麦提示 -->
+
+    <string name="gift_pop_all_users_on_mic">To all users on mic</string> <!-- 送给在麦上的用户 -->
+    <string name="gift_pop_all_users_in_room">To all users in room</string> <!-- 送给语聊间所有用户 -->
+
+    <!-- game -->
+    <string name="game_menu_hot_game">Hot Game</string> <!-- 热门游戏 -->
+
+    <string name="top_contributors_dialy">Daily</string> <!-- 日贡献榜 -->
+    <string name="top_contributors_weekly">Weekly</string> <!-- 周贡献榜 -->
+    <string name="top_contributors_weekly_update">Update in:%s</string> <!-- 周贡献榜 -->
+
+    <string name="kick_out_the_room">Kick out the room</string>
+    <string name="kick_out_room_10_minutes">10 minutes</string>
+    <string name="kick_out_room_30_minutes">30 minutes</string>
+    <string name="kick_out_room_60_minutes">60 minutes</string>
+    <string name="kick_out_room_120_minutes">120 minutes</string>
+    <string name="kick_out_room_1_day">1 Day</string>
+
+    <string name="mute_time_tips">Can\'t sending message until %s</string>
+
+    <!-- 房间功能菜单 -->
+    <string name="room_function_menu_default">default</string><!-- 默认 -->
+    <string name="room_function_menu_luck_bag">Luck bag</string><!--幸运背包-->
+    <string name="room_function_menu_gift_record">Gift record</string><!--收礼记录-->
+    <string name="room_function_menu_text_chat">Text chat</string><!--聊天-->
+    <string name="room_function_menu_mic">Mic</string><!-- 麦位选择 -->
+    <string name="room_function_menu_host_data">Host data</string><!-- 主播数据 -->
+    <string name="room_function_menu_chat_room">Chatroom</string><!-- 清理 -->
+    <string name="room_function_menu_mute">Mute</string> <!-- 静音 -->
+    <string name="room_function_menu_music">Play music</string> <!-- 播放音乐 -->
+    <string name="room_function_menu_text_chat_all_user">All user</string><!-- 全部用户 -->
+    <string name="room_function_menu_text_chat_only_me">Only me</string><!-- 仅自己 -->
+
+    <string name="room_exit_tip_minimize">Minimize</string> <!-- 最小化 -->
+    <string name="room_exit_tip_exit">Exit</string> <!-- 退出 -->
+    <string name="room_block_tip">Block</string> <!-- 黑名单 -->
+
+    <!-- 房间信息 -->
+    <string name="room_info_dialog_no_introduction">No introduction here</string> <!-- 这里没有介绍 -->
+    <string name="user_info_dialog_unfollow_tip">"Sure to unfollow him "</string> <!-- 取关提示 -->
+
+    <!-- 日期选择对话框 -->
+    <string name="pickerview_cancel">@string/common_cancel</string>
+    <string name="pickerview_day">@string/common_day</string>
+    <string name="pickerview_hours">@string/date_hour</string>
+    <string name="pickerview_minutes">@string/common_time_minute</string>
+    <string name="pickerview_month">@string/common_month</string>
+    <string name="pickerview_seconds">@string/common_time_second</string>
+    <string name="pickerview_submit">@string/common_confirm</string>
+    <string name="pickerview_year">@string/common_year</string>
+
+    <string name="send_picture_need_vip_tips">Require SVIP %d or above to send picture</string>
+    <string name="banner_jump_room">Whether to enter the room ID %d</string>
+
+    <!-- 下拉刷新 -->
+    <string name="srl_header_failed">Refresh failed</string>
+    <string name="srl_header_finish">Refresh completed</string>
+    <string name="srl_header_loading">Wait for the bottom loading to complete...</string>
+    <string name="srl_header_pulling">Dropdown can be refreshed</string>
+    <string name="srl_header_refreshing">Refreshing...</string>
+    <string name="srl_header_release">Release Refresh Now</string>
+    <string name="srl_header_secondary">Release and enter the second floor</string>
+    <string name="srl_header_update">\'Last Update\' M-d HH:mm</string>
+
+    <string name="srl_footer_failed">Loading failed</string>
+    <string name="srl_footer_finish">Loading completed</string>
+    <string name="srl_footer_loading">Loading...</string>
+    <string name="srl_footer_nothing">No more data available</string>
+    <string name="srl_footer_pulling">Pull up to load more</string>
+    <string name="srl_footer_refreshing">Wait for the header refresh to complete...</string>
+    <string name="srl_footer_release">Release Load Now</string>
+
+
+</resources>
+
+<!-- erban_core -->
+<resources>
+    <string name="app_name">xchat_core</string>
+
+    <string name="common_cancel">Cancel</string>
+    <string name="common_ok">OK</string>
+    <string name="common_web_please_wait">Please wait</string>
+
+    <string name="audio_room_msg_notice">Welcome to the live broadcast! Official 24-hour online inspection of the room\'s contents. Any spread of illegal, illegal, vulgar, violent and other bad information will be closed.</string>
+    <string name="ask_again">Please give the application the necessary permissions for the program to work properly.</string>
+    <string name="layout_ok_cancel_label_security">Security warning</string> <!-- 安全警告 -->
+    <string name="perm_tip">
+        The current application lacks necessary permissions. \n Please click "Settings "-" Permissions "- to open the required permissions. \n Finally click the back button twice to return.
+    </string><!--  当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。-->
+    <string name="setting">Setting</string><!--设置-->
+    <string name="ok_dialog_big_tip_i_know">I know</string> <!-- 我知道了 -->
+    <string name="layout_ok_cancel_label_desc">This URL may be dangerous. Please only open the URL with reliable source</string> <!-- 该网址可能存在危险，请只打开来源可靠的网址！ -->
+    <string name="yumeng_ok_cancel_dialog_tip">Exit family risk notification</string> <!-- 退出家族风险告知 -->
+    <string name="splash_tip">Warm prompt</string> <!-- 温馨提示 -->
+    <string name="pic_login_dialog_lock">The room is locked</string> <!-- 房间已上锁 -->
+    <string name="pic_login_dialog_pwd">Please enter the room password</string> <!-- 请输入房间密码 -->
+    <string name="pic_login_dialog_pwd_error">Password error, please re-enter</string> <!-- 密码错误，请重新输入 -->
+    <string name="default_toolbar_title">Title</string> <!-- 标题 -->
+    <string name="default_toolbar_charge">Recharge</string> <!-- 充值 -->
+    <string name="str_network_not_capable">Network is slow</string><!--网络不给力-->
+    <string name="no_list_data">No more data here</string>
+    <string name="network_error_reload">The network is abnormal. Please check the network and click Refresh</string><!--网络异常，请检查网络后点击刷新-->
+    <string name="click_screen_reload">Hit Refresh</string><!--点击刷新-->
+    <string name="click_or_pull_refresh">Click or drop down to try refreshing</string><!--点击或者下拉尝试刷新-->
+    <string name="network_unavailable">Network unavailable</string>
+    <string name="enter_the_room">Enter the room</string><!-- 进入房间-->
+
+
+    <string name="mic_mute">Mic mute</string><!--麦位静音-->
+    <string name="mic_open">Mic open</string><!--麦位打开声音-->
+    <string name="disable_chat">Disable chat</string><!--禁止聊天-->
+    <string name="enable_chat">Enable chat</string><!--解除禁止聊天-->
+    <string name="take_the_mic">Take the Mic</string><!--上麦-->
+    <string name="embrace_up_mic">Carry them to the mic</string><!--抱Ta上麦-->
+    <string name="embrace_down_mic">Hold them off the wheat</string><!--抱Ta下麦-->
+    <string name="unlock_mic">Unlock Mic</string><!--Unseal this seat-->
+    <string name="lock_mic">Lock Mic</string><!--封锁此座位-->
+    <string name="lock_all_mic">Lock all Mic</string>
+    <string name="unlock_all_mic">Unlock all Mic</string>
+    <string name="lock_mic_kick_out_success">Successful off the user and lock the mic</string>
+    <string name="kick_out_mic_success">Successful off the user mic</string>
+    <string name="mute_successful">Successful muted the user for 30 minutes</string>
+    <string name="kick_out_of_the_room">Kick out room</string><!--踢出房间-->
+    <string name="mic_has_been_locked">Mic has been locked</string>
+    <string name="seat_already_occupied">This mic is already occupied</string>
+
+    <string name="leave_mic_text">Leave the Mic</string> <!-- 下麦 -->
+    <string name="gift_action">Send gift</string><!--送礼物-->
+    <string name="info">Profile</string>
+
+    <string name="kick_mic_by_owner">You are off the mic by %s</string><!--您已被房主或管理员踢下麦-->
+    <string name="invite_on_the_mic">Invite on the mic</string>
+    <string name="invite_tips">%s invite you up on the mic and enjoy our party</string><!--我们邀请你上台来享受我们的派对-->
+    <string name="invite_accept">Accept</string>
+    <string name="invite_refuse">Refuse</string>
+</resources>
+
+<!-- erban_framework -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">xchat_framework</string>
+
+    <string name="common_something_wrong">Something wrong</string> <!-- 操作失败，请重试 -->
+    <string name="common_operation_success">Successful Operation</string> <!-- 操作成功 -->
+
+    <string name="date_second">seconds</string> <!-- 秒 -->
+    <string name="date_minute">points</string> <!-- 分 -->
+    <string name="date_hour">hour</string> <!-- 时 -->
+    <string name="date_day">day</string> <!-- 天 -->
+
+    <string name="common_year">Year</string> <!-- 年 -->
+    <string name="common_month">Month</string> <!-- 月 -->
+    <string name="common_day">Day</string> <!-- 日 -->
+
+    <string name="str_right_now">Just</string> <!-- 刚刚 -->
+    <string name="str_today">Today</string> <!-- 今天 -->
+    <string name="str_yesterday">Yesterday</string> <!-- 昨天 -->
+    <string name="str_day_before_yesterday">The day before yesterday</string> <!-- 前天 -->
+    <string name="str_short_date_format">%1$d month %2$d day</string> <!-- %1$d月%2$d日 -->
+    <string name="str_date_format">%1$d year %2$d month %3$d day</string> <!-- %1$d年%2$d月%3$d日 -->
+    <string name="str_minutes_ago_format">%1$d minutes ago</string> <!-- %1$d分钟前 -->
+    <string name="str_hours_ago_format">%1$d hours ago</string> <!-- %1$d小时前 -->
+
+    <string name="sensitive_word_data">Sending failed. Xiaomeng sister reminds you to use civilized language~</string> <!-- 发送失败，小萌妹提醒您文明用语~ -->
+    <string name="image_sending_failure">Image sending failure</string> <!-- 图片发送失败 -->
+
+
+    <string name="string_mj_name">Ayome</string> <!--  -->
+
+    <string name="network_something_wrong">The network is unstable. Please try again later</string> <!-- 网络不稳定，请稍后再试... -->
+    <string name="network_error">Network error</string> <!-- 网络错误 -->
+    <string name="error_tip_1">The user does not exist or the password is incorrect</string> <!-- 用户不存在或密码错误 -->
+    <string name="error_tip_2">The user has been frozen</string> <!-- 用户已被冻结 -->
+    <string name="error_tip_3">Verification code error</string> <!-- 验证码错误 -->
+    <string name="error_tip_4">Mobile number is not available</string> <!-- 手机号不可用 -->
+    <string name="error_tip_5">Reset password is invalid</string> <!-- 重置密码无效 -->
+    <string name="error_tip_6">The nickname is illegal</string> <!-- 昵称不合法 -->
+    <string name="error_tip_7">The mobile phone number has been registered</string> <!-- 手机号码已经被注册 -->
+    <string name="error_tip_8">Login credentials are invalid, please log in again</string> <!-- 登录凭证失效，请重新登录 -->
+    <string name="error_tip_9">The server is being maintained</string> <!-- 服务器正在维护 -->
+
+    <string name="service_error_message_tip_1">The number of sound waves is not enough</string> <!-- 音浪数量不够 -->
+    <string name="service_error_message_tip_2">SMS verification code error</string> <!-- 短信验证码错误 -->
+    <string name="service_error_message_tip_3">The user does not exist</string> <!-- 该用户不存在 -->
+    <string name="service_error_message_tip_4">The room is running.</string> <!-- 房间正在运行中... -->
+    <string name="service_error_message_tip_5">The current bidder is being auctioned and has not finished</string> <!-- 当前被竞拍者正在被竞拍中，还未结束 -->
+    <string name="service_error_message_tip_6">The bidding price is less than the current maximum price</string> <!-- 竞拍价格小于当前最高价 -->
+    <string name="service_error_message_tip_7">The order does not exist</string> <!-- 订单不存在 -->
+    <string name="service_error_message_tip_8">The phone format is incorrect</string> <!-- 手机格式不正确 -->
+    <string name="service_error_message_tip_9">Network exception</string> <!-- 网络异常 -->
+    <string name="service_error_message_tip_10">Unknown error</string> <!-- 未知错误 -->
+    <string name="service_error_tip_1">The service is not available</string> <!-- 服务不可用 -->
+    <string name="service_error_tip_2">Server side exception</string> <!-- 服务端异常 -->
+    <string name="service_error_tip_3">The service is busy</string> <!-- 服务繁忙 -->
+    <string name="service_error_tip_4">Error sending SMS</string> <!-- 发送短信出错 -->
+    <string name="service_error_tip_5">You can only withdraw cash twice a week</string> <!-- 每周只能提现2次 -->
+    <string name="im_send_msg_error">IM message sending failed</string> <!-- im消息发送失败 -->
+    <string name="chat_connect_service_tip">Dear, because your speech violates the platform green convention, if you have any objection, please contact customer service</string> <!-- 亲，由于您的发言违反了平台绿色公约，若有异议请联系客服 -->
+    <string name="telephone_type_cmcc">China Mobile</string> <!-- 中国移动 -->
+    <string name="telephone_type_ctl">China Telecom</string> <!-- 中国电信 -->
+    <string name="telephone_type_unicom">China Unicom</string> <!-- 中国联通 -->
+    <string name="telephone_type_unknow">Unknown</string> <!-- 未知 -->
+
+    <string name="common_time_second">seconds</string> <!-- 秒 -->
+    <string name="common_time_minute">minutes</string> <!-- 分钟 -->
+    <string name="common_time_hour">Hour</string> <!-- 小时 -->
+    <string name="common_time_day">Days</string> <!-- 天 -->
+
+    <string name="time_morning">Morning</string> <!-- 上午 -->
+    <string name="time_afternoon">Afternoon</string> <!-- 下午 -->
+    <string name="time_dawn">In the morning</string> <!-- 凌晨 -->
+    <string name="time_night">Evening</string> <!-- 晚上 -->
+
+    <string name="down_loading">Downloading</string> <!-- 正在下载 -->
+    <string name="mount_point">Mount point</string> <!-- 挂载点 -->
+
+    <string name="not_support_text_dipdlay">The text display is not supported-Ui</string><!--不支持该文本显示-->
+    <string name="common_ok">OK</string><!--确定-->
+    <string name="common_cancel">Cancel</string><!--取消-->
+
+    <string name="warn_tips">Tips</string>
+    <string name="confirm_cancel">cancel</string>
+    <string name="confirm_submit">submit</string>
+    <string name="common_confirm">Confirm</string>
+
+    <string name="common_no_data">There are no more ～</string> <!-- 没有数据 -->
+    <string name="common_data_loading_completed">Data loading completed</string> <!-- 数据加载完成 -->
+    <string name="common_list_refresh_tip">Pull down to refresh or try again later</string> <!-- 下拉刷新或稍后再试 -->
+    <string name="common_list_no_data_tip">No more data here</string> <!-- 没有数据 -->
+    <string name="common_top_up_success">Top up successfully</string> <!-- 充值成功 -->
+    <string name="common_top_up_fail">Failed to top up, please retry</string> <!-- 充值失败 -->
+    <string name="inbox_feedback_photo_limit">Photo size limit is 5Mb</string>
+
+    <string name="id_copied_successfully">Ayome ID is copied successfully</string><!-- 用户ID复制成功-->
+
+</resources>
+
+<!-- erban_main -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="server_client_id" translatable="false">5765146594-s1sslh9a1bma81b9lifm78jp31jc8g1e.apps.googleusercontent.com</string>
+    <string name="google_login_network_error">Log in failed, please choose another login method</string>
+    <string name="google_login_fail">Google account authorization failed</string>
+
+    <string name="notification_msg_id" translatable="false">id_channel_msg</string>
+    <string name="notification_msg_name" translatable="false">msg</string>
+    <string name="notification_msg_desc" translatable="false">msg</string>
+
+    <string name="notification_firebase_id">id_channel_firebase</string>
+    <string name="notification_firebase_name">firebase</string>
+    <string name="notification_firebase_desc">firebase</string>
+    <string name="updating">Updating...</string>
+    <string name="update_complete">Update finished</string>
+    <string name="consents_install">Do you want to install the new version now?</string>
+    <string name="order_in_process">Order in process</string>
+    <string name="purchase_failed">Purchase failed, please try again</string>
+    <string name="network_err">Network is busy now, please try again</string>
+    <string name="order_success">Order processed successfully</string>
+    <string name="no_product">No product found, please try again</string>
+    <string name="pay_fail2">Failed purchase</string>
+
+</resources>
+
+<!-- erban_nim_uikit res-ptr2 -->
+<resources>
+    <string name="loading">Loading...</string>
+    <string name="load_failed">load more failed</string>
+    <string name="load_end">No more data</string>
+</resources>
+
+<-- erabn_nim_uikit -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <string name="empty"></string>
+    <string name="ok">OK</string> <!-- 确定 -->
+    <string name="cancel">Cancel</string> <!-- 取消 -->
+    <string name="clear_empty">Clear</string> <!-- 清空 -->
+    <string name="iknow">I know</string> <!-- 知道了 -->
+    <string name="search">Search</string> <!-- 搜索 -->
+    <string name="remove">Remove</string> <!-- 移除 -->
+    <string name="add">Add</string> <!-- 添加 -->
+    <string name="create">New</string> <!-- 新建 -->
+    <string name="without_content">No</string> <!-- 暂无 -->
+    <string name="network_is_not_available">Network connection failed, please check your network settings</string> <!-- 网络连接失败，请检查你的网络设置 -->
+    <string name="menu">Menu</string> <!-- 菜单 -->
+    <string name="now_allow_space">cannot contain spaces</string> <!-- 不能含有空格 -->
+
+    <!-- session -->
+    <string name="input_panel_photo">Picture</string> <!-- 图 片 -->
+    <string name="input_panel_video">Video</string> <!-- 视 频< -->
+    <string name="input_panel_location">Location</string> <!-- 位 置 -->
+    <string name="input_panel_take">Shoot</string> <!-- 拍 摄 -->
+    <string name="repeat_download_message">Download again</string> <!-- 重新下载? -->
+    <string name="repeat_send_has_blank">Resend</string> <!-- 重 发 -->
+    <string name="repeat_send_message">Resend message?</string> <!-- 重发消息? -->
+    <string name="copy_has_blank">Copy</string> <!-- 复 制 -->
+    <string name="delete_has_blank">Delete</string> <!-- 删 除 -->
+    <string name="voice_to_text">Convert text</string> <!-- 转文字 -->
+    <string name="forward_to_person">Forward to individuals</string> <!-- 转发到个人 -->
+    <string name="forward_to_team">Forward to group</string> <!-- 转发到群组 -->
+    <string name="withdrawn_msg">Recall</string> <!-- 撤 回 -->
+    <string name="save">Save</string> <!-- 保存 -->
+    <string name="main_msg_list_delete_chatting">Delete the chat</string> <!-- 删除该聊天 -->
+    <string name="main_msg_list_sticky_on_top">Top the chat</string> <!-- 置顶该聊天 -->
+    <string name="main_msg_list_clear_sticky_on_top">Cancel topping</string> <!-- 取消置顶 -->
+    <string name="save_to_device">Save to mobile phone</string> <!-- 保存到手机 -->
+    <string name="picture_save_fail">Picture saving failed</string> <!-- 图片保存失败 -->
+    <string name="picture_save_to">The picture has been saved to the phone</string> <!-- 图片已保存到手机 -->
+    <string name="trans_voice_failed">Voice conversion failed</string> <!-- 语音转化失败 -->
+    <string name="team_invalid_tip">You have quit the family</string> <!-- 您已退出该家族 -->
+    <string name="normal_team_invalid_tip">You have quit the family</string> <!-- 您已退出该家族 -->
+    <string name="team_send_message_not_allow">You are no longer in this family and cannot send messages</string> <!-- 您已不在该家族，不能发送消息 -->
+    <string name="send">Send</string> <!--  -->
+    <string name="send_hint">Please enter text..</string> <!--  -->
+    <string name="unsupport_title">The content cannot be displayed</string> <!-- 无法显示该内容 -->
+    <string name="unsupport_desc">The client version does not support this content</string> <!-- 客户端版本不支持该内容 -->
+    <string name="revoke_failed">Messages sent for more than 2 minutes cannot be recalled</string> <!-- 发送时间超过2分钟的消息，不能被撤回 -->
+    <string name="revoke_failed_code">revoke msg failed, code: %1$d</string> <!-- revoke msg failed, code: -->
+    <string name="on_failed">on failed:</string> <!-- on failed: -->
+
+
+    <!-- 语音 -->
+    <string name="record_audio">Hold and speak</string><!--按住 说话-->
+    <string name="record_audio_end">Release end</string><!--松开  结束-->
+    <string name="sdcard_not_exist_error">Please insert the SD card</string><!--请插入SD卡-->
+    <string name="recording_error">Recording failed. Please try again</string><!--录音失败，请重试-->
+    <string name="recording_cancel">Swipe up to cancel send</string><!--手指上滑，取消发送-->
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel_tip">Release your finger to cancel the send</string><!--松开手指，取消发送-->
+    <string name="recording_max_time">Whether to send the recording after the recording reaches the maximum time?</string><!--录音达到最大时间，是否发送-->
+
+    <!-- 拍照视频 -->
+    <string name="gallery_invalid">Your phone does not have a gallery program</string> <!-- 你的手机没有图库程序 -->
+    <string name="sdcard_not_enough_head_error">The SD card is unplugged or the storage space is insufficient, and the avatar cannot be saved</string> <!-- SD卡被拔出或存储空间不足，无法保存头像 -->
+    <string name="sdcard_not_enough_error">There is not enough storage space to save this multimedia message</string> <!-- 存储空间不足，无法保存此次多媒体消息 -->
+    <string name="download_video">Downloading video</string> <!-- 正在下载视频 -->
+    <string name="download_video_fail">Video download failed, please try again</string> <!-- 视频下载失败,请重试 -->
+    <string name="look_video_fail">The video cannot be played</string> <!-- 无法播放该视频 -->
+    <string name="look_video_fail_try_again">The video cannot be played temporarily. Please try again</string> <!-- 暂时无法播放视频，请重试 -->
+    <string name="video_play">Video playback</string> <!-- 视频播放 -->
+    <string name="video_record">Video recording</string> <!-- 视频录制 -->
+    <string name="connect_vedio_device_fail">Unable to connect the video device, please try again later</string> <!-- 无法连接视频设备 ，请稍候再试 -->
+    <string name="capture_video_size_in_kb">The video file size is: %1$dKB,</string> <!-- 视频文件大小为: %1$dKB, -->
+    <string name="capture_video_size_in_mb">The video file size is: %1$.2fMB,</string> <!-- 视频文件大小为: %1$.2fMB, -->
+    <string name="is_send_video">Do you want to send the video？</string> <!-- 是否发送该视频？ -->
+    <string name="start_camera_to_record_failed">Starting the camera to record video failed</string> <!-- 启动摄像头录制视频失败 -->
+    <string name="stop_fail_maybe_stopped">Stop failed. It may have stopped</string> <!-- 停止失败，可能已经停止 -->
+    <string name="video_exception">Video file exception</string> <!-- 视频文件异常 -->
+    <string name="im_choose_video_file_size_too_large">The video file is too large, and the system limit is 20MB</string> <!-- 视频文件过大，系统限制为20MB -->
+    <string name="im_choose_video">Please select a video file in 3GP MP4 format</string> <!-- 请选择3GP MP4格式的视频文件 -->
+    <string name="video_record_short">The recorded video is too short</string> <!-- 录制视频太短 -->
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string> <!--  -->
+
+    <!-- 联系人选择器 -->
+    <string name="contact_selector">Contact Selector</string> <!-- 联系人选择器 -->
+
+    <!-- team -->
+    <string name="team_need_authentication">Authentication is required</string> <!-- 需要身份验证 -->
+    <string name="team_allow_anyone_join">Allow anyone to join</string> <!-- 允许任何人加入 -->
+    <string name="team_not_allow_anyone_join">No one is allowed to apply for joining</string> <!-- 不允许任何人申请加入 -->
+    <string name="team_admin_invite">Administrator invitation</string> <!-- 管理员邀请 -->
+    <string name="team_everyone_invite">Everyone invites</string> <!-- 所有人邀请 -->
+    <string name="team_admin_update">Administrator Modify</string> <!-- 管理员修改 -->
+    <string name="team_everyone_update">Everyone modifies</string> <!-- 所有人修改 -->
+    <string name="team_invitee_need_authen">Verification is required</string> <!-- 需要验证 -->
+    <string name="team_invitee_not_need_authen">No validation is required</string> <!-- 不需要验证 -->
+    <string name="team_nickname">Family nickname</string> <!-- 家族昵称 -->
+    <string name="team_nickname_none">Not filled in</string> <!-- 未填写 -->
+    <string name="team_identity">Identity</string> <!-- 身份 -->
+    <string name="remove_member">Move out of the family</string> <!-- 移出本家族 -->
+    <string name="team_member_info">member information</string> <!-- 成员信息 -->
+    <string name="team_admin">Administrator</string> <!-- 管理员 -->
+    <string name="team_creator">Family leader</string> <!-- 族长 -->
+    <string name="team_member">Family members</string> <!-- 家族成员 -->
+    <string name="update_success">Saved successfully</string> <!-- 保存成功 -->
+    <string name="update_failed">Save failed, code:%d</string> <!-- 保存失败, code:%d -->
+    <string name="no_permission">No permission</string> <!-- 没有权限 -->
+    <string name="set_team_admin">Set as administrator</string> <!-- 设为管理员 -->
+    <string name="cancel_team_admin">Cancel administrator</string> <!-- 取消管理员 -->
+    <string name="team_member_remove_confirm">Are you sure you want to move it out of the family?</string> <!-- 确定要将其移出家族么? -->
+    <string name="team_annourcement">Family announcement</string> <!-- 家族公告 -->
+    <string name="invite_member">Invite members</string> <!-- 邀请成员 -->
+    <string name="team_name">Family name</string> <!-- 家族名称 -->
+    <string name="team_introduce">Family Introduction</string> <!-- 家族介绍 -->
+    <string name="team_extension">Extension Example</string> <!-- 扩展示例 -->
+    <string name="click_set">Click Settings</string> <!-- 点击设置 -->
+    <string name="reach_team_member_capacity">The number of members cannot exceed %1$d</string> <!-- 成员数量不能超过%1$d -->
+    <string name="team_authentication">Authentication</string> <!-- 身份验证 -->
+    <string name="team_invite">Invite others permission</string> <!-- 邀请他人权限 -->
+    <string name="team_info_update">Family data modification permission</string> <!-- 家族资料修改权限 -->
+    <string name="team_invitee_authentication">Invitee authentication</string> <!-- 被邀请人身份验证 -->
+    <string name="team_announce_title">Title</string> <!-- 标题 -->
+    <string name="team_announce_content">Announcement content</string> <!-- 公告内容 -->
+    <string name="team_announce_notice">Please enter the family announcement title</string> <!-- 请输入家族公告标题 -->
+    <string name="my_team_card">My family business card</string> <!-- 我的家族名片 -->
+    <string name="team_introduce_hint">Click to fill in the family introduction</string> <!-- 点击填写家族介绍 -->
+    <string name="team_extension_hint">Click to modify the extension content</string> <!-- 点击修改扩展内容 -->
+    <string name="team_announce_hint">Click to fill in the family announcement</string> <!-- 点击填写家族公告 -->
+    <string name="team_notification_config">Message reminder</string> <!-- 消息提醒 -->
+    <string name="team_transfer_without_member">No family members can be transferred</string> <!-- 没有可转移的家族成员 -->
+    <string name="team_transfer_success">Family transfer succeeded</string> <!-- 家族转移成功 -->
+    <string name="team_transfer_failed">Family transfer failed</string> <!-- 家族转移失败 -->
+    <string name="quit_team_success">You have retired from the family</string> <!-- 您已退家族 -->
+    <string name="quit_team_failed">Failed to quit the family</string> <!-- 退家族失败 -->
+    <string name="quit_normal_team_success">You have exited the discussion group</string> <!-- 您已经退出讨论组 -->
+    <string name="quit_normal_team_failed">Exit discussion group failed</string> <!-- 退出讨论组失败 -->
+    <string name="dismiss_team_success">The family has been dissolved</string> <!-- 家族已解散 -->
+    <string name="dismiss_team_failed">Failed to dissolve the family</string> <!-- 解散家族失败 -->
+    <string name="dismiss_team">Dissolve the family</string> <!-- 解散本家族 -->
+    <string name="transfer_team">Transfer family</string> <!-- 转让家族 -->
+    <string name="quit_team">Exit the family</string> <!-- 退出家族 -->
+    <string name="quit_normal_team">Exit the discussion group</string> <!-- 退出讨论组 -->
+    <string name="team_name_toast">Family name cannot be empty</string> <!-- 家族名称不能为空 -->
+    <string name="not_allow_empty">cannot be empty</string> <!-- 不能为空 -->
+    <string name="team_settings_name">Set Name</string> <!-- 设置名称 -->
+    <string name="normal_team_name">Discussion group name</string> <!-- 讨论组名称 -->
+    <string name="remove_member_success">Remove member successfully</string> <!-- 移除成员成功 -->
+    <string name="remove_member_failed">Remove member failed</string> <!-- 移除成员失败 -->
+    <string name="team_settings_set_name">Choose a name</string> <!-- 取个名字吧 -->
+    <string name="team_not_exist">The family does not exist</string> <!-- 该家族不存在 -->
+    <string name="normal_team_not_exist">The discussion group does not exist</string> <!-- 该讨论组不存在 -->
+    <string name="mute_msg">Set taboo</string> <!-- 设置禁言 -->
+    <string name="set_head_image">Set avatar</string> <!-- 设置头像 -->
+    <string name="team_update_cancel">Cancel update</string> <!-- 取消更新 -->
+    <string name="team_update_failed">Family portrait setting failed</string> <!-- 家族头像设置失败 -->
+    <!-- 消息搜索 -->
+
+    <!-- image picker -->
+    <string name="picker_image_preview">Preview</string> <!-- 预览 -->
+    <string name="picker_image_send">Send</string> <!-- 发送 -->
+    <string name="picker_image_folder">Photo album</string> <!-- 相册 -->
+    <string name="picker_image_album_loading">Album loading...</string> <!-- 相册加载中… -->
+    <string name="picker_image_album_empty">There are no pictures in the album</string> <!-- 相册中没有图片！ -->
+    <string name="picker_image_folder_info">%d in total</string> <!-- 共%d张 -->
+    <string name="picker_image_exceed_max_image_select">Select up to %d pictures</string> <!-- 最多选择%d张图片！ -->
+    <string name="picker_image_send_select">Completed（%d）</string> <!-- 完成（%d） -->
+    <string name="picker_image_preview_original">Send original image</string> <!-- 发送原图</ -->
+    <string name="picker_image_preview_original_select">Send original image（%s）</string> <!-- 发送原图（%s） -->
+    <string name="picker_image_error">Error in getting pictures</string> <!-- 获取图片出错 -->
+    <string name="image_compressed_size">The original image size is: %1$s,</string> <!-- 该原始图片大小为: %1$s, -->
+    <string name="unknow_size">Unknown size</string> <!-- 未知大小 -->
+    <string name="is_send_image">Do you want to send the original image</string> <!-- 是否发送该原始图片？ -->
+    <string name="multi_image_compressed_size">The total size of the original image is: %1$s,</string> <!-- 原始图片总大小为: %1$s, -->
+    <string name="is_send_multi_image">Do you want to send these original pictures</string> <!-- 是否发送这些原始图片？ -->
+    <string name="waitfor_image_local">Opening album, please wait\u2026</string> <!-- 正在打开相册，请稍候\u2026 -->
+    <string name="recapture">retake</string> <!-- 重拍 -->
+    <string name="image_show_error">Abnormal image display</string> <!-- 图片显示异常 -->
+    <string name="memory_out">Insufficient memory</string> <!-- 内存不足 -->
+    <string name="choose_from_photo_album">Select</string> <!-- 从手机相册选择 -->
+    <string name="choose">Select</string> <!-- 选取 -->
+    <string name="crop">Crop</string> <!-- 裁剪 -->
+
+    <!-- 消息类型 -->
+
+    <!-- 查看大图 -->
+    <string name="download_picture_fail">Image download failed</string> <!-- 图片下载失败 -->
+
+    <!-- 本地化 -->
+    <string name="dialog_msg_act_black">Pull black</string> <!-- 拉黑 -->
+    <string name="dialog_msg_act_report">Report</string> <!-- 拉黑 -->
+    <string name="nim_advanced_team_at">On</string> <!-- 于 -->
+    <string name="nim_advanced_team_create">Create</string> <!-- 创建 -->
+    <string name="nim_contact_loading">Loading...</string> <!-- 加载中... -->
+    <string name="nim_contact_sure">OK(0)</string> <!-- 确定(0) -->
+    <string name="nim_message_chat">Chat charges</string> <!-- 聊天收费 -->
+    <string name="nim_message_rebot">Continue the conversation</string> <!-- 继续对话 -->
+    <string name="nim_message_invite_tip">Invitation prompt</string> <!-- 邀请提示 -->
+    <string name="nim_message_go_room">Enter the room</string> <!-- 进入房间 -->
+    <string name="nim_read_read">Read</string> <!-- 已读 -->
+    <string name="nim_recent_online">Online</string> <!-- 在线 -->
+    <string name="nim_recent_skip_msg">Omit message</string> <!-- 省略消息 -->
+
+    <string name="nim_select_people">Select the person to remind</string> <!-- 选择提醒的人 -->
+    <string name="nim_robot">Robot</string> <!-- 机器人 -->
+    <string name="nim_group_menber">Group members</string> <!-- 群成员 -->
+    <string name="nim_me">I</string> <!-- 我 -->
+    <string name="nim_you">You</string> <!-- 你 -->
+    <string name="nim_morning">Morning</string> <!-- 上午 -->
+    <string name="nim_afternoon">Afternoon</string> <!-- 下午 -->
+    <string name="nim_today">Today</string> <!-- 今天 -->
+    <string name="nim_yesterday">Yesterday</string> <!-- 昨天 -->
+    <string name="nim_before_yesterday">The day before yesterday</string> <!-- 前天 -->
+    <string name="nim_dawn">In the morning</string> <!-- 凌晨 -->
+    <string name="nim_night">Evening</string> <!-- 晚上 -->
+    <string name="nim_sunday">Sunday</string> <!-- 星期日 -->
+    <string name="nim_monday">Monday</string> <!-- 星期一 -->
+    <string name="nim_tuesday">Tuesday</string> <!-- 星期二 -->
+    <string name="nim_wednesday">Wednesday</string> <!-- 星期三 -->
+    <string name="nim_thursday">Thursday</string> <!-- 星期四 -->
+    <string name="nim_friday">Friday</string> <!-- 星期五 -->
+    <string name="nim_saturday">Saturday</string> <!-- 星期六 -->
+    <string name="nim_hour">hour</string> <!-- 小时" -->
+    <string name="nim_minute">minute</string> <!-- 分 -->
+    <string name="nim_second">seconds</string> <!-- 秒 -->
+    <string name="nim_has_friend">Shared friends</string> <!-- 共有好友 -->
+    <string name="nim_number">Name</string> <!-- 名 -->
+    <string name="nim_has_chat_msg_number">related chat records</string> <!-- 条相关聊天记录 -->
+    <string name="nim_no_chat_select_one">There is no conversation yet. Find someone in the address book to chat</string> <!-- 还没有会话，在通讯录中找个人聊聊吧！ -->
+    <string name="nim_broadcast_received">Refresh contact broadcast event received </string> <!-- 刷新联系人的 广播事件 收到  -->
+    <string name="nim_find_you">\@you</string> <!-- 有人@你 -->
+    <string name="nim_receive_photo">[Picture]</string> <!-- 图片 -->
+    <string name="nim_receive_video">[Video]</string> <!-- [视频] -->
+    <string name="nim_receive_voice">[Voice message]</string> <!-- [语音消息] -->
+    <string name="nim_receive_location">[Location]</string> <!-- [位置] -->
+    <string name="nim_receive_file">[File]</string> <!-- [文件] -->
+    <string name="nim_receive_notice">[Notification Reminder]</string> <!-- [通知提醒] -->
+    <string name="nim_receive_rebot">[robot message]"</string> <!-- [机器人消息]" -->
+    <string name="nim_receive_attend">The TA you are following is online. Go and watch it~~</string> <!-- 您关注的TA上线啦，快去围观吧~~~ -->
+    <string name="nim_receive_transfer">[Transfer]</string> <!-- [转账] -->
+    <string name="nim_receive_gift">[Gift]</string> <!-- [礼物] -->
+    <string name="nim_receive_custom">[Custom Message]</string> <!-- [自定义消息] -->
+    <string name="nim_operate_fail">The operation failed. Please check the network</string> <!-- 操作失败，请检查网络 -->
+    <string name="nim_word_chat_charge_1">This chat will generate text charges</string> <!-- 本次聊天将产生文字收费 -->
+    <string name="nim_word_chat_charge_2">Chat coin/1 (before the first chat</string> <!-- 聊币/1条（首次聊天前 -->
+    <string name="nim_word_chat_charge_3">free~)</string> <!-- 条免费哦~） -->
+    <string name="nim_word_chat_charge_4">Chat coin/1 piece</string> <!-- 聊币/1条 -->
+    <string name="nim_other_inputing">The other party is inputting</string> <!-- 对方正在输入... -->
+    <string name="nim_get_group_fail">Failed to get group information</string> <!-- 获取群组信息失败! -->
+    <string name="nim_group_chat">Group chat</string> <!-- 群聊 -->
+    <string name="nim_coverting">Converting</string> <!-- 正在转换 -->
+    <string name="nim_param_error">Parameter error</string> <!-- 参数错误 -->
+    <string name="nim_size">Size</string> <!-- 大小 -->
+    <string name="nim_duration">Duration</string> <!-- 时长 -->
+    <string name="nim_other">The other party</string> <!-- 对方 -->
+    <string name="nim_cancel_msg">recalled a message</string> <!-- 撤回了一条消息 -->
+    <string name="nim_invite">Invite</string> <!-- 邀请 -->
+    <string name="nim_join_family">Join the family</string> <!-- 加入家族 -->
+    <string name="nim_remove_from_family">has been removed from the family</string> <!-- 已被移出家族 -->
+    <string name="nim_leave_family">left the family</string> <!-- 离开了家族 -->
+    <string name="nim_disbanded_family">dissolved the family</string> <!-- 解散了家族 -->
+    <string name="nim_update_name">The name is updated to</string> <!-- 名称被更新为 -->
+    <string name="nim_update_family_desc">The family introduction is updated to</string> <!-- 家族介绍被更新为 -->
+    <string name="nim_update_family_desc_modify">Modified the family announcement</string> <!-- 修改了家族公告 -->
+    <string name="nim_update_authentication">The family authentication permission is updated to</string> <!-- 家族身份验证权限更新为 -->
+    <string name="nim_update_family_expand">The family extension field is updated to</string> <!-- 家族扩展字段被更新为 -->
+    <string name="nim_update_family_service_expand">The family extension field (server) is updated to</string> <!-- 家族扩展字段(服务器)被更新为 -->
+    <string name="nim_update_family_head">The family portrait has been updated</string> <!-- 家族头像已更新 -->
+    <string name="nim_update_invite_other">The family invitation permission is updated to</string> <!-- 家族邀请他人权限被更新为 -->
+    <string name="nim_update_modify_info">The family data modification authority is updated to</string> <!-- 家族资料修改权限被更新为 -->
+    <string name="nim_update_family_invite_authentication">The family invitee authentication permission is updated to</string> <!-- 家族被邀请人身份验证权限被更新为 -->
+    <string name="nim_update_family_expand_modify">The family extension field modification permission is updated to</string> <!-- 家族扩展字段修改权限被更新为 -->
+    <string name="nim_cancel_forbid_chat">Cancel the ban of all members of the group</string> <!-- 取消群全员禁言 -->
+    <string name="nim_forbid_chat">All members of the group are forbidden to speak</string> <!-- 群全员禁言 -->
+    <string name="nim_family">Family</string> <!-- 家族 -->
+    <string name="nim_update_to">is updated to</string> <!-- 被更新为 -->
+    <string name="nim_unknow_notice">Unknown notification</string> <!-- 未知通知 -->
+    <string name="nim_family_leader_adopt_user">The family leader passes the user</string> <!-- 族长通过用户 -->
+    <string name="nim_family_apply_family">application to join the family</string> <!-- 的加入家族申请 -->
+    <string name="nim_family_transfer_to">Transfer the family to</string> <!-- 将家族转移给 -->
+    <string name="nim_family_become_to_family_leader">was appointed as the deputy chief</string> <!-- 被任命为副族长 -->
+    <string name="nim_family_cancel_family_leader">The status of deputy family leader has been revoked</string> <!-- 被撤销副族长身份 -->
+    <string name="nim_accept">accepted</string> <!-- 接受了 -->
+    <string name="nim_join_family_invite">invitation to join the family</string> <!-- 的加入家族邀请 -->
+    <string name="nim_family_leader">By family leader</string> <!-- 被族长 -->
+    <string name="nim_forbid_chat_only">Forbidden</string> <!-- 禁言 -->
+    <string name="nim_cancel_forbid_chat_only">Remove the ban</string> <!-- 解除禁言 -->
+    <string name="nim_take_video">Capture video</string> <!-- 拍摄视频 -->
+    <string name="nim_take_video_from_album">Select a video from the album</string> <!-- 从相册中选择视频 -->
+    <string name="nim_photo_msg">Map message</string> <!-- 贴图消息 -->
+    <string name="nim_select_send_people">Select the forwarding person</string> <!-- 选择转发的人 -->
+    <string name="nim_select_send_group">Select the forwarding group</string> <!-- 选择转发的群 -->
+    <string name="nim_type_not_send">This type does not support forwarding</string> <!-- 该类型不支持转发 -->
+    <string name="nim_path_error">Path error</string> <!-- 路径错误 -->
+    <string name="nim_complex_msg">[Complex button template trigger message]</string> <!-- [复杂按钮模板触发消息] -->
+    <string name="nim_close">Close</string> <!-- 关闭 -->
+    <string name="nim_open">Enable</string> <!-- 开启 -->
+    <string name="nim_people_number">%d in total</string> <!-- 共%d人 -->
+    <string name="nim_select_move_object">Select the group transfer object</string> <!-- 选择群转移的对象 -->
+    <string name="nim_member_not_exit">The member does not exist</string> <!-- 成员不存在 -->
+    <string name="nim_member_forbid_chat">The member has been banned. Please cancel the ban first</string> <!-- 该成员已被禁言，请先取消禁言 -->
+    <string name="nim_forbid_chat_success">The group banned successfully</string> <!-- 群禁言成功 -->
+    <string name="nim_cancel_forbid_chat_success">Cancel the group ban successfully</string> <!-- 取消群禁言成功 -->
+    <string name="nim_get_menber_list_fail">Failed to get member list</string> <!-- 获取成员列表失败 -->
+    <string name="nim_invite_member">Invite members</string> <!-- 邀请成员 -->
+    <string name="nim_my_computer">My Computer</string> <!-- 我的电脑 -->
+    <string name="nim_wealth_tip1">Wealth level needs to reach</string> <!-- 财富等级需要达到 -->
+    <string name="nim_wealth_tip2">level can only chat privately</string> <!-- 级才可以私聊哦 -->
+    <string name="nim_stop_function">This function is suspended due to system upgrade</string> <!-- 由于系统升级暂停使用此功能 -->
+    <string name="select_most_number">最多选择</string> <!-- 最多选择 -->
+    <string name="select_least_number">至少选择</string> <!-- 至少选择 -->
+    <string name="select_least_people">people</string> <!-- 人 -->
+    <string name="nim_wealth_tip3">级才可以发送图片哦</string> <!-- 级才可以发送图片哦 -->
+
+
+    <string name="constants_give"> give </string><!-- 送给-->
+    <string name="constants_open"> open </string><!-- 打开了-->
+    <string name="constants_out"> out </string><!-- 开出了-->
+    <string name="constants_by"> ,by </string><!-- ，为-->
+    <string name="constants_whole_wheat">Whole wheat delivery</string><!-- 全麦送出-->
+    <string name="constants_all_in_room">All in room</string><!-- 全麦送出-->
+    <string name="cproompresenter_homeowner">Homeowner</string><!--房主-->
+    <string name="cproompresenter_owner_not_in_room">The owner is not in the room</string><!--房主不在房间-->
+
+    <string name="stringutils_just_now">Just now</string><!--刚刚-->
+    <string name="stringutils_minutes_age">%d minutes ago</string><!--%d分钟前-->
+    <string name="stringutils_hour_ago">Hour ago</string><!--小时前-->
+    <string name="stringutils_morning">Morning</string><!--上午-->
+    <string name="stringutils_afternoon">Afternoon</string><!--下午-->
+    <string name="stringutils_day_age">days ago</string><!--天前-->
+    <string name="stringutils_before_yesterday">the day before yesterday</string><!--前天-->
+    <string name="stringutils_yesterday">Yesterday</string><!--昨天-->
+    <string name="stringutils_today">Today</string><!--今天-->
+    <string name="stringutils_tomorrow">Tomorrow</string><!--明天-->
+    <string name="stringutils_sunday">Sunday</string><!--周日-->
+    <string name="stringutils_monday">Monday</string><!--周一-->
+    <string name="stringutils_tuesday">Tuesday</string><!--周二-->
+    <string name="stringutils_wednesday">Wednesday</string><!--周三-->
+    <string name="stringutils_thurday">Thursday</string><!--周四-->
+    <string name="stringutils_friday">Friday</string><!--周五-->
+    <string name="stringutils_saturday">Saturday</string><!--周六-->
+
+    <string name="imfrendcoreimp_blocked">blocked</string><!--已拉黑-->
+    <string name="refusing_to_your_bes_friend">Refusing to be your best friend</string><!--拒绝和你成为挚友-->
+
+    <string name="success_close_mic">Successful close mic</string><!--下麦成功-->
+    <string name="failure_close_mic">Failure close mic</string><!--下麦失败：-->
+    <string name="success_go_mic">Success on the mic</string><!--上麦成功：-->
+    <string name="failure_go_mic">Failure on the mic:</string><!--上麦失败：-->
+    <string name="no_games">No games, please other!</string><!--暂无游戏，敬请其他！-->
+    <string name="small_game">Small game:</string><!--小游戏：-->
+
+</resources>
+
+
