@@ -41,13 +41,25 @@ import com.sunhapper.x.spedit.mention.span.IntegratedBgSpan;
 
 public class AtUserSpan implements BreakableSpan, DataSpan, IntegratedBgSpan {
 
+    private long uid;
     private String name;
     private boolean isShow = false;
     private ForegroundColorSpan styleSpan = null;
     private BackgroundColorSpan bgSpan = null;
 
-    public AtUserSpan(String name) {
-        this.name = name;
+    public AtUserSpan(long uid, String name) {
+        this.uid = uid;
+        if(name != null)
+            name = name.replace(" ", "");
+        this.name = name + " ";
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public long getUid() {
+        return uid;
     }
 
     public Spannable getSpannableString() {
@@ -63,8 +75,12 @@ public class AtUserSpan implements BreakableSpan, DataSpan, IntegratedBgSpan {
     }
 
     private CharSequence getDisplayText() {
-        return "@" + name /*+ "\u200E"*/;
+        return "\u200e" + "@" + name + "\u200e";
     }
+
+//    private CharSequence getDisplayText() {
+//        return "@" + name;
+//    }
 
     @NonNull
     @Override

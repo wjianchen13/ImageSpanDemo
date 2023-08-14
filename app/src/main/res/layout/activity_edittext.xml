@@ -30,11 +30,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_test2"
-        android:textAllCaps="false"
-        android:text="测试3"
-        android:gravity="center"
         android:layout_marginTop="5dp"
-        android:onClick="onTest3" />
+        android:gravity="center"
+        android:onClick="onTest3"
+        android:text="测试3"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_test3"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:onClick="onTest4"
+        android:text="测试4"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_test4"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:onClick="onTest5"
+        android:text="测试5"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/tv_test1"
@@ -52,6 +74,15 @@
         android:gravity="center"
         android:layout_marginTop="5dp" />
 
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff00"
+        android:layout_above="@id/edtv_test"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
 
     <com.sunhapper.x.spedit.view.SpXEditText
         android:id="@+id/edtv_test"
@@ -59,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center"
+        android:textDirection="locale"
         android:layout_marginBottom="10dp" />
 
 </RelativeLayout>
