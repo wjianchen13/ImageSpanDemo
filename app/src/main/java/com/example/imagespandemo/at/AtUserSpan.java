@@ -78,6 +78,14 @@ public class AtUserSpan implements BreakableSpan, DataSpan, IntegratedBgSpan {
         return "\u200e" + "@" + name + "\u200e";
     }
 
+    private CharSequence getDisplayText1() {
+        StringBuilder sb = new StringBuilder(name);
+        for(int i = sb.length() - 1; i >= 0; i --) {
+            sb.insert(i, "\u200e");
+        }
+        return sb;
+    }
+
 //    private CharSequence getDisplayText() {
 //        return "@" + name;
 //    }
