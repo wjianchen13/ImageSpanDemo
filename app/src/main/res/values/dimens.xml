@@ -177,4 +177,6 @@
     <!-- 直播间 -->
     <dimen name="room_bottom_button_margin">8dp</dimen>
 
+    <dimen name="badge_normal_height">16dp</dimen>
+
 </resources>

@@ -7,8 +7,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.imagespandemo.at.AtActivity;
+import com.example.imagespandemo.cache.CacheActivity;
 import com.example.imagespandemo.ellipsize.EllipsizeActivity;
 import com.example.imagespandemo.fans.ImageSpanActivity;
+import com.example.imagespandemo.gradient.GradientActivity;
 import com.example.imagespandemo.line.LineActivity;
 import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.span.SpanActivity;
@@ -78,6 +80,22 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest9(View v) {
         startActivity(new Intent(this, EllipsizeActivity.class));
+    }
+
+    /**
+     * 渐变字体方案
+     * @param v
+     */
+    public void onTest10(View v) {
+        startActivity(new Intent(this, GradientActivity.class));
+    }
+
+    /**
+     * 动态生成TextView的缩略图，解决阿语渐变错乱问题
+     * @param v
+     */
+    public void onTest11(View v) {
+        startActivity(new Intent(this, CacheActivity.class));
     }
 
 

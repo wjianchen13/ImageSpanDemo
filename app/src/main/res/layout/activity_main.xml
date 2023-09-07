@@ -86,6 +86,23 @@
         android:text="富文本获取省略实际内容"
         android:onClick="onTest9"/>
 
+    <Button
+        android:id="@+id/btn_test10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="渐变字体方案"
+        android:onClick="onTest10"/>
+
+    <Button
+        android:id="@+id/btn_test11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="动态生成TextView的缩略图，解决阿语渐变错乱问题"
+        android:onClick="onTest11"/>
 
 
 </LinearLayout>

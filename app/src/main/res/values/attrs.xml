@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <declare-styleable name="SpEditText">
-    <attr format="string" name="react_keys" />
-    <attr format="enum" name="sp_mode">
-      <enum name="integrated" value="0" />
-      <enum name="breakable" value="1" />
-    </attr>
-  </declare-styleable>
+    <declare-styleable name="GradientTextView">
+        <attr name="gradient_text" format="string" />
+        <attr name="gradient_bold" format="boolean" />
+        <attr name="gradient_start_color" format="color" />
+        <attr name="gradient_end_color" format="color" />
+    </declare-styleable>
+
+    <!-- 自动滚动的textview -->
+    <declare-styleable name="marquee_view">
+        <attr name="marquee_text_color" format="color|reference" /> <!-- id字体颜色 -->
+        <attr name="marquee_text_size" format="dimension" /> <!-- id字体大小 -->
+    </declare-styleable>
+
 </resources>
