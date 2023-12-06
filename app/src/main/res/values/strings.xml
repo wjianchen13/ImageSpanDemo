@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ImageSpanDemo</string>
     <string name="enter_the_room">Enter the room！</string><!-- 进入房间！-->
-
+    <string name="span_test" >%s entered the room driving a car named %s</string>
 </resources>

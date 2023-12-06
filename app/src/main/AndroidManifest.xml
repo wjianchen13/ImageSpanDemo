@@ -32,7 +32,7 @@
         <activity android:name=".ellipsize.EllipsizeActivity" />
         <activity android:name=".gradient.GradientActivity" />
         <activity android:name=".cache.CacheActivity" />
-
+        <activity android:name=".SpanActivity1" />
 
     </application>
 

@@ -98,5 +98,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, CacheActivity.class));
     }
 
+    /**
+     * 动态设置span，解决不同语言语序不一致的问题
+     * @param v
+     */
+    public void onTest12(View v) {
+        startActivity(new Intent(this, SpanActivity1.class));
+    }
+
 
 }

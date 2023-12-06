@@ -104,5 +104,11 @@
         android:text="动态生成TextView的缩略图，解决阿语渐变错乱问题"
         android:onClick="onTest11"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="动态设置span，解决不同语言语序不一致的问题"
+        android:onClick="onTest12"/>
 
 </LinearLayout>
