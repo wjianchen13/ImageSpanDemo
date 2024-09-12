@@ -14,6 +14,7 @@ import com.example.imagespandemo.gradient.GradientActivity;
 import com.example.imagespandemo.line.LineActivity;
 import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.span.SpanActivity;
+import com.example.imagespandemo.tag.TagActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -105,6 +106,15 @@ public class MainActivity extends AppCompatActivity {
     public void onTest12(View v) {
         startActivity(new Intent(this, SpanActivity1.class));
     }
+
+    /**
+     * span 标签，按钮
+     * @param v
+     */
+    public void onTest13(View v) {
+        startActivity(new Intent(this, TagActivity.class));
+    }
+
 
 
 }
