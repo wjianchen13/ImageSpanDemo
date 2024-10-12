@@ -13,6 +13,7 @@ import com.example.imagespandemo.fans.ImageSpanActivity;
 import com.example.imagespandemo.gradient.GradientActivity;
 import com.example.imagespandemo.line.LineActivity;
 import com.example.imagespandemo.normal_span.NormalSpanActivity;
+import com.example.imagespandemo.shadow.ShadowActivity;
 import com.example.imagespandemo.span.SpanActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -106,5 +107,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SpanActivity1.class));
     }
 
+    /**
+     * TextView设置字体阴影
+     * @param v
+     */
+    public void onTest13(View v) {
+        startActivity(new Intent(this, ShadowActivity.class));
+    }
 
 }
