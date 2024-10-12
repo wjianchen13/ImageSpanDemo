@@ -115,6 +115,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
+        android:text="span 标签，按钮"
+        android:onClick="onTest13"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="TextView设置字体阴影"
         android:onClick="onTest13"/>
 

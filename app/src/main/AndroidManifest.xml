@@ -33,6 +33,7 @@
         <activity android:name=".gradient.GradientActivity" />
         <activity android:name=".cache.CacheActivity" />
         <activity android:name=".SpanActivity1" />
+        <activity android:name=".tag.TagActivity" />
         <activity android:name=".shadow.ShadowActivity" />
 
     </application>
