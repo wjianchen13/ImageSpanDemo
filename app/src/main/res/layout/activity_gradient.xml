@@ -62,9 +62,10 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:singleLine="true"
-            android:background="#3f00ff00"
+            android:background="#000000"
             android:textColor="#8aeaff"
-            android:textSize="13sp" />
+            android:textStyle="bold"
+            android:textSize="33sp" />
     </LinearLayout>
 
     <Button
@@ -94,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_test2"
         android:textAllCaps="false"
-        android:text="测试3"
+        android:text="垂直渐变+阴影"
         android:gravity="center"
         android:layout_marginTop="5dp"
         android:onClick="onTest3" />

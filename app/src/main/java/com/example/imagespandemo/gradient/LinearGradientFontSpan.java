@@ -56,13 +56,17 @@ public class LinearGradientFontSpan extends ReplacementSpan {
                     endColor,
                     Shader.TileMode.REPEAT);
         } else {
-            lg = new LinearGradient(0, 0, 0, paint.descent() - paint.ascent(),
+//            lg = new LinearGradient(0, 0, 0, paint.descent() - paint.ascent(),
+//                    startColor,
+//                    endColor,
+//                    Shader.TileMode.REPEAT);
+            lg = new LinearGradient(0, paint.ascent(), 0, paint.descent(),
                     startColor,
                     endColor,
                     Shader.TileMode.REPEAT);
         }
         paint.setShader(lg);
-
+        ShadowSpan a;
         canvas.drawText(text, start, end, x, y, paint);//绘制文字
     }
 

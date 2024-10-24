@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.imagespandemo.R;
 
@@ -74,11 +75,18 @@ public class GradientActivity extends AppCompatActivity {
 
 
     /**
-     *
+     * 垂直渐变+阴影
      * @param v
      */
     public void onTest3(View v) {
+        String string = "abcdefghijklmn";
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(string);
+        LinearGradientFontSpan span = new LinearGradientFontSpan(ContextCompat.getColor(this, R.color.cffffff), ContextCompat.getColor(this, R.color.c_ll_cffee52), false);
+        spannableStringBuilder.setSpan(span, 0, spannableStringBuilder.length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
 
+//        ShadowSpan span1 = new ShadowSpan(3, 0, 3, Color.GREEN);
+//        spannableStringBuilder.setSpan(span1, 0, spannableStringBuilder.length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        tvTest3.setText(spannableStringBuilder);
     }
 
 }
