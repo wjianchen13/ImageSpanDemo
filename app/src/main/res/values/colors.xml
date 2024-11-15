@@ -7,6 +7,7 @@
     <color name="blue">#0000ff</color>
     <color name="black">#000000</color>
     <color name="common_transform">#00000000</color>
+    <color name="common_white">#ffffff</color>
 
     <color name="ccbcbcb">#ffcbcbcb</color>
 
@@ -38,5 +39,8 @@
     <color name="c_ll_cffee52">#ffee52</color>
 
     <color name="cffffff">#ffffff</color>
+
+    <color name="c_ll_ff00bfcb">#00BFCB</color>
+    <color name="c_ll_ffffc735">#FFC735</color>
 
 </resources>
