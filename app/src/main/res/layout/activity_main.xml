@@ -132,4 +132,11 @@
         android:text="Span根据宽度自动截取字符串"
         android:onClick="onTest15"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="用户等级徽章"
+        android:onClick="onTest14"/>
+
 </LinearLayout>

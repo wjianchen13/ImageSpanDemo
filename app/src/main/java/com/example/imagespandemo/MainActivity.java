@@ -16,6 +16,7 @@ import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.shadow.ShadowActivity;
 import com.example.imagespandemo.span.SpanActivity;
 import com.example.imagespandemo.tag.TagActivity;
+import com.example.imagespandemo.test1.TestActivity1;
 import com.example.imagespandemo.test15.TestActivity15;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(it);
     }
 
+    /**
+     * 粉丝团徽章
+     */
     public void onTest4(View v) {
         startActivity(new Intent(this, ImageSpanActivity.class));
     }
@@ -118,11 +122,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * TextView设置字体阴影
+     * 用户等级徽章
      * @param v
      */
     public void onTest14(View v) {
-        startActivity(new Intent(this, ShadowActivity.class));
+        startActivity(new Intent(this, TestActivity1.class));
     }
 
     /**
