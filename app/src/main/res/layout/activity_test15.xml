@@ -17,13 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:textSize="30dp"
+        android:textSize="14sp"
         android:layout_marginTop="15dp"
-        android:text="hello"
-        android:shadowColor="#ff0000"
-        android:shadowDx="0"
-        android:shadowDy="5"
-        android:shadowRadius="1"/>
+        android:text="hello" />
 
     <Button
         android:id="@+id/btn_test1"
