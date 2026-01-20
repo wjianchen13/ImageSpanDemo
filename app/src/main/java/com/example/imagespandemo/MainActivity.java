@@ -16,6 +16,7 @@ import com.example.imagespandemo.normal_span.NormalSpanActivity;
 import com.example.imagespandemo.shadow.ShadowActivity;
 import com.example.imagespandemo.span.SpanActivity;
 import com.example.imagespandemo.tag.TagActivity;
+import com.example.imagespandemo.test15.TestActivity15;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -116,13 +117,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, TagActivity.class));
     }
 
-
     /**
      * TextView设置字体阴影
      * @param v
      */
-    public void onTest13(View v) {
+    public void onTest14(View v) {
         startActivity(new Intent(this, ShadowActivity.class));
     }
+
+    /**
+     * Span根据宽度自动截取字符串
+     * @param v
+     */
+    public void onTest15(View v) {
+        startActivity(new Intent(this, TestActivity15.class));
+    }
+
+
+
 
 }
