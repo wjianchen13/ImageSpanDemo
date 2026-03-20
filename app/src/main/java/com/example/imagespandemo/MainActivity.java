@@ -18,6 +18,7 @@ import com.example.imagespandemo.span.SpanActivity;
 import com.example.imagespandemo.tag.TagActivity;
 import com.example.imagespandemo.test1.TestActivity1;
 import com.example.imagespandemo.test15.TestActivity15;
+import com.example.imagespandemo.test16.TestActivity16;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -137,6 +138,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, TestActivity15.class));
     }
 
+
+    /**
+     * 测试实现动画图文混排的情况，AI处理
+     * @param v
+     */
+    public void onTest16(View v) {
+        startActivity(new Intent(this, TestActivity16.class));
+    }
 
 
 
